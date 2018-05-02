@@ -60,10 +60,15 @@ p {
 
 /* Section Case Studies */
 .col-sm-6 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 120px;
-  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 80px;
+  color: #FFFFFF;
+  background-color: #333333;
+}
+
+#leftcolumn {
+  align-content: center;
 }
 
 /* unvisited link */
