@@ -1,52 +1,114 @@
-header {
-  background: url(../images/background-image-tabletkeyboard.jpg) center / cover;
-  height: 60vh;
-  justify-content: center;
-  text-align: center;
-}
-
 body {
-  padding-bottom: 5rem;
+  background-color: #EEE2DB;
+  font-family: "Poppins", Helvetica, sans-serif;
 }
 
+/* Navigation Bar */
+.navbar-nav {
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-nav a {
+  display: block;
+  position: relative;
+  float: left;
+  padding: 1em 0 2em;
+  width: 25%;
+  text-decoration: none;
+  color: #393939;
+  transition: .7s;
+}
+
+.nav a:hover {
+  color: #E3B505;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+.navbar-nav .effect {
+  width: 90px;
+  height: 2px;
+  bottom: 36px;
+  background: #E3B505;
+  box-shadow: 0 1px 1 white;
+  margin-left: -45px;
+}
+
+/* Hero Titles and Image */
+#hero {
+  margin-bottom: 200px;
+}
 h1 {
+  font-family: "Playfair Display", serif;
   font-weight: bold;
-  color: rgba(255,255,255,0.9);
+  margin-top: 80px;
+  letter-spacing: 5px;
 }
 
-.slogan {
+h4 {
   font-weight: lighter;
-  font-size: 1.6rem;
-  color: rgba(255,255,255,0.8);
+  color: #703035;
 }
 
-main {
-  max-width: 900px;
+p {
+  width: 550px;
 }
 
-.project-description {
-  padding-left: 0;
+/* Section Case Studies */
+.col-sm-6 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 120px;
+  background-color: white;
 }
 
-.project img {
-  width: 100%;
+/* unvisited link */
+a:link {
+    color: #333333;
 }
 
-footer.mdl-mini-footer {
+/* visited link */
+a:visited {
+    color: #333333;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: #703035;
+}
+
+footer {
+  position: relative;
+  padding: 10px;
   bottom: 0;
-  padding: 0.5rem;
-  position: fixed;
   width: 100%;
-  z-index: 1;
+  height: 60px;
+  line-height: 60px;
 }
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 2rem;
+i {
+  padding-left: 10px;
 }
 
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
-  }
+.btn-primary {
+  background-color: #E3B505;
+  border-color: #E3B505;
+  font-weight: 200;
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+}
+
+.col-6 {
+  align-content: center;
 }
