@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #EEE2DB;
   font-family: "Poppins", Helvetica, sans-serif;
@@ -41,7 +47,13 @@ body {
 /* Hero Titles and Image */
 #hero {
   margin-bottom: 200px;
+  position: relative;
 }
+
+#lamp-anim {
+  position: absolute;
+}
+
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -59,17 +71,38 @@ p {
 }
 
 /* Section Case Studies */
-.col-sm-6 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 80px;
-  color: #FFFFFF;
-  background-color: #333333;
+#preview {
+  background: url(/images/wavy_background@2x.png) no-repeat 0 0;
+  background-size: 100%;
+  background-position: 0% 0%;
+  padding-bottom: 150px;
 }
 
-#leftcolumn {
-  align-content: center;
+.col-lg-12 {
+  margin-top: 20px;
 }
+
+.col-sm-6 {
+  margin-top: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.leftboxed {
+  color: #10618B;
+  font-family: "Quicksand", "Nunito", "Poppins", sans-serif;
+  background-color: #EEEEEE;
+  padding: 20px;
+  width: 600px;
+}
+
+.rightboxed {
+  color: #FFFFFF;
+  background-color: #333333;
+  padding: 180px;
+  width: 600px;
+}
+
 
 /* unvisited link */
 a:link {
@@ -91,6 +124,7 @@ a:active {
     color: #703035;
 }
 
+/* Footer section */
 footer {
   position: relative;
   padding: 10px;
@@ -114,6 +148,23 @@ i {
   background-color: #333333;
 }
 
-.col-6 {
-  align-content: center;
+
+/* Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;}
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

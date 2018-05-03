@@ -1,0 +1,102 @@
+body {
+  background-color: #EEE2DB;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #B85C43;
+}
+
+.navbar-nav {
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-nav a {
+  display: block;
+  position: relative;
+  float: left;
+  padding: 1em 0 2em;
+  width: 25%;
+  text-decoration: none;
+  color: #393939;
+  transition: .7s;
+}
+
+.nav a:hover {
+  color: #E3B505;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+.navbar-nav .effect {
+  width: 90px;
+  height: 2px;
+  bottom: 36px;
+  background: #E3B505;
+  box-shadow: 0 1px 1 white;
+  margin-left: -45px;
+}
+
+/* Hero */
+#hero {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.lavalamp-bg {
+  position: relative;
+}
+
+#lamp-anim {
+  position: absolute;
+}
+
+/* unvisited link */
+a:link {
+    color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+    color: #333333;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: #703035;
+}
+
+/* Footer section */
+footer {
+  position: relative;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #D28F7C;
+}
+
+i {
+  padding-left: 10px;
+}
+
+.btn-primary {
+  background-color: #E3B505;
+  border-color: #E3B505;
+  font-weight: 200;
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+}
