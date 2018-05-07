@@ -70,6 +70,10 @@ nav-menu ul li a:before {
   position: relative;
 }
 
+#herograph {
+  font-size: 18px;
+}
+
 #lamp-anim {
   position: absolute;
 }
@@ -87,7 +91,7 @@ h4 {
 }
 
 p {
-  width: 630px;
+  width: 600px;
 }
 
 /* Section Case Studies */
@@ -95,37 +99,34 @@ p {
   background: url(/images/wavy_background@2x.png) no-repeat 0 0;
   background-size: 100%;
   background-position: 0% 0%;
-  padding-bottom: 150px;
+  padding-bottom: 180px;
 }
 
 .col-lg-12 {
   margin-top: 20px;
 }
 
-.col-sm-6 {
-  margin-top: 30px;
-  padding-top: 80px;
-  padding-bottom: 40px;
+.casestudies {
+  margin-top: 20px;
+  padding-top: 70px;
+  /* padding-bottom: 40px; */
 }
 
-.leftboxed {
+#leftcolumn {
   color: #10618B;
   font-family: "Quicksand", "Nunito", "Poppins", sans-serif;
   background-color: #EEEEEE;
-  padding: 20px;
-  width: 600px;
+  padding-top: 20px;
+  margin-left: 50px;
 }
 
-.rightboxed {
+#rightcolumn {
   color: #FFFFFF;
   background-color: #333333;
-  padding: 180px;
-  width: 600px;
+  padding-top: 60px;
+  margin-right: 50px;
 }
 
-.rightboxed p {
-  width: 300px;
-}
 
 
 /* unvisited link */
