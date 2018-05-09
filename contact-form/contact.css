@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  background: #EEE2DB;  /* fallback for old browsers */
+}
+
+/* Navigation Bar */
+.navbar-fixed-top {
+  background-color: #B85C43;
+}
+
+.navbar-nav {
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.navbar-nav a {
+  display: block;
+  position: relative;
+  float: left;
+  padding: 1em 0 1em;
+  text-decoration: none;
+  font-weight: 400;
+  color: #393939;
+  transition: .7s;
+}
+
+.nav a:hover {
+  color: #E3B505;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+nav-menu ul li a,
+nav-menu ul li a:after,
+nav-menu ul li a:before {
+  transition: all .5s;
+}
+
+.nav-menu ul li a {
+  position: relative;
+}
+
+.nav-menu ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #E3B505;
+  height: 3px;
+  box-shadow: 0 1px 1 white;
+}
+
+.nav-menu ul li a:hover:after {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Main */
+#hero {
+  margin: 80px 50px;
+  position: relative;
+}
+
+#hero-left {
+  padding-top: 30px;
+}
+
+#lamp-anim {
+  position: absolute;
+  margin-top: -80px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: lighter;
+  color: #703035;
+}
+
+p {
+  font-size: 20px;
+  font-weight: lighter;
+  width: 600px;
+}
+
+.form-group {
+  width: 80%;
+  text-align: left;
+}
+
+/* unvisited link */
+a:link {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: #333333;
+}
+/* mouse over link */
+a:hover {
+    color: #5d5d5d;
+    text-decoration: none;
+}
+/* selected link */
+a:active {
+    color: #FFFFFF;
+}
+
+
+/* Footer section */
+footer {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #D28F7C;
+}
+
+i {
+  padding-left: 10px;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #E3B505;
+  border-color: #E3B505;
+  font-weight: 200;
+}
+
+.btn-primary:hover {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.btn-primary:visited {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.btn-primary:active {
+  background-color: #E3B505;
+  border-color: #E3B505;
+}
+
+.btn-success.disabled {
+  background-color: #E3B505;
+  border-color: #E3B505;
+}

@@ -72,15 +72,15 @@ nav-menu ul li a:before {
 
 /* Sticky nav */
 .sticky-top {
-  top: 0;
+  top: -1px;
   margin: 0;
 }
 
 .anchor::before {
-  display: block;
+  display: inline-block;
   content: " ";
-  margin-top: -105px;
-  height: 105px;
+  margin-top: -30px;
+  height: 120px;
   visibility: hidden;
 }
 
@@ -88,21 +88,22 @@ nav-menu ul li a:before {
 #hero {
   color: #FFFFFF;
   background: #333333;  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to top, #22343B, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to top, #22343B, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */ */
+  height: 400px;
+  padding-top: 50px;
 }
 
-#hero-left, #hero-right {
-  padding: 20px;
+#hero-right {
+  padding-right: 70px;
 }
 
 #hero-left {
-  padding-top: 70px;
-  padding-left: 50px;
+  padding-top: 50px;
+  padding-left: 70px;
 }
 
 #lamp-anim {
   position: absolute;
+  margin-top: -50px;
 }
 
 h1 {
@@ -150,6 +151,7 @@ section {
   text-align: center;
 }
 
+
 h3 {
   font-family: "Poppins", Helvetica, sans-serif;
   font-weight: 400;
@@ -169,7 +171,9 @@ p {
 #overview-shaded {
   background-color: #545454;
   color: #FFFFFF;
-  padding: 50px;
+  padding: 80px;
+  padding-top: 100px;
+  margin-top: -100px;
 }
 
 .titleshaded {
@@ -178,7 +182,7 @@ p {
 
 #shaded {
   background-color: #EEEEEE;
-  padding: 50px;
+  padding: 80px;
 }
 
 #showcaseimg {
@@ -186,18 +190,28 @@ p {
 }
 
 /* Process */
-#research, #branding, #execution, #learnings {
-  padding: 50px;
+#process, #research, #branding, #execution, #learnings {
+  padding: 80px;
   text-align: left;
 }
 
-.researchtitle {
+#process {
+  margin-bottom: -100px;
+}
+
+.processtitle {
   color: #2C88AD;
   text-align: center;
 }
 
-.title{
+.researchtitle, .brandingtitle, .executiontitle, .lessonstitle, .moretitle {
   text-align: center;
+}
+
+.researchtitle, .brandingtitle, .executiontitle {
+  background-color: #EEEEEE;
+  margin: -100px;
+  padding: 30px;
 }
 
 .sub-title {
@@ -220,6 +234,10 @@ ul {
 #learnings {
   background: url(/images/cloudcore/colorbanner@2x.png);
   color: #FFFFFF;
+}
+
+#lessons {
+  margin-top: -80px;
 }
 
 /* More to come */
@@ -255,19 +273,8 @@ a:active {
     color: #703035;
 }
 
-.back-to-top {
-  background: none;
-  margin: 0;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 70px;
-  height: 70px;
-  z-index: 100;
-  display: none;
-  text-decoration: none;
+.back-to-top:visited {
   color: #ffffff;
-  background-color: #ff9000;
 }
 
 
@@ -282,4 +289,8 @@ footer {
 
 i {
   padding-left: 10px;
+}
+
+#footerbutton {
+  padding-left: 30px;
 }
