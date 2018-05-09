@@ -186,7 +186,6 @@ i {
   border-color: #E3B505;
 }
 
-.btn-success.disabled {
-  background-color: #E3B505;
-  border-color: #E3B505;
+.btn-primary a:visited {
+  color: #FFFFFF;
 }

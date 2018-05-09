@@ -294,3 +294,7 @@ i {
 #footerbutton {
   padding-left: 30px;
 }
+
+#footerbutton .btn-primary a:link {
+    color: #FFFFFF;
+}

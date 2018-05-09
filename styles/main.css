@@ -132,7 +132,8 @@ p {
 
 /* unvisited link */
 a:link {
-    color: #333333;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* visited link */
@@ -171,6 +172,7 @@ i {
 .btn-primary:hover {
   background-color: #333333;
   border-color: #333333;
+  color: #FFFFFF;
 }
 
 
