@@ -68,6 +68,7 @@ nav-menu ul li a:before {
 .nav-menu ul li a:hover:after {
   display: inline-block;
   width: 100%;
+  transition: all 1s ease-in-out;
 }
 
 /* Sticky nav */
@@ -154,26 +155,25 @@ section {
 
 h3 {
   font-family: "Poppins", Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 28px;
+  font-weight: 400;
   padding: 10px;
 }
 
 p {
   padding-top: 10px;
-  line-height: 30px;
-  font-weight: lighter;
   font-size: 18px;
-  width: 100%;
+  font-weight: lighter;
+  line-height: 30px;
 }
 
 /* Overview */
 #overview-shaded {
   background-color: #545454;
+  margin-top: -100px;
   color: #FFFFFF;
   padding: 80px;
   padding-top: 100px;
-  margin-top: -100px;
 }
 
 .titleshaded {
@@ -275,6 +275,34 @@ a:active {
 
 .back-to-top:visited {
   color: #ffffff;
+}
+
+/* Return to Top */
+.arrow a {
+  color: white;
+  text-decoration: none;
+}
+
+.arrow p {
+  font-family: "Poppins", sans-serif;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 

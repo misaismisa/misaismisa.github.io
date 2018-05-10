@@ -66,6 +66,7 @@ nav-menu ul li a:before {
 .nav-menu ul li a:hover:after {
   display: inline-block;
   width: 100%;
+  transition: all 1s ease-in-out;
 }
 
 /* Main */

@@ -62,7 +62,9 @@ nav-menu ul li a:before {
 .nav-menu ul li a:hover:after {
   display: inline-block;
   width: 100%;
+  transition: all 1s ease-in-out;
 }
+
 
 /* Hero Titles and Image */
 #hero {
@@ -121,8 +123,12 @@ h4 {
   padding: 10px;
 }
 
+.card:hover {
+  background-color: #828B8C;
+}
+
 #more {
-  padding-top: 150px;
+  padding-top: 140px;
 }
 
 
