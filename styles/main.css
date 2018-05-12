@@ -18,28 +18,23 @@ body {
   position: relative;
 }
 
-.navbar-nav a {
+.navbar-light .navbar-nav a {
   display: block;
   position: relative;
   float: left;
   padding: 1em 0 1em;
   text-decoration: none;
+  font-weight: 400;
   color: #393939;
   transition: .7s;
 }
 
-.nav a:hover {
-  color: #E3B505;
+.navbar-light .navbar-nav a:hover {
+  color: #E3B505 !important;
 }
 
 .nav-item {
   padding-right: 20px;
-}
-
-nav-menu ul li a,
-nav-menu ul li a:after,
-nav-menu ul li a:before {
-  transition: all .5s;
 }
 
 .nav-menu ul li a {
@@ -55,7 +50,7 @@ nav-menu ul li a:before {
   content: '.';
   color: transparent;
   background: #E3B505;
-  height: 3px;
+  height: 4px;
   box-shadow: 0 1px 1 white;
 }
 
@@ -127,11 +122,11 @@ h4 {
   background-color: #828B8C;
 }
 
-#more {
-  padding-top: 140px;
+.card-body {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 /* unvisited link */
 a:link {
@@ -146,7 +141,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #G3B505;
+    color: #FFFFFF;
 }
 
 /* selected link */
@@ -191,7 +186,61 @@ i {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+    /* NAV */
+    /* .nav-menu {
+      display: flex;
+    }
+    .navbar li {
+      font-size: 2vw;
+    } */
+    /* HERO */
+    /* #hero h1 {
+      font-size: 4.5vw;
+    }
+    #hero h4 {
+      font-size: 3vw;
+    }
+    #hero p {
+      font-size: 2vw;
+    }
+
+    canvas {
+      padding-bottom: 80px;
+      height: 10px;
+    } */
+    /* Case STUDIES */
+    /* #preview {
+      background: url(/images/wavy_background@2x.png) no-repeat 0 0;
+      background-size: 100%;
+      background-position: 0% 15%;
+      margin-bottom: -140px;
+    }
+    .col-lg-12 {
+      margin: 0;
+    }
+    .card-title {
+      font-size: 2.5vw;
+    }
+    .card-text {
+      font-size: 1vw;
+    } */
+
+    /* Footer */
+    /* footer {
+      font-size: 1.5vw;
+    }
+    footer h4 {
+      font-size: 16px;
+    }
+    .logoblack {
+      width: 100px;
+    }
+    .btn-primary {
+      width: 50%;
+      font-size: 13px;
+    } */
+ }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }

@@ -15,7 +15,7 @@ body {
 }
 
 /* Navigation Bar */
-.navbar-fixed-top {
+.navbar-light {
   background-color: #B85C43;
 }
 
@@ -26,7 +26,7 @@ body {
   color: #FFFFFF;
 }
 
-.navbar-nav a {
+.navbar-light .navbar-nav a {
   display: block;
   position: relative;
   float: left;
@@ -37,8 +37,8 @@ body {
   transition: .7s;
 }
 
-.nav a:hover {
-  color: #E3B505;
+.navbar-light .navbar-nav a:hover {
+  color: #E3B505 !important;
 }
 
 .nav-item {
@@ -64,7 +64,7 @@ nav-menu ul li a:before {
   content: '.';
   color: transparent;
   background: #E3B505;
-  height: 3px;
+  height: 4px;
   box-shadow: 0 1px 1 white;
 }
 
