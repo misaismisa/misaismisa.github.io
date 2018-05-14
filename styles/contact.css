@@ -14,8 +14,13 @@ body {
   background-color: #B85C43;
 }
 
+.logowhite {
+  width: 100px;
+}
+
 .navbar-nav {
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 10px;
   overflow: hidden;
   position: relative;
   color: #FFFFFF;
@@ -24,7 +29,7 @@ body {
 .navbar-light .navbar-nav a {
   display: block;
   position: relative;
-  float: left;
+  float: right;
   padding: 1em 0 1em;
   text-decoration: none;
   font-weight: 400;
@@ -37,7 +42,7 @@ body {
 }
 
 .nav-item {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 nav-menu ul li a,
@@ -70,18 +75,19 @@ nav-menu ul li a:before {
 }
 
 /* Main */
+#lamp-anim {
+  position: absolute;
+  width: 100%;
+  height: 740px;
+}
+
 #hero {
-  margin: 80px 50px;
   position: relative;
+  margin: 0 5px;
 }
 
 #hero-left {
-  padding-top: 30px;
-}
-
-#lamp-anim {
-  position: absolute;
-  margin-top: -80px;
+  margin: 20px 0;
 }
 
 h1 {
@@ -95,14 +101,22 @@ h4 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: lighter;
-  width: 600px;
+}
+
+#hero-right {
+    margin: 30px 0 40px 0;
 }
 
 .form-group {
-  width: 80%;
+  width: 100%;
   text-align: left;
+}
+
+.form-control {
+  font-size: 13px;
+  font-weight: lighter;
 }
 
 /* unvisited link */
@@ -129,39 +143,261 @@ a:active {
 /* Footer section */
 footer {
   position: relative;
-  padding: 10px;
+  padding: 20px 0;
   width: 100%;
-  line-height: 60px;
   background-color: #D28F7C;
 }
 
 i {
-  padding-left: 10px;
+  font-size: 25px;
+  padding-left: 8px;
 }
 
-/* Button */
-.btn-primary {
+.logoblack {
+  width: 100px;
+  margin-top: -23px;
+}
+
+footer h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn-secondary {
   background-color: #E3B505;
   border-color: #E3B505;
+  font-size: 14px;
   font-weight: 200;
 }
 
-.btn-primary:hover {
-  background-color: #333333;
-  border-color: #333333;
-}
-
-.btn-primary:visited {
-  background-color: #333333;
-  border-color: #333333;
-}
-
-.btn-primary:active {
+.btn-sm {
   background-color: #E3B505;
   border-color: #E3B505;
+  font-size: 10px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.btn-sm a {
+  font-size: 14px;
+}
+
+.btn-sm:hover {
+  background-color: #333333;
+  border-color: #333333;
+  color: #FFFFFF;
+}
+
+span.small {
+  font-size: 9px;
+  padding: 20px;
 }
 
 .btn-success.disabled {
   background-color: #E3B505;
   border-color: #E3B505;
+}
+
+
+/* Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Navigation Bar */
+  .logowhite {
+    width: 110px;
+  }
+
+  /* Main */
+  #lamp-anim {
+    position: absolute;
+    width: 100%;
+    height: 430px;
+  }
+
+  #hero {
+    position: relative;
+    margin: 0;
+  }
+
+  #hero-left {
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+
+  h1 {
+    width: 200px;
+  }
+
+  #hero-right {
+      margin: 40px 0;
+      padding-left: 20px;
+      align: right;
+  }
+
+  /* Footer section */
+
+  i {
+    font-size: 25px;
+    padding-left: 8px;
+  }
+
+  .logoblack {
+    width: 100px;
+    margin-top: -23px;
+  }
+
+  footer h4 {
+    font-size: 16px;
+  }
+
+  .btn-sm {
+    background-color: #E3B505;
+    border-color: #E3B505;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
+
+  .btn-sm a {
+    font-size: 14px;
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Navigation Bar */
+  .logowhite {
+    width: 130px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Navigation Bar */
+  .logowhite {
+    width: 120px;
+  }
+
+  .navbar-nav {
+    font-size: 14px;
+    line-height: 10px;
+    overflow: hidden;
+    position: relative;
+    color: #FFFFFF;
+  }
+
+  /* Main */
+
+  #hero-left {
+    margin: 40px 0;
+    padding-right: 30px;
+  }
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  #hero-right {
+      margin: 40px 0;
+      padding-left: 30px;
+      text-align: right;
+  }
+
+  /* Footer section */
+  i {
+    font-size: 30px;
+    padding-left: 8px;
+  }
+
+  .logoblack {
+    width: 110px;
+  }
+
+  footer h4 {
+    font-size: 20px;
+  }
+
+  .btn-sm a {
+    font-size: 16px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Navigation Bar */
+  .logowhite {
+    width: 150px;
+  }
+
+  .navbar-nav {
+    font-size: 16px;
+  }
+
+  .nav-item {
+    padding-right: 10px;
+  }
+
+  /* Main */
+  #lamp-anim {
+    height: 500px;
+  }
+
+  #hero {
+    margin: 50px 0;
+  }
+  #hero-left {
+    margin: 40px 0;
+    padding: 0 50px;
+  }
+
+  h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 20px;
+    width: 600px;
+  }
+
+  #hero-right {
+      margin: 40px 0;
+      padding-left: 80px;
+      justify-content: flex-end;
+  }
+
+  .form-group {
+    width: 600px;
+    justify-content: flex-end;
+
+  }
+
+  /* Footer section */
+  i {
+    font-size: 35px;
+    padding-left: 10px;
+  }
+
+  .logoblack {
+    width: 130px;
+  }
+
+  footer h4 {
+    font-size: 24px;
+  }
+
+  .btn-sm a {
+    font-size: 20px;
+  }
+
+  span.small {
+    font-size: 12px;
+  }
+
 }
