@@ -21,8 +21,7 @@ body {
 .navbar-light .navbar-nav a {
   display: block;
   position: relative;
-  float: left;
-  padding: 1em 0 1em;
+  float: right;
   text-decoration: none;
   font-weight: 400;
   color: #393939;
@@ -31,10 +30,6 @@ body {
 
 .navbar-light .navbar-nav a:hover {
   color: #E3B505 !important;
-}
-
-.nav-item {
-  padding-right: 20px;
 }
 
 .nav-menu ul li a {
@@ -60,34 +55,42 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.logowine {
+  width: 120px;
+}
+
 
 /* Hero Titles and Image */
-#hero {
-  margin-bottom: 200px;
-  position: relative;
-}
-
-#herograph {
-  font-size: 18px;
-  width: 600px;
-  font-weight: lighter;
-}
-
 #lamp-anim {
   position: absolute;
+  width: 100%;
+  height: 610px;
+}
+
+#hero {
+  margin-bottom: 140px;
+  position: relative;
 }
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 45px;
+  font-size: 34px;
   font-weight: bold;
-  letter-spacing: 5px;
-  margin-top: 60px;
+  letter-spacing: 4px;
+  margin-top: 90px;
 }
 
 h4 {
+  font-size: 20px;
   font-weight: lighter;
   color: #703035;
+}
+
+#herograph {
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: justify;
+  padding: 0 16px;
 }
 
 
@@ -95,21 +98,30 @@ h4 {
 /* Section Case Studies */
 #preview {
   background: url(/images/wavy_background@2x.png) no-repeat 0 0;
-  background-size: 100%;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
   background-position: 0% 0%;
-  padding-bottom: 150px;
+  padding-bottom: 110px;
 }
 
-.col-lg-12 {
-  margin: 35px 0;
+.casetitle {
+  margin-top: 20px;
 }
 
 .card-deck {
-  margin: 50px;
+  margin: 10px;
+  padding-top: 90px;
 }
 
 .card-deck a:visited {
   color: #FFFFFF;
+}
+
+.card-body {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -122,49 +134,67 @@ h4 {
   background-color: #828B8C;
 }
 
-.card-body {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#preview h3 {
+  font-size: 20px;
 }
+
+.card-text {
+  font-size: 13px;
+}
+
+.morecard {
+  padding: 70px 0;
+}
+
+
 
 /* unvisited link */
 a:link {
     color: #FFFFFF;
     text-decoration: none;
 }
-
 /* visited link */
 a:visited {
-    color: #333333;
+    color: #EEEEEE;
 }
-
 /* mouse over link */
 a:hover {
     color: #FFFFFF;
 }
-
 /* selected link */
 a:active {
-    color: #703035;
+    color: #E3B505;
 }
+
+
 
 /* Footer section */
 footer {
   position: relative;
-  padding: 10px;
+  padding-bottom: 20px;
   width: 100%;
-  line-height: 60px;
 }
 
 i {
-  padding-left: 10px;
+  font-size: 25px;
+  padding-left: 8px;
+}
+
+.logoblack {
+  width: 100px;
+  margin-top: -23px;
+}
+
+footer h4 {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .btn-primary {
   background-color: #E3B505;
   border-color: #E3B505;
   font-weight: 200;
+  margin-bottom: 10px;
 }
 
 .btn-primary:hover {
@@ -173,77 +203,422 @@ i {
   color: #FFFFFF;
 }
 
+span.small {
+  font-size: 9px;
+  padding: 20px;
+}
 
 /* Media Queries */
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;}
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Navigation Bar */
+    .navbar-nav {
+      font-size: 18px;
+    }
+
+    /* Hero Titles and Image */
+    #lamp-anim {
+      width: 100%;
+      height: 570px;
+    }
+
+    #hero {
+      margin-bottom: 140px;
+    }
+
+    #herograph {
+      width: 450px;
+    }
+
+    /* Case STUDIES */
+    #preview {
+      background-size: cover;
+      background-position: 0% 18%;
+      height: 450px;
+      margin-bottom: 20px;
+    }
+
+    .casetitle {
+      margin-top: 10px;
+    }
+
+    .card-deck {
+      margin: 10px;
+      padding-top: 50px;
+    }
+
+    .card-text {
+      font-size: 12px;
+    }
+
+
+
+    /* Footer section */
+    footer {
+      position: relative;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+
+    i {
+      font-size: 25px;
+      padding-left: 8px;
+    }
+
+    .logoblack {
+      width: 100px;
+      margin-top: -23px;
+    }
+
+    footer h4 {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .btn-primary {
+      align: center;
+    }
+
+    span.small {
+      font-size: 11px;
+      padding: 20px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    /* NAV */
-    /* .nav-menu {
-      display: flex;
-    }
-    .navbar li {
-      font-size: 2vw;
-    } */
-    /* HERO */
-    /* #hero h1 {
-      font-size: 4.5vw;
-    }
-    #hero h4 {
-      font-size: 3vw;
-    }
-    #hero p {
-      font-size: 2vw;
-    }
+@media (min-width: 768px) and (max-width: 991px) {
 
-    canvas {
-      padding-bottom: 80px;
-      height: 10px;
-    } */
-    /* Case STUDIES */
-    /* #preview {
-      background: url(/images/wavy_background@2x.png) no-repeat 0 0;
-      background-size: 100%;
-      background-position: 0% 15%;
-      margin-bottom: -140px;
-    }
-    .col-lg-12 {
-      margin: 0;
-    }
-    .card-title {
-      font-size: 2.5vw;
-    }
-    .card-text {
-      font-size: 1vw;
-    } */
+  /* Navigation Bar */
+  .navbar-nav {
+    font-size: 18px;
+  }
 
-    /* Footer */
-    /* footer {
-      font-size: 1.5vw;
-    }
-    footer h4 {
-      font-size: 16px;
-    }
-    .logoblack {
-      width: 100px;
-    }
-    .btn-primary {
-      width: 50%;
-      font-size: 13px;
-    } */
+  /* Hero Titles and Image */
+  #lamp-anim {
+    width: 100%;
+    height: 580px;
+  }
+
+  #hero {
+    margin-bottom: 140px;
+  }
+
+  #herograph {
+    width: 550px;
+  }
+
+  /* Case STUDIES */
+  #preview {
+    background-size: cover;
+    background-position: 0% 18%;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+
+  .casetitle {
+    margin-top: 10px;
+  }
+
+  .card-deck {
+    margin: 10px;
+    padding-top: 40px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+
+  /* Footer section */
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  i {
+    font-size: 25px;
+    padding-left: 8px;
+  }
+
+  .logoblack {
+    width: 100px;
+    margin-top: -43px;
+  }
+
+  footer h4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .btn-primary {
+    align: center;
+  }
+
+  span.small {
+    font-size: 11px;
+    padding: 20px;
+  }
  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+
+  /* Navigation Bar */
+  .navbar-nav {
+    font-size: 18px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .navbar-light .navbar-nav a {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 1em 0 1em;
+    text-decoration: none;
+    font-weight: 400;
+    color: #393939;
+    transition: .7s;
+  }
+
+  .navbar-light .navbar-nav a:hover {
+    color: #E3B505 !important;
+  }
+
+  .nav-item {
+    padding-right: 10px;
+  }
+
+  .nav-menu ul li a {
+    position: relative;
+  }
+
+  .nav-menu ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #E3B505;
+    height: 4px;
+    box-shadow: 0 1px 1 white;
+  }
+
+  .nav-menu ul li a:hover:after {
+    display: inline-block;
+    width: 100%;
+    transition: all 1s ease-in-out;
+  }
+
+  .logowine {
+    width: 130px;
+  }
+
+  /* Hero Titles and Image */
+  #lamp-anim {
+    width: 100%;
+    height: 590px;
+  }
+
+  #hero {
+    margin: 70px 0 150px 0;
+  }
+
+  h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+
+  #herograph {
+    width: 700px;
+    font-size: 1.5vw;
+  }
+
+  /* Section Case Studies */
+  #preview {
+    background-size: cover;
+    background-position: 0% 18%;
+    height: 520px;
+    margin-bottom: 20px;
+  }
+
+  .casetitle {
+    margin-top: 10px;
+  }
+
+  .card-deck {
+    margin: 10px;
+    padding-top: 50px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  /* Footer section */
+  i {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+
+  .logoblack {
+    width: 120px;
+    margin-top: -23px;
+  }
+
+  footer h4 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  span.small {
+    font-size: 12px;
+    padding: 20px;
+  }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+
+  /* Navigation Bar */
+  .navbar-nav {
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .navbar-light .navbar-nav a {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 1em 0 1em;
+    text-decoration: none;
+    font-weight: 400;
+    color: #393939;
+    transition: .7s;
+  }
+
+  .navbar-light .navbar-nav a:hover {
+    color: #E3B505 !important;
+  }
+
+  .nav-item {
+    padding-right: 20px;
+  }
+
+  .nav-menu ul li a {
+    position: relative;
+  }
+
+  .nav-menu ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #E3B505;
+    height: 4px;
+    box-shadow: 0 1px 1 white;
+  }
+
+  .nav-menu ul li a:hover:after {
+    display: inline-block;
+    width: 100%;
+    transition: all 1s ease-in-out;
+  }
+
+  .logowine {
+    width: 150px;
+  }
+
+
+  /* Hero Titles and Image */
+  #hero {
+    margin-bottom: 210px;
+    position: relative;
+  }
+
+  #herograph {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  #lamp-anim {
+    position: absolute;
+    width: 100%;
+    height: 780px;
+  }
+
+  h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+
+  h4 {
+    font-size: 28px;
+    font-weight: lighter;
+    color: #703035;
+  }
+
+
+
+  /* Section Case Studies */
+  #preview {
+    background-size: cover;
+    background-position: 0% 45%;
+    height: 730px;
+    margin-bottom: 50px;
+  }
+
+  #preview h3 {
+    font-size: 25px;
+  }
+
+  .card-deck {
+    margin: 10px;
+    padding-top: 90px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+
+  /* Footer section */
+  i {
+    font-size: 40px;
+    padding-left: 15px;
+  }
+
+  .logoblack {
+    width: 150px;
+    margin-top: -23px;
+  }
+
+  .footerbtn {
+    padding: 10px;
+  }
+
+  footer h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    font-size: 20px;
+  }
+
+  span.small {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+}
