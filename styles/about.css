@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
 
 body {
   font-family: "Poppins", Helvetica, sans-serif;
@@ -19,8 +15,13 @@ body {
   background-color: #B85C43;
 }
 
+.logowhite {
+  width: 100px;
+}
+
 .navbar-nav {
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 10px;
   overflow: hidden;
   position: relative;
   color: #FFFFFF;
@@ -29,7 +30,7 @@ body {
 .navbar-light .navbar-nav a {
   display: block;
   position: relative;
-  float: left;
+  float: right;
   padding: 1em 0 1em;
   text-decoration: none;
   font-weight: 400;
@@ -42,7 +43,7 @@ body {
 }
 
 .nav-item {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 nav-menu ul li a,
@@ -51,7 +52,7 @@ nav-menu ul li a:before {
   transition: all .5s;
 }
 
-.nav-menu ul li a {
+.nav-menu>a {
   position: relative;
 }
 
@@ -71,7 +72,7 @@ nav-menu ul li a:before {
 .nav-menu ul li a:hover:after {
   display: inline-block;
   width: 100%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 /* Hero */
@@ -85,49 +86,54 @@ nav-menu ul li a:before {
 } */
 
 /* Main */
-
-#aboutmain, #aboutmain2, #aboutmain3, #quote {
-  margin-left: 50px;
-  margin-bottom: 40px;
-}
 #aboutmain {
-  margin-top: 80px;
+  margin-top: 50px;
   position: relative;
 }
 
-#aboutmain2, #aboutmain3 {
-  margin-right: 50px;
-}
-
 #about-left {
-  padding-top: 30px;
-  padding-right: 50px;
-  text-align: justify;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-#about-right {
-  padding-right: 100px;
+#about-right1, #about-right2 {
+  padding: 0 50px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-#lamp-anim {
-  position: absolute;
-  margin-top: -80px;
+.profilepic {
+  width: 260px;
 }
 
 h1 {
   font-family: "Playfair Display", serif;
+  font-size: 30px;
   font-weight: bold;
 }
 
 h4 {
+  font-size: 20px;
   font-weight: lighter;
   color: #703035;
 }
 
+.subtitle, p {
+  font-size: 14px;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
 p {
-  font-size: 20px;
   font-weight: lighter;
   line-height: 30px;
+}
+
+img {
+  width: 100%;
 }
 
 
@@ -155,38 +161,209 @@ a:active {
 /* Footer section */
 footer {
   position: relative;
-  padding: 10px;
+  padding: 10px 0;
   width: 100%;
-  line-height: 60px;
   background-color: #D28F7C;
 }
 
 i {
-  padding-left: 10px;
+  font-size: 25px;
+  padding-left: 8px;
 }
 
-/* Button */
-.btn-primary {
+.logoblack {
+  width: 100px;
+  margin-top: -23px;
+}
+
+footer h4 {
+  font-size: 16px;
+}
+
+.btn-sm {
   background-color: #E3B505;
   border-color: #E3B505;
+  font-size: 10px;
   font-weight: 200;
+  margin-bottom: 10px;
 }
 
-.btn-primary:hover {
+.btn-sm a {
+  font-size: 14px;
+}
+
+.btn-sm:hover {
   background-color: #333333;
   border-color: #333333;
-}
-
-.btn-primary:visited {
-  background-color: #333333;
-  border-color: #333333;
-}
-
-.btn-primary:active {
-  background-color: #E3B505;
-  border-color: #E3B505;
-}
-
-.btn-primary a:visited {
   color: #FFFFFF;
+}
+
+span.small {
+  font-size: 9px;
+  padding: 15px;
+}
+
+
+/* Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Main */
+  #about-left {
+    padding: 0 20px;
+    margin-top: -380px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  #about-right1, #about-right2 {
+    padding: 0 20px 0 50px;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  #about-right2 {
+    margin-top: -1200px;
+    text-align: right;
+  }
+
+  .profilepic {
+    width: 260px;
+    margin-left: 350px;
+  }
+
+  p {
+    font-weight: lighter;
+    line-height: 30px;
+  }
+
+  img {
+    width: 35%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Main */
+  #about-left {
+    padding: 0 20px;
+    margin-top: -590px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  #about-right1, #about-right2 {
+    padding: 0 20px 50px 50px;
+    margin-bottom: 50px;
+    text-align: right;
+  }
+
+  #about-right2 {
+    margin-top: -700px;
+    text-align: right;
+  }
+
+  .profilepic {
+    width: 350px;
+    margin-left: 350px;
+  }
+
+  img {
+    width: 35%;
+  }
+
+  /* Footer section */
+  i {
+    font-size: 30px;
+    padding-left: 8px;
+  }
+
+  .logoblack {
+    width: 110px;
+    margin-top: -23px;
+  }
+
+  footer h4 {
+    font-size: 20px;
+    margin-top: -50px;
+  }
+
+  span.small {
+    font-size: 11px;
+    padding: 15px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Navigation Bar */
+  .logowhite {
+    width: 150px;
+  }
+
+  /* Main */
+  #about-left {
+    padding: 0 40px 0 50px;
+    margin-top: -650px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  #about-right1, #about-right2 {
+    padding: 0 50px 50px 50px;
+    margin-bottom: 50px;
+    text-align: right;
+  }
+
+  #about-right2 {
+    margin-top: -650px;
+    text-align: right;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .subtitle, p {
+    font-size: 18px;
+  }
+
+  .profilepic {
+    width: 400px;
+    margin-left: 350px;
+  }
+
+  img {
+    width: 26%;
+  }
+
+  /* Footer section */
+  footer h4 {
+    font-size: 24px;
+    margin-top: -50px;
+  }
+
+  .btn-sm {
+    font-size: 16px;
+  }
+
+  .btn-sm a {
+    font-size: 20px;
+  }
+
+  span.small {
+    font-size: 12px;
+  }
+
 }

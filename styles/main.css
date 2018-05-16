@@ -32,7 +32,7 @@ body {
   color: #E3B505 !important;
 }
 
-.nav-menu ul li a {
+.nav-menu>a {
   position: relative;
 }
 
@@ -187,7 +187,6 @@ i {
 
 footer h4 {
   font-size: 16px;
-  margin-top: 10px;
 }
 
 .btn-primary {

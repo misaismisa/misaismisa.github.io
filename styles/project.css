@@ -7,8 +7,6 @@
 body {
   background-color: #FFFFFF;
   font-family: "Poppins", Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 /* Navigation Bar */
@@ -16,8 +14,13 @@ body {
   background-color: #B85C43;
 }
 
+.logowhite {
+  width: 100px;
+}
+
 .navbar-nav {
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 10px;
   overflow: hidden;
   position: relative;
   color: #FFFFFF;
@@ -26,7 +29,7 @@ body {
 .navbar-light .navbar-nav a {
   display: block;
   position: relative;
-  float: left;
+  float: right;
   padding: 1em 0 1em;
   text-decoration: none;
   font-weight: 400;
@@ -39,7 +42,7 @@ body {
 }
 
 .nav-item {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 nav-menu ul li a,
@@ -48,7 +51,7 @@ nav-menu ul li a:before {
   transition: all .5s;
 }
 
-.nav-menu ul li a {
+.nav-menu>a {
   position: relative;
 }
 
@@ -68,62 +71,48 @@ nav-menu ul li a:before {
 .nav-menu ul li a:hover:after {
   display: inline-block;
   width: 100%;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-/* Sticky nav */
-.sticky-top {
-  top: -1px;
-  margin: 0;
-  padding: 20px;
-  font-weight: bold;
-}
-
-.sticky-top li a:hover {
-  color: #E3B505;
-}
-
-.anchor::before {
-  display: inline-block;
-  content: " ";
-  margin-top: -30px;
-  height: 120px;
-  visibility: hidden;
-}
 
 /* Hero */
 #hero {
   color: #FFFFFF;
   background: #333333;  /* fallback for old browsers */
-  height: 400px;
-  padding-top: 50px;
-}
-
-#hero-right {
-  padding-right: 70px;
-}
-
-#hero-left {
-  padding-top: 50px;
-  padding-left: 70px;
-}
-
-#lamp-anim {
-  position: absolute;
-  margin-top: -50px;
+  height: 660px;
+  padding-top: 30px 0 0 20px;
+  text-align: center;
 }
 
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
+  font-size: 36px;
 }
+
+.hero-desc {
+  display:block;
+  word-wrap: break-word;
+  font-size: 16px;
+}
+
+.btnproto {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-right img {
+  width: 100%;
+}
+
+
 
 /* Button */
 .btn-primary {
   background-color: #E3B505;
   border-color: #E3B505;
   font-weight: 200;
-  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 .btn-primary:hover {
@@ -141,34 +130,65 @@ h1 {
   border-color: #E3B505;
 }
 
-/* Submenu Nav */
-.affix-top {
-  display: inline block;
+/* Sticky nav */
+.sticky-top {
+  background-color: #828B8C;
+  top: -1px;
+  padding: 19px;
+  font-weight: bold;
+}
+
+.sticky-top a:link {
+  font-size: 18px;
+}
+
+.sticky-top li a:hover {
+  color: #E3B505;
+}
+
+.anchor::before {
+  display: inline-block;
+  content: " ";
+  margin-top: -10px;
+  visibility: hidden;
+}
+
+#navbar-left {
+  display: inline-block;
+  text-align: center;
 }
 
 .subnav {
-  padding-left: 30px;
+  padding: 8px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.subnav>a:link {
+  color: #FFF;
+}
+
+.subnav>a:visited {
+  color: #FFFFFF;
 }
 
 /* Sections */
 section {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 
 h3 {
   font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 0 10px 0;
 }
 
 p {
-  padding-top: 10px;
-  font-size: 18px;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
   font-weight: lighter;
   line-height: 30px;
 }
@@ -176,38 +196,45 @@ p {
 /* Overview */
 #overview-shaded {
   background-color: #545454;
-  margin-top: -100px;
+  margin-top: -30px;
   color: #FFFFFF;
-  padding: 80px;
-  padding-top: 100px;
+  /* padding-top: 150px; */
 }
 
 .titleshaded {
   color: #2C88AD;
 }
 
+#overview-shaded, #shaded {
+  padding: 20px;
+}
+
 #shaded {
   background-color: #EEEEEE;
-  padding: 80px;
 }
 
 #showcaseimg {
-  padding-left: 90px;
+  width: 100%;
+  padding-left: 40px;
 }
 
 /* Process */
 #process, #research, #branding, #execution, #learnings {
-  padding: 80px;
   text-align: left;
 }
 
 #process {
-  margin-bottom: -100px;
+  margin-top: 80px;
 }
 
 .processtitle {
   color: #2C88AD;
   text-align: center;
+}
+
+.processimg {
+  width: 100%;
+  margin-bottom: -30px;
 }
 
 .researchtitle, .brandingtitle, .executiontitle, .lessonstitle, .moretitle {
@@ -216,14 +243,16 @@ p {
 
 .researchtitle, .brandingtitle, .executiontitle {
   background-color: #EEEEEE;
-  margin: -100px;
+  margin: 50px -35px 0 -35px;
   padding: 30px;
 }
 
 .sub-title {
+  margin-top: 20px;
   text-align: left;
   color: #A0094A;
   font-weight: 400;
+  font-size: 20px;
 }
 
 hr {
@@ -233,22 +262,75 @@ hr {
 
 ul {
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+/* Research */
+.surveydata, .competitor, .userflowimg, .brandsketch, .logoimg, .colorimg, .mockupimg  {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.wireframeimg, .mobileimg {
+  width: 45%;
+}
+
+.mobileimg2, .mockupimg2 {
+  width: 30%;
+}
+
+.persona_vincent, .persona_alexis {
+  padding: 30px;
+}
+
+.personaimg {
+  width: 70%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.persona_head p {
+  margin-bottom: -16px;
+}
+
+.persona_body {
+  margin-top: 20px;
+}
+
+.persona_quote p {
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.persona_alexis::before {
+  content: '';
+  width: 1px;
+  position: absolute;
+  background: #979797;
+  top: 71px;
+  bottom: 106px;
+  left: 0;
 }
 
 /* Learnings */
 #learnings {
   background: url(/images/cloudcore/colorbanner@2x.png);
   color: #FFFFFF;
+  padding-top: 20px;
 }
 
-#lessons {
-  margin-top: -80px;
+.lessonstitle {
+  margin-top: 30px;
+  margin-bottom: -8px;
 }
 
 /* More to come */
 #more {
-  padding: 50px;
+  padding-top: 30px;
   background-color: #333333;
   color: white;
   width: 100%;
@@ -315,20 +397,564 @@ a:active {
 /* Footer section */
 footer {
   position: relative;
-  padding: 10px;
+  padding: 10px 0;
   width: 100%;
-  line-height: 60px;
   background-color: #D28F7C;
 }
 
 i {
-  padding-left: 10px;
+  font-size: 25px;
+  padding-left: 8px;
 }
 
-#footerbutton {
-  padding-left: 30px;
+.logoblack {
+  width: 100px;
+  margin-top: -23px;
 }
 
-#footerbutton .btn-primary a:link {
+footer h4 {
+  font-size: 16px;
+}
+
+.btn-sm {
+  background-color: #E3B505;
+  border-color: #E3B505;
+  font-size: 10px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.btn-sm a {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.btn-sm:hover {
+  background-color: #333333;
+  border-color: #333333;
+  color: #FFFFFF;
+}
+
+span.small {
+  font-size: 9px;
+  padding: 15px;
+}
+
+/* Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Hero */
+  #hero {
+    height: 330px;
+    text-align: left;
+  }
+
+  #hero-left {
+    padding-left: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .hero-desc, #hero-left .btn, i  {
+    font-size: 14px;
+  }
+
+  .btnproto {
+    justify-content: left;
+  }
+
+  #hero-right img {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  /* Sticky nav */
+  .sticky-top {
+    padding: 15px;
+  }
+
+  /* Process */
+  #overview {
+    text-align: center;
+  }
+
+  #shaded {
+    padding-bottom: 40px;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .sub-title {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+
+  /* Research */
+  .logoimg, .colorimg, {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .competitors, .competitor {
+    padding: 0;
+  }
+
+  .userflowimg, .brandsketch, .wireframeimg, .mockupimg {
+    width: 45%;
+  }
+
+  .mobileimg {
+    width: 20%;
+  }
+
+  .mobileimg2, .mockupimg2 {
+    width: 30%;
+  }
+
+  .personaimg {
+    width: 60%;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Hero */
+  #hero {
+    height: 380px;
+    text-align: left;
+  }
+
+  #hero, .researchtitle, .brandingtitle, .executiontitle {
+    padding: 20px;
+  }
+
+  #hero-left {
+    padding-left: 30px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .hero-desc, #hero-left .btn, i  {
+    font-size: 16px;
+  }
+
+  .btnproto {
+    justify-content: left;
+  }
+
+  #hero-right img {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  /* Process */
+  #overview {
+    text-align: center;
+  }
+
+  #overview-shaded, #shaded {
+    padding-bottom: 40px;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    font-size: 24px;
+    margin: 0 -15px 0 -15px;
+  }
+
+  .sub-title {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .processimg, .surveydata, .logoimg {
+    width: 70%;
+  }
+
+  /* Research */
+  .colorimg, {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .competitors, .competitor {
+    padding: 0;
+  }
+
+  .userflowimg, .brandsketch, .mockupimg {
+    width: 45%;
+  }
+
+  .wireframeimg, .mobileimg, .mobileimg2 {
+    width: 23%;
+  }
+
+  .mockupimg2 {
+    width: 30%;
+  }
+
+  .personaimg {
+    width: 50%;
+  }
+
+  /* Lessons */
+  #lessons {
+    text-align: center;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Hero */
+  #hero {
+    height: 380px;
+    text-align: left;
+  }
+
+  #hero, .researchtitle, .brandingtitle, .executiontitle {
+    padding: 20px;
+  }
+
+  #hero-left {
+    padding-left: 30px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .hero-desc, #hero-left .btn, i  {
+    font-size: 16px;
+  }
+
+  .btnproto {
+    justify-content: left;
+  }
+
+  #hero-right img {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  /* Process */
+  #overview {
+    text-align: center;
+  }
+
+  #overview-shaded, #shaded {
+    padding-bottom: 40px;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    font-size: 24px;
+    margin: 0 -15px 0 -15px;
+  }
+
+  .sub-title {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .processimg, .surveydata, .logoimg {
+    width: 70%;
+  }
+
+  /* Research */
+  .colorimg, {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .competitors, .competitor {
+    padding: 0;
+  }
+
+  .userflowimg, .brandsketch, .mockupimg {
+    width: 45%;
+  }
+
+  .wireframeimg, .mobileimg, .mobileimg2 {
+    width: 23%;
+  }
+
+  .mockupimg2 {
+    width: 30%;
+  }
+
+  .personaimg {
+    width: 50%;
+  }
+
+  #lessons {
+    padding-bottom: 50px;
+  }
+
+  /* Lessons */
+  #lessons {
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Navigation Bar */
+  .logowhite, .logoblack {
+    width: 150px;
+  }
+
+  .nav-item {
+    padding-right: 10px;
+  }
+
+  /* Hero */
+  #hero {
+    height: 400px;
+    text-align: left;
+  }
+
+  #hero, .sticky-top, .wireframeimg, .mobileimg, .mobileimg2, .mockupimg, .mockupimg2 {
+    padding: 20px;
+  }
+
+  #hero-left {
+    padding-left: 30px;
+    padding-right: 150px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  .hero-desc, .sticky-top a:link, .sub-sub-title, p {
+    font-size: 20px;
+  }
+
+  #hero-left .btn, .btn-prototype i {
+    font-size: 18px;
+  }
+
+  .btn-prototype {
+    line-height: 35px;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+
+  .btnproto {
+    display: inline;
+  }
+
+  #hero-right img {
+    float: right;
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  /* Button */
+  .btn-primary {
+    background-color: #E3B505;
+    border-color: #E3B505;
+    font-weight: 200;
+    margin-right: 30px;
+  }
+
+  .btn-primary:hover {
+    background-color: #333333;
+    border-color: #333333;
+  }
+
+  .btn-primary:visited {
+    background-color: #333333;
+    border-color: #333333;
+  }
+
+  .btn-primary:active {
+    background-color: #E3B505;
+    border-color: #E3B505;
+  }
+
+  /* Sticky Nav */
+  .subnav {
+    padding-right: 20px;
+  }
+
+  .anchor::before {
+    display: inline-block;
+    content: " ";
+    margin-top: -10px;
+    height: 100px;
+    visibility: hidden;
+  }
+
+
+  /* Sections */
+  h3 {
+    font-size: 30px;
+  }
+
+  .sub-title {
+    padding-top: 30px;
+  }
+
+
+  /* Overview */
+  #overview {
+    margin-top: -70px;
+  }
+  #shaded {
+    padding: 80px;
+  }
+
+  #showcaseimg {
+    width: 80%;
+    padding-left: 70px;
+  }
+
+  /* Process */
+  #process, #research, #branding, #execution, #learnings {
+    padding: 30px;
+    text-align: left;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    margin: -50px;
+    padding: 30px;
+  }
+
+  ul, .btn-sm a {
+    font-size: 18px;
+  }
+
+  .processimg, .surveydata, .logoimg, .colorimg {
+    width: 50%;
+  }
+
+  /* Research */
+  .personaimg, .userflowimg, .brandsketch {
+    width: 40%;
+  }
+
+  .competitors, .competitor {
+    padding: 0;
+  }
+
+  .wireframeimg {
+    width: 23%;
+  }
+
+  .mobileimg, .mobileimg2 {
+    width: 15%;
+  }
+
+  .mockupimg, .mockupimg2 {
+    width: 30%;
+  }
+
+
+  /* Learnings */
+  #lessons {
+    padding-bottom: 50px;
+  }
+
+  /* More to come */
+   #more {
+    padding: 50px;
+  }
+
+
+  /* unvisited link */
+  a:link {
+      color: #2C88AD;
+      font-size: 20px;
+      text-decoration: none;
+  }
+  /* visited link */
+  a:visited {
+      color: #333333;
+  }
+  /* mouse over link */
+  a:hover {
+      color: #5d5d5d;
+      text-decoration: none;
+  }
+  /* selected link */
+  a:active {
+      color: #703035;
+  }
+
+  .back-to-top:visited {
+    color: #ffffff;
+  }
+
+  /* Return to Top */
+  .arrow a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  /* Footer section */
+  i {
+    font-size: 35px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  footer h4 {
+    font-size: 24px;
+    margin: -55px 0 -6px 0;
+  }
+
+  .btn-sm {
+    margin-bottom: 15px;
+  }
+
+  .btn-sm a {
     color: #FFFFFF;
+  }
+
+  span.small {
+    font-size: 14px;
+    padding: 15px;
+  }
+
 }

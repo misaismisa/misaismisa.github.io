@@ -23,7 +23,7 @@
       <!-- NAVIGATION -->
       <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
         <a class="navbar-brand" href="index.html">
-          <img src="images/misa_logo_white@2x.png" alt="Misa Logo" width="150px">
+          <img class="logowhite" src="images/misa_logo_white@2x.png" alt="Misa Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,21 +41,23 @@
 
     <!-- MAIN  -->
     <main class="container-fluid">
-    <canvas id="lamp-anim" class="lamp-anim" style="width:100%; height:1400px"></canvas>
     <div id="aboutmain" class="row">
-        <div id="about-left" class="col-7" align="left">
+        <div id="about-right1" class="col-lg-5.offsetLeft col-md-5.offsetLeft col-sm-12">
+            <img class="profilepic" src="images/about/profilephoto.png">
+        </div>
+        <div id="about-left" class="col-lg-7 col-md-7 col-sm-12">
           <h1>Hey there! I'm Misa Nguyen.</h1>
           <br>
           <h4>A UX/UI Designer with a passion for seeing and interacting with the cultures of the world.</h4>
           <br>
-          <p style="font-weight: 400">My foray into the world of art and design.</p>
+          <p class="subtitle">My foray into the world of art and design.</p>
           <p>At the age of 3 I wanted to be the next Monet. At the age of 10, I began to interact with computers and learned what computer graphics were. I found myself heavily invested in learning the basics of graphic design using Photoshop and blog layout design using html and css. I joined forums where I could make nifty little animated gifs before memes were popular and would spend countless hours on dafont.com staring at all the fonts they had to offer. Realizing now, how typography has an impact on the way we view the products that we interact with on an everyday basis.</p>
           <br>
-          <p style="font-weight: 400">Deviation and experiences abroad.</p>
+          <p class="subtitle">Deviation and experiences abroad.</p>
           <p>After studying politics and human behavior in an international setting, my dream of living abroad came true when I moved to Tokyo, Japan for 3 years.  I had the opportunity to teach English in a corporate setting and worked in the pharmaceutical recruitment industry thereafter. Working in a fast-paced, hard-hitting environment where I was constantly assessing business KPIs and speaking with top professionals on a daily basis, gave me the skillset to negotiate and work with clientele under pressure.
           </p>
           <br>
-          <p style="font-weight: 400">Finding UX and pursuing the dream.</p>
+          <p class="subtitle">Finding UX and pursuing the dream.</p>
           <p>Exploring a career in fashion back in California after leaving Japan and backpacking solo for 3 to 4 months in Southeast Asia, reignited my interests in design and the arts. Working as the Operations Manager for the major fashion house, Chanel, I learned to appreciate the intricate detailing that went into embroidery and designs that were hand stitched for the brand’s bags. I grew increasingly curious about how both good and bad design affects how the user interacts with a technological interface and I chose Bloc as my apprenticeship program to guide me in learning the hard skills.  Knowing now that design comes hand in hand with the business needs of a company, my confidence to interact client side with my detailed eye for design is my greatest asset. Design goes beyond just looking like another pretty interface but is layers of research and thought, centered around human behavior.
           </p>
           <br>
@@ -63,18 +65,14 @@
           <p>-Charles Eames</p>
         </div>
 
-        <div id="about-right" class="col-5" align="right">
-            <img src="images/about/profilephoto.png" style="width: 80%;">
-            <br>
-            <br>
-          <div class="website" style="padding: 40px 0;">
-            <p><b>Check out my personal photography site!</b></p>
-            <img src="images/about/paris.png" style="width: 80%">
-            <br>
-            <img src="images/about/laos.png" style="width: 80%">
-            <br><br>
-            <button type="button" class="btn btn-primary"><a href="https://www.misaismisa.com" target="_blank">View Website</a></button>
-          </div>
+
+        <div id="about-right2" class="col-lg-5.offsetLeft col-md-5.offsetLeft col-sm-12 misasite">
+          <p><b>Check out my personal website!</b></p>
+          <img src="images/about/paris.png">
+          <br>
+          <img src="images/about/laos.png">
+          <br><br>
+          <button type="button" class="btn btn-sm"><a href="https://www.misaismisa.com" target="_blank">View Website</a></button>
         </div>
     </div>
 
@@ -82,40 +80,31 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="container-fluid bottom">
-        <div class="row justify-content-md-center">
-          <div class="col-sm-3" style="padding-top: 15px">
-            <a href="https://www.linkedin.com/in/misanguyen1390"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://twitter.com/Misa_N13"><i class="fab fa-twitter fa-2x"></i></a>
-            <a href="https://github.com/misaismisa"><i class="fab fa-github fa-2x"></i></a>
+      <footer>
+        <div class="container-fluid bottom">
+          <div class="row footer-row justify-content-between">
+            <div class="col-lg-6 col-md-6 col-5">
+              <a href="https://www.linkedin.com/in/misanguyen1390"><i class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/Misa_N13"><i class="fab fa-twitter"></i></a>
+              <a href="https://github.com/misaismisa"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-5" align="right">
+              <a href="index.html"><img class="logoblack" src="images/misa_logo_black@2x.png" alt="misa_logo_black"></a>
+            </div>
           </div>
-          <div class="col-sm-6" align="center" style="padding-top: 15px">
-            <h4>Thanks for stopping by!</h4>
-            <button type="button" class="btn btn-primary"><a href="mailto:misanguyen1390@gmail.com">Let's Connect</a></button>
+          <div class="row justify-content-md-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 footerbtn" align="center">
+              <h4>Thanks for stopping by!</h4>
+              <button type="button" class="btn btn-sm"><a href="mailto:misanguyen1390@gmail.com">Let's Connect</a></button>
+            </div>
           </div>
-          <div class="col-sm-3" align="right">
-            <img src="../images/misa_logo_black@2x.png" alt="misa_logo_black" width="120px">
+          <div class="row justify-content-md-center">
+            <div class="col-lg-12 col-md-12 col-sm-12" align="center">
+              <span class="small">© 2018 Misa Nguyen | Designed and Developed by Misa Nguyen</span>
+            </div>
           </div>
         </div>
-        <div class="row justify-content-md-center">
-          <div class="col-lg-12" align="center">
-            <span class="small">© 2018 Misa Nguyen | Designed and Developed by Misa Nguyen</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Lavalamp Javascript -->
-      <script>
-        window.lavaAnimation=function(){"use strict";var t,i={screen:{elem:null,callback:null,ctx:null,width:0,height:0,left:0,top:0,init:function(t,i,s){return this.elem=document.getElementById(t),this.callback=i||null,"CANVAS"==this.elem.tagName&&(this.ctx=this.elem.getContext("2d")),window.addEventListener("resize",function(){this.resize()}.bind(this),!1),this.elem.onselectstart=function(){return!1},this.elem.ondrag=function(){return!1},s&&this.resize(),this},resize:function(){var t=this.elem;for(this.width=t.offsetWidth,this.height=t.offsetHeight,this.left=0,this.top=0;null!=t;t=t.offsetParent)this.left+=t.offsetLeft,this.top+=t.offsetTop;this.ctx&&(this.elem.width=this.width,this.elem.height=this.height),this.callback&&this.callback()}}},s=function(t,i){this.x=t,this.y=i,this.magnitude=t*t+i*i,this.computed=0,this.force=0};s.prototype.add=function(t){return new s(this.x+t.x,this.y+t.y)};var h=function(t){var i=.1,h=1;this.vel=new s((Math.random()>.5?1:-1)*(.1+.25*Math.random()),(Math.random()>.5?1:-1)*(.2+Math.random())),this.pos=new s(.2*t.width+Math.random()*t.width*.2,.2*t.height+Math.random()*t.height*.2),this.size=t.wh/15+(Math.random()*(h-i)+i)*(t.wh/15),this.width=t.width,this.height=t.height};h.prototype.move=function(){this.pos.x>=this.width-this.size?(this.vel.x>0&&(this.vel.x=-this.vel.x),this.pos.x=this.width-this.size):this.pos.x<=this.size&&(this.vel.x<0&&(this.vel.x=-this.vel.x),this.pos.x=this.size),this.pos.y>=this.height-this.size?(this.vel.y>0&&(this.vel.y=-this.vel.y),this.pos.y=this.height-this.size):this.pos.y<=this.size&&(this.vel.y<0&&(this.vel.y=-this.vel.y),this.pos.y=this.size),this.pos=this.pos.add(this.vel)};var e=function(t,i,e,n,a){this.step=5,this.width=t,this.height=i,this.wh=Math.min(t,i),this.sx=Math.floor(this.width/this.step),this.sy=Math.floor(this.height/this.step),this.paint=!1,this.metaFill=r(t,i,t,n,a),this.plx=[0,0,1,0,1,1,1,1,1,1,0,1,0,0,0,0],this.ply=[0,0,0,0,0,0,1,0,0,1,1,1,0,1,0,1],this.mscases=[0,3,0,3,1,3,0,3,2,2,0,2,1,1,0],this.ix=[1,0,-1,0,0,1,0,-1,-1,0,1,0,0,1,1,0,0,0,1,1],this.grid=[],this.balls=[],this.iter=0,this.sign=1;for(var o=0;o<(this.sx+2)*(this.sy+2);o++)this.grid[o]=new s(o%(this.sx+2)*this.step,Math.floor(o/(this.sx+2))*this.step);for(var l=0;e>l;l++)this.balls[l]=new h(this)};e.prototype.computeForce=function(t,i,s){var h,e=s||t+i*(this.sx+2);if(0===t||0===i||t===this.sx||i===this.sy)h=.6*this.sign;else{h=0;for(var r,n=this.grid[e],a=0;r=this.balls[a++];)h+=r.size*r.size/(-2*n.x*r.pos.x-2*n.y*r.pos.y+r.pos.magnitude+n.magnitude);h*=this.sign}return this.grid[e].force=h,h},e.prototype.marchingSquares=function(t){var i=t[0],s=t[1],h=t[2],e=i+s*(this.sx+2);if(this.grid[e].computed===this.iter)return!1;for(var r,n=0,a=0;4>a;a++){var l=i+this.ix[a+12]+(s+this.ix[a+16])*(this.sx+2),d=this.grid[l].force;(d>0&&this.sign<0||0>d&&this.sign>0||!d)&&(d=this.computeForce(i+this.ix[a+12],s+this.ix[a+16],l)),Math.abs(d)>1&&(n+=Math.pow(2,a))}if(15===n)return[i,s-1,!1];5===n?r=2===h?3:1:10===n?r=3===h?0:2:(r=this.mscases[n],this.grid[e].computed=this.iter);var p=this.step/(Math.abs(Math.abs(this.grid[i+this.plx[4*r+2]+(s+this.ply[4*r+2])*(this.sx+2)].force)-1)/Math.abs(Math.abs(this.grid[i+this.plx[4*r+3]+(s+this.ply[4*r+3])*(this.sx+2)].force)-1)+1);return o.lineTo(this.grid[i+this.plx[4*r]+(s+this.ply[4*r])*(this.sx+2)].x+this.ix[r]*p,this.grid[i+this.plx[4*r+1]+(s+this.ply[4*r+1])*(this.sx+2)].y+this.ix[r+4]*p),this.paint=!0,[i+this.ix[r+4],s+this.ix[r+8],r]},e.prototype.renderMetaballs=function(){for(var t,i=0;t=this.balls[i++];)t.move();for(this.iter++,this.sign=-this.sign,this.paint=!1,o.fillStyle=this.metaFill,o.beginPath(),i=0;t=this.balls[i++];){var s=[Math.round(t.pos.x/this.step),Math.round(t.pos.y/this.step),!1];do s=this.marchingSquares(s);while(s);this.paint&&(o.fill(),o.closePath(),o.beginPath(),this.paint=!1)}};var r=function(t,i,s,h,e){var r=o.createRadialGradient(t/1,i/1,0,t/1,i/1,s);return r.addColorStop(0,h),r.addColorStop(1,e),r};if(document.getElementById("lamp-anim")){var n=function(){requestAnimationFrame(n),o.clearRect(0,0,a.width,a.height),t.renderMetaballs()},a=i.screen.init("lamp-anim",null,!0),o=a.ctx;a.resize(),t=new e(a.width,a.height,4,"#D56546","#E3B505")}return{run:n}}();
-
-        if (document.getElementById('lamp-anim')) {
-          lavaAnimation.run();
-        }
-        setTimeout(function() {
-          $('.js-works-d-list').addClass('is-loaded');
-        }, 150);
-        </script>
-    </footer>
+      </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
