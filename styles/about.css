@@ -305,13 +305,21 @@ span.small {
 @media (min-width: 1200px) {
   /* Navigation Bar */
   .logowhite {
-    width: 150px;
+    width: 120px;
+  }
+
+  a.nav-link {
+    font-size: 16px;
+  }
+
+  .nav-item {
+    padding-right: 10px;
   }
 
   /* Main */
   #about-left {
-    padding: 0 40px 0 50px;
-    margin-top: -650px;
+    padding: 0 80px 0 50px;
+    margin-top: -590px;
     text-align: left;
     flex-wrap: wrap;
   }
@@ -328,11 +336,11 @@ span.small {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   h4 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .subtitle, p {
@@ -340,7 +348,7 @@ span.small {
   }
 
   .profilepic {
-    width: 400px;
+    width: 350px;
     margin-left: 350px;
   }
 
@@ -349,17 +357,23 @@ span.small {
   }
 
   /* Footer section */
-  footer h4 {
+  i {
     font-size: 24px;
+    padding-left: 10px;
+    color: #333;
+  }
+
+  .logoblack {
+    width: 100px;
+  }
+
+  footer h4 {
+    font-size: 20px;
     margin-top: -50px;
   }
 
-  .btn-sm {
-    font-size: 16px;
-  }
-
   .btn-sm a {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   span.small {
