@@ -266,7 +266,7 @@ ul {
 }
 
 /* Research */
-.surveydata, .competitor, .userflowimg, .brandsketch, .logoimg, .colorimg, .mockupimg  {
+.surveydata, .competitor, .userflowimg, .brandsketch, .logoimg, .colorimg  {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -283,8 +283,8 @@ ul {
   padding: 30px;
 }
 
-.personaimg {
-  width: 70%;
+.personaimg, .mockupimg {
+  width: 60%;
 }
 
 .name {
@@ -358,7 +358,7 @@ a:hover {
 }
 /* selected link */
 a:active {
-    color: #703035;
+    color: #333333;
 }
 
 .back-to-top:visited {
@@ -405,6 +405,10 @@ footer {
 i {
   font-size: 25px;
   padding-left: 8px;
+}
+
+footer a:link {
+  color: #333333;
 }
 
 .logoblack {
@@ -782,7 +786,7 @@ span.small {
 
   .btn-primary:hover {
     background-color: #333333;
-    border-color: #333333;
+    border-color: #E3B505;
   }
 
   .btn-primary:visited {
@@ -823,8 +827,8 @@ span.small {
   #overview {
     margin-top: -70px;
   }
-  #shaded {
-    padding: 80px;
+  #overview-shaded, #shaded {
+    padding: 50px;
   }
 
   #showcaseimg {
@@ -841,6 +845,10 @@ span.small {
   .researchtitle, .brandingtitle, .executiontitle {
     margin: -50px;
     padding: 30px;
+  }
+
+  .persona_vincent, .persona_alexis {
+    padding: 80px;
   }
 
   ul, .btn-sm a {
@@ -901,7 +909,7 @@ span.small {
   }
   /* selected link */
   a:active {
-      color: #703035;
+      color: #333333;
   }
 
   .back-to-top:visited {
