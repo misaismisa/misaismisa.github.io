@@ -325,13 +325,13 @@ span.small {
   #about-left {
     width: 500px;
     padding: 0 50px 0 80px;
-    margin-top: -590px;
+    margin-top: -650px;
     text-align: left;
     flex-wrap: wrap;
   }
 
   #about-right1, #about-right2 {
-    padding: 0 50px 50px 50px;
+    padding: 0 80px 50px 50px;
     margin-bottom: 50px;
     text-align: right;
   }
@@ -360,7 +360,7 @@ span.small {
   }
 
   img {
-    width: 23%;
+    width: 25%;
   }
 
   /* Footer section */
