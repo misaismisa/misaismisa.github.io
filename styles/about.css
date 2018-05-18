@@ -13,6 +13,7 @@ body {
 /* Navigation Bar */
 .navbar-light {
   background-color: #B85C43;
+  padding: 2px;
 }
 
 .logowhite {
@@ -171,6 +172,10 @@ i {
   padding-left: 8px;
 }
 
+footer a:link {
+  color: #333;
+}
+
 .logoblack {
   width: 100px;
   margin-top: -23px;
@@ -308,7 +313,11 @@ span.small {
     width: 120px;
   }
 
+<<<<<<< HEAD
   a.nav-link {
+=======
+  .nav-link {
+>>>>>>> portfolio
     font-size: 16px;
   }
 
@@ -331,7 +340,7 @@ span.small {
   }
 
   #about-right2 {
-    margin-top: -650px;
+    margin-top: -700px;
     text-align: right;
   }
 
