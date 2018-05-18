@@ -13,6 +13,7 @@ body {
 /* Navigation Bar */
 .navbar-light {
   background-color: #B85C43;
+  padding: 2px;
 }
 
 .logowhite {
@@ -171,6 +172,10 @@ i {
   padding-left: 8px;
 }
 
+footer a:link {
+  color: #333;
+}
+
 .logoblack {
   width: 100px;
   margin-top: -23px;
@@ -305,7 +310,15 @@ span.small {
 @media (min-width: 1200px) {
   /* Navigation Bar */
   .logowhite {
-    width: 150px;
+    width: 120px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .nav-item {
+    padding-right: 10px;
   }
 
   /* Main */
@@ -323,7 +336,7 @@ span.small {
   }
 
   #about-right2 {
-    margin-top: -650px;
+    margin-top: -700px;
     text-align: right;
   }
 
@@ -349,17 +362,23 @@ span.small {
   }
 
   /* Footer section */
-  footer h4 {
+  i {
     font-size: 24px;
+    padding-left: 10px;
+    color: #333;
+  }
+
+  .logoblack {
+    width: 100px;
+  }
+
+  footer h4 {
+    font-size: 20px;
     margin-top: -50px;
   }
 
-  .btn-sm {
-    font-size: 16px;
-  }
-
   .btn-sm a {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   span.small {

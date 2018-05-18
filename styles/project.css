@@ -12,6 +12,7 @@ body {
 /* Navigation Bar */
 .navbar-light {
   background-color: #B85C43;
+  padding: 2px;
 }
 
 .logowhite {
@@ -723,8 +724,12 @@ span.small {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Navigation Bar */
-  .logowhite, .logoblack {
-    width: 150px;
+  .logowhite {
+    width: 120px;
+  }
+
+  .nav-link {
+    font-size: 16px;
   }
 
   .nav-item {
@@ -743,19 +748,19 @@ span.small {
 
   #hero-left {
     padding-left: 30px;
-    padding-right: 150px;
+    padding-right: 100px;
   }
 
   h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .hero-desc, .sticky-top a:link, .sub-sub-title, p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #hero-left .btn, .btn-prototype i {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn-prototype {
@@ -815,11 +820,15 @@ span.small {
 
   /* Sections */
   h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .sub-title {
     padding-top: 30px;
+  }
+
+  p {
+    font-size: 16px;
   }
 
 
@@ -864,8 +873,9 @@ span.small {
     width: 40%;
   }
 
-  .competitors, .competitor {
-    padding: 0;
+  .competitor {
+    margin-left: 80px;
+    width: 70%;
   }
 
   .wireframeimg {
@@ -941,28 +951,27 @@ span.small {
   }
 
   /* Footer section */
-  i {
-    font-size: 35px;
+  footer i {
+    font-size: 24px;
     padding-left: 10px;
-    margin-top: 10px;
+    color: #333;
+  }
+
+  .logoblack {
+    width: 100px;
   }
 
   footer h4 {
-    font-size: 24px;
-    margin: -55px 0 -6px 0;
-  }
-
-  .btn-sm {
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-top: -50px;
   }
 
   .btn-sm a {
-    color: #FFFFFF;
+    font-size: 16px;
   }
 
   span.small {
-    font-size: 14px;
-    padding: 15px;
+    font-size: 12px;
   }
 
 }
