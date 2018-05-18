@@ -313,11 +313,7 @@ span.small {
     width: 120px;
   }
 
-<<<<<<< HEAD
   a.nav-link {
-=======
-  .nav-link {
->>>>>>> portfolio
     font-size: 16px;
   }
 
@@ -327,7 +323,8 @@ span.small {
 
   /* Main */
   #about-left {
-    padding: 0 80px 0 50px;
+    width: 500px;
+    padding: 0 50px 0 80px;
     margin-top: -590px;
     text-align: left;
     flex-wrap: wrap;
@@ -340,7 +337,7 @@ span.small {
   }
 
   #about-right2 {
-    margin-top: -700px;
+    /* margin-top: -750px; */
     text-align: right;
   }
 
@@ -359,15 +356,16 @@ span.small {
   .profilepic {
     width: 350px;
     margin-left: 350px;
+    padding-bottom: 20px;
   }
 
   img {
-    width: 26%;
+    width: 23%;
   }
 
   /* Footer section */
   i {
-    font-size: 24px;
+    font-size: 26px;
     padding-left: 10px;
     color: #333;
   }

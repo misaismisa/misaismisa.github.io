@@ -764,11 +764,11 @@ span.small {
   }
 
   .btn-prototype {
-    line-height: 35px;
+    line-height: 30px;
   }
 
   .btn {
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .btnproto {
@@ -777,7 +777,7 @@ span.small {
 
   #hero-right img {
     float: right;
-    width: 70%;
+    width: 65%;
     margin-top: 20px;
   }
 
@@ -951,8 +951,8 @@ span.small {
   }
 
   /* Footer section */
-  footer i {
-    font-size: 24px;
+  i {
+    font-size: 26px;
     padding-left: 10px;
     color: #333;
   }
