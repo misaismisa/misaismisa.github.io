@@ -314,7 +314,7 @@ span.small {
   }
 
   a.nav-link {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .nav-item {
@@ -325,7 +325,7 @@ span.small {
   #about-left {
     width: 500px;
     padding: 0 50px 0 80px;
-    margin-top: -650px;
+    margin-top: -600px;
     text-align: left;
     flex-wrap: wrap;
   }
