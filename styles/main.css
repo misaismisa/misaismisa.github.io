@@ -45,7 +45,7 @@ body {
   content: '.';
   color: transparent;
   background: #E3B505;
-  height: 4px;
+  height: 3px;
   box-shadow: 0 1px 1 white;
 }
 
@@ -179,6 +179,10 @@ footer {
 i {
   font-size: 25px;
   padding-left: 8px;
+}
+
+i:hover {
+  color: #ffffff;
 }
 
 .logoblack {

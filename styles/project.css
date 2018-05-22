@@ -65,7 +65,7 @@ nav-menu ul li a:before {
   content: '.';
   color: transparent;
   background: #E3B505;
-  height: 4px;
+  height: 3px;
   box-shadow: 0 1px 1 white;
 }
 
@@ -411,6 +411,10 @@ i {
   padding-left: 8px;
 }
 
+i:hover {
+  color: #fff;
+}
+
 footer a:link {
   color: #333333;
 }
@@ -751,7 +755,7 @@ span.small {
 
   #hero-left {
     padding-left: 30px;
-    padding-right: 100px;
+    padding-right: 10px;
   }
 
   h1 {
