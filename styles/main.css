@@ -114,7 +114,7 @@ h4 {
   padding-top: 90px;
 }
 
-.card-deck a:visited {
+.card-deck a:visited, .card-title {
   color: #FFFFFF;
 }
 
@@ -131,7 +131,8 @@ h4 {
 }
 
 .card:hover {
-  background-color: #828B8C;
+  opacity: 0.5;
+  filter: alpha(opacity=20);
 }
 
 #preview h3 {
@@ -150,7 +151,7 @@ h4 {
 
 /* unvisited link */
 a:link {
-    color: #FFFFFF;
+    color: #333333;
     text-decoration: none;
 }
 /* visited link */

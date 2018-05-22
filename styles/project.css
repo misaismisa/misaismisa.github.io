@@ -79,7 +79,7 @@ nav-menu ul li a:before {
 /* Hero */
 #hero {
   color: #FFFFFF;
-  background: #333333;  /* fallback for old browsers */
+  background: #333333;
   height: 650px;
   padding-top: 30px 0 0 20px;
   text-align: center;
@@ -100,6 +100,11 @@ h1 {
 .btnproto {
   display: flex;
   justify-content: center;
+}
+
+.btnproto i {
+  font-size: 18px;
+  color: #FFFFFF;
 }
 
 #hero-right img {
@@ -345,8 +350,6 @@ h4 {
 /* unvisited link */
 a:link {
     color: #2C88AD;
-    font-size: 20px;
-    text-decoration: none;
 }
 /* visited link */
 a:visited {
@@ -354,7 +357,7 @@ a:visited {
 }
 /* mouse over link */
 a:hover {
-    color: #5d5d5d;
+    color: #EEE;
     text-decoration: none;
 }
 /* selected link */
