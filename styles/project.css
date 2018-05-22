@@ -249,7 +249,7 @@ p {
 
 .researchtitle, .brandingtitle, .executiontitle {
   background-color: #EEEEEE;
-  margin: 50px -35px 0 -35px;
+  margin: 50px -15px 0 -15px;
   padding: 30px;
 }
 
@@ -539,6 +539,12 @@ span.small {
     width: 60%;
   }
 
+  /* Footer */
+  footer i {
+    font-size: 25px;
+    padding-left: 8px;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -677,7 +683,6 @@ span.small {
 
   .researchtitle, .brandingtitle, .executiontitle {
     font-size: 24px;
-    margin: 0 -15px 0 -15px;
   }
 
   .sub-title {
@@ -859,7 +864,7 @@ span.small {
   }
 
   .researchtitle, .brandingtitle, .executiontitle {
-    margin: -50px;
+    margin: -50px -45px 0 -45px;
     padding: 30px;
   }
 
