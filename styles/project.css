@@ -107,6 +107,10 @@ h1 {
   color: #FFFFFF;
 }
 
+.btnproto i:visited {
+  color: #fff;
+}
+
 #hero-right img {
   width: 100%;
 }
