@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   background: #EEE2DB;  /* fallback for old browsers */
@@ -137,7 +141,8 @@ a:active {
 
 /* Footer section */
 footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   padding: 20px 0;
   width: 100%;
   background-color: #D28F7C;
@@ -370,6 +375,7 @@ span.small {
   }
 
   /* Footer section */
+
   i {
     font-size: 26px;
     padding-left: 10px;
