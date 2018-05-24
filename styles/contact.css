@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", Helvetica, sans-serif;
   background: #EEE2DB;  /* fallback for old browsers */
   height: 100%;
-  /* position: relative; */
+  position: relative;
 }
 
 /* Navigation Bar */
@@ -269,8 +269,8 @@ span.small {
   }
 
   #hero {
-    min-height: 100%;
-    margin-bottom: 150px;
+    position: relative;
+    margin-top: 50px;
   }
 
   footer h4 {
@@ -296,7 +296,7 @@ span.small {
 
   /* Main */
   #hero {
-    margin-bottom: 150px;
+    margin-top: 50px;
   }
 
   #hero-left {
@@ -351,7 +351,7 @@ span.small {
 
   /* Main */
   #hero {
-    margin: 50px 50px 150px 50px;
+    margin: 50px 50px 200px 50px;
   }
 
   #hero-left {
