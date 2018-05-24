@@ -53,37 +53,33 @@
 
         <div id="hero-right" class="col-lg-6 col-md-6 col-sm-6">
           <!-- <form id="contact-form" method="post" action="contact.php" role="form"> -->
-
           <form action="https://getsimpleform.com/messages?form_api_token=7365899cf9a6640d7e7a4c1301ea7721" method="post">
             <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
             <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>'/> -->
             <div class="messages"></div>
             <div class="controls">
-
-            <div class="form-group">
-              <label class="control-label" for="name_id">Full Name<span class="asteriskField">*</span></label>
-              <input type="text" class="form-control" id="name_id" name="name_name" placeholder="Please enter your name" required="required" data-error="First & last name are required.">
-              <div class="help-block with-errors"></div>
+              <div class="form-group">
+                <label class="control-label" for="name_id">Full Name<span class="asteriskField">*</span></label>
+                <input type="text" class="form-control" id="name_id" name="name_name" placeholder="Please enter your name" required="required" data-error="First & last name are required.">
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="email_id">Email Address<span class="asteriskField">*</span></label>
+                <input type="email" class="form-control" id="email_id" name="email_name" placeholder="name@example.com" required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="message_id">Message</label>
+                <textarea class="form-control" id="message_id" name="message" maxlength="6000" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-send btn-secondary" value="Send Message" style="width: 100px">Submit</button>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="control-label" for="email_id">Email Address<span class="asteriskField">*</span></label>
-              <input type="email" class="form-control" id="email_id" name="email_name" placeholder="name@example.com" required="required" data-error="Valid email is required.">
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="message_id">Message</label>
-              <textarea class="form-control" id="message_id" name="message" maxlength="6000" rows="4" required="required" data-error="Please, leave me a message."></textarea>
-              <div class="help-block with-errors"></div>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-success btn-send btn-secondary" value="Send Message" style="width: 100px">Submit</button>
-            </div>
-          </div>
-        </form>
+          </form>
         </div>
-
     </div>
-
     </main>
 
     <!-- FOOTER -->

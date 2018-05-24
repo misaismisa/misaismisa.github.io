@@ -79,8 +79,8 @@ nav-menu ul li a:before {
 
 /* Main */
 #hero {
-  /* position: relative; */
-  min-height: 100%;
+  position: relative;
+  height: 100%;
   margin: 0 5px;
 }
 
@@ -140,8 +140,8 @@ a:active {
 
 /* Footer section */
 footer {
-  position: absolute bottom;
-  /* bottom: 0; */
+  position: relative;
+  bottom: 0;
   padding: 20px 0;
   width: 100%;
   background-color: #D28F7C;
@@ -214,7 +214,6 @@ span.small {
 
   /* Main */
   #hero {
-    position: relative;
     margin: 0;
   }
 
