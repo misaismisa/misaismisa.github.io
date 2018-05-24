@@ -94,7 +94,7 @@ h1 {
 .hero-desc {
   display:block;
   word-wrap: break-word;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .btnproto {
@@ -272,7 +272,7 @@ hr {
 
 ul li {
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Research */
