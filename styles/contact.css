@@ -186,7 +186,9 @@ hr {
 
 .alert {
     display: none;
+    text-align: left;
 }
+
 
 /* unvisited link */
 a:link {
