@@ -51,6 +51,8 @@
           <h1>Let's get in touch.</h1>
           <p>Have a project you would like to collaborate on or simply want to talk design?</p>
           <p>I am always happy to grab coffee or a bite to eat over some interesting topics like travel, design, music, and curiousities of the world.</p>
+          <hr>
+          <p>Want to see my <b>resume</b>? Shoot me a message and I'll send it right over!</p>
         </div>
 
         <div id="hero-right" class="col-lg-6 col-md-6 col-sm-6">
@@ -76,11 +78,11 @@
                 <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-success btn-send btn-secondary" value="Send Message" style="width: 100px">Submit</button>
-                <div class="alert alert-success alert-dismissable" id="alertMessage">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                      Success! message sent successfully.
-                </div>
+                <button type="submit" class="btn btn-success btn-send btn-secondary" id="btnsubmit" value="Send Message" style="width: 100px">Submit</button>
+              </div>
+              <div class="alert alert-success alert-dismissable" id="alertMessage">
+                  <button type="button" class="close alert-close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    Success!
               </div>
             </div>
           </form>
@@ -115,13 +117,13 @@
       </div>
 
       <script>
-
-      $(document).ready(function() {
-        $('.alert').alert()
-        $(".btn-success").click(function(){
-        	   $(".alert-success").show()
-        })
-    });
+      $(document).ready(function () {
+        $(function() {
+          $('#btnsubmit').on('click',function() {
+            $('#alertMessage').show()
+          })
+        });
+        });
         </script>
     </footer>
 
