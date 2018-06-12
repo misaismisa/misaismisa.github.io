@@ -292,9 +292,27 @@ p {
   text-align: center;
 }
 
-.processimg {
+.uxdesignprocess {
   width: 100%;
-  margin-bottom: -30px;
+  text-align: center;
+}
+
+.reiterative {
+  margin-bottom: -10px;
+}
+
+.uxdesignprocess h3 {
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.uxdesignprocess h4 {
+  font-weight: 400;
+  color: #126796;
+}
+
+.uxdesignprocess img {
+  width: 40%;
 }
 
 .researchtitle, .brandingtitle, .executiontitle, .lessonstitle, .moretitle {
@@ -331,19 +349,43 @@ ul li {
   margin-bottom: 20px;
 }
 
-.wireframeimg, .mobileimg {
-  width: 45%;
+ul.datastats {
+  font-size: 18px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.datastats li {
+  margin: 10px;
+  padding: 10px;
+  background-color: #2C88AD;
+  color: #fff;
+}
+
+li h3 {
+  float: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+li h3, li p {
+  text-align: center;
+}
+
+.wireframeimg, .mobileimg, .mockupimg {
+  width: 100%;
 }
 
 .mobileimg2, .mockupimg2 {
-  width: 30%;
+  width: 70%;
 }
 
 .persona_vincent, .persona_alexis {
   padding: 30px;
 }
 
-.personaimg, .mockupimg {
+.personaimg {
   width: 60%;
 }
 
@@ -374,6 +416,15 @@ ul li {
   top: 71px;
   bottom: 106px;
   left: 0;
+}
+
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: lighter;
 }
 
 /* Learnings */
@@ -546,7 +597,7 @@ span.small {
 
   /* Process */
   #overview {
-    text-align: center;
+    text-align: left;
   }
 
   #shaded {
@@ -566,6 +617,38 @@ span.small {
     font-size: 18px;
   }
 
+  .uxdesignprocess h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .uxdesignprocess {
+    display: inline;
+    text-align: left;
+  }
+
+  .numberedprocess {
+    margin-left: 20px;
+  }
+
+  .processcol {
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  .uxdesignprocess img {
+    width: 100px;
+  }
+
+  .uxdesignprocess h4 {
+    font-size: 18px;
+  }
+
+  .uxdesignprocess p {
+    font-size: 14px;
+  }
+
 
   /* Research */
   .logoimg, .colorimg, {
@@ -582,7 +665,7 @@ span.small {
   }
 
   .mobileimg {
-    width: 20%;
+    width: 80%;
   }
 
   .mobileimg2, .mockupimg2 {
@@ -591,6 +674,10 @@ span.small {
 
   .personaimg {
     width: 60%;
+  }
+
+  .lessonstitle {
+    text-align: left;
   }
 
   /* Footer */
@@ -636,7 +723,7 @@ span.small {
 
   /* Process */
   #overview {
-    text-align: center;
+    text-align: left;
   }
 
   #overview-shaded, #shaded {
@@ -656,8 +743,57 @@ span.small {
     font-size: 18px;
   }
 
-  .processimg, .surveydata, .logoimg {
+  .uxdesignprocess h3 {
+    text-align: left;
+    margin-left: -90px;
+  }
+
+  .uxdesignprocess {
+    text-align: left;
+  }
+
+  .numberedprocess {
+    margin-left: -40px;
+    margin-bottom: 50px;
+  }
+
+  .uxdesignprocess img {
+    width: 110px;
+  }
+
+  .uxdesignprocess h4 {
+    font-size: 18px;
+  }
+
+  .uxdesignprocess p {
+    font-size: 16px;
+  }
+
+  .surveydata, .logoimg {
     width: 70%;
+  }
+
+  .datastats {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .datastats li {
+    padding: 10px;
+  }
+
+  li h3 {
+    float: left;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    width: 25%;
+    padding-left: 10px;
+  }
+
+  li p {
+    text-align: left;
+    margin: 10px;
   }
 
   /* Research */
@@ -674,7 +810,7 @@ span.small {
     width: 45%;
   }
 
-  .wireframeimg, .mobileimg, .mobileimg2 {
+  .wireframeimg, .mobileimg2 {
     width: 23%;
   }
 
@@ -686,9 +822,17 @@ span.small {
     width: 50%;
   }
 
+  .mobileimg {
+    width: 70%;
+  }
+
   /* Lessons */
+  #lessons, .lessonstitle {
+    text-align: left;
+  }
+
   #lessons {
-    text-align: center;
+    padding-bottom: 50px;
   }
 
 }
@@ -728,11 +872,12 @@ span.small {
 
   /* Process */
   #overview {
-    text-align: center;
+    text-align: left;
   }
 
   #overview-shaded, #shaded {
     padding-bottom: 40px;
+    text-align: left;
   }
 
   .researchtitle, .brandingtitle, .executiontitle {
@@ -747,8 +892,53 @@ span.small {
     font-size: 18px;
   }
 
-  .processimg, .surveydata, .logoimg {
+  .uxdesignprocess h3 {
+    text-align: left;
+  }
+
+  .uxdesignprocess {
+    text-align: left;
+  }
+
+  .numberedprocess {
+    margin-left: -40px;
+    margin-bottom: 50px;
+  }
+
+  .uxdesignprocess img {
+    width: 120px;
+  }
+
+  .uxdesignprocess h4 {
+    font-size: 20px;
+  }
+
+  .uxdesignprocess p {
+    font-size: 18px;
+  }
+
+  .surveydata, .logoimg {
     width: 70%;
+  }
+
+  .datastats {
+    width: 60%;
+  }
+
+  .datastats li {
+    padding: 20px;
+  }
+
+  li h3 {
+    float: left;
+    text-align: left;
+    font-size: 50px;
+    width: 25%;
+    padding-left: 10px;
+  }
+
+  li p {
+    text-align: left;
   }
 
   /* Research */
@@ -765,7 +955,7 @@ span.small {
     width: 45%;
   }
 
-  .wireframeimg, .mobileimg, .mobileimg2 {
+  .wireframeimg, .mobileimg2 {
     width: 23%;
   }
 
@@ -777,14 +967,23 @@ span.small {
     width: 50%;
   }
 
-  #lessons {
-    padding-bottom: 50px;
+  .mobileimg {
+    width: 80%;
   }
 
   /* Lessons */
   #lessons {
-    text-align: center;
+    padding-bottom: 50px;
   }
+
+  #lessons, .lessonstitle {
+    text-align: left;
+  }
+}
+
+/* Footer section */
+i {
+  font-size: 24px;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -894,22 +1093,26 @@ span.small {
   }
 
   p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 36px;
   }
 
 
   /* Overview */
   #overview {
     margin-top: -70px;
+    text-align: left;
   }
   #overview-shaded, #shaded {
     padding: 50px;
   }
 
   #showcaseimg {
-    width: 80%;
-    padding-left: 70px;
+    width: 90%;
+    text-align: center;
+    padding-left: 230px;
   }
+
 
   /* Process */
   #process, #research, #branding, #execution, #learnings {
@@ -922,6 +1125,36 @@ span.small {
     padding: 30px;
   }
 
+  .reiterative {
+    margin-bottom: -50px;
+  }
+
+  .uxdesignprocess h3 {
+    font-size: 28px;
+    margin-left: 40px;
+  }
+
+  .numberedprocess {
+    margin-left: 20px;
+  }
+
+  .processcol {
+    max-width: 100%;
+    padding: 50px;
+  }
+
+  .uxdesignprocess img {
+    width: 140px;
+  }
+
+  .uxdesignprocess h4 {
+    font-size: 20px;
+  }
+
+  .uxdesignprocess p {
+    font-size: 20px;
+  }
+
   .persona_vincent, .persona_alexis {
     padding: 80px;
   }
@@ -930,26 +1163,45 @@ span.small {
     font-size: 18px;
   }
 
-  .processimg, .surveydata, .logoimg, .colorimg {
+  .logoimg  {
     width: 50%;
   }
+
+  .datastats li {
+    margin: 10px;
+    padding-bottom: 20px;
+  }
+
+  li h3 {
+    width: 20%;
+    padding-left: 20px;
+  }
+
 
   /* Research */
   .personaimg, .userflowimg, .brandsketch {
     width: 40%;
   }
 
+  .colorimg {
+    width: 60%;
+  }
+
   .competitor {
-    margin-left: 80px;
+    margin: 0 auto;
     width: 70%;
   }
 
   .wireframeimg {
-    width: 23%;
+    width: 35%;
   }
 
-  .mobileimg, .mobileimg2 {
-    width: 15%;
+  .mobileimg {
+    width: 100%;
+  }
+
+  .mobileimg2 {
+    width: 20%;
   }
 
   .mockupimg, .mockupimg2 {
@@ -958,8 +1210,8 @@ span.small {
 
 
   /* Learnings */
-  #lessons {
-    padding-bottom: 50px;
+  #lessons, .lessonstitle {
+    text-align: left;
   }
 
   /* More to come */
