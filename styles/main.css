@@ -125,15 +125,14 @@ button:focus {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 34px;
+  font-size: 45px;
   font-weight: 900;
-  letter-spacing: 4px;
   margin-top: 90px;
 }
 
 h2, h4 {
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 400;
   color: #703035;
 }
 
@@ -192,26 +191,21 @@ h2, h4 {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  /* background-color: #C67B3F; */
-  /* z-index: 9999; */
 }
 
 .card:hover .overlay {
   opacity: 1;
 }
 
-.card::before {
-  content: " ";
-  background: url(/images/misa_logo_black.png);
-  opacity: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+.card-img-top {
+  opacity: 1;
+  transition: 1s ease;
 }
 
+.card:hover .card-img-top {
+  opacity: .1;
+  transition: .5s ease;
+}
 
 .text {
   color: white;
@@ -334,16 +328,20 @@ span.small {
       height: 550px;
     }
 
+    #preview h3 {
+      font-size: 28px;
+    }
+
     .casetitle {
       margin-top: 10px;
     }
 
     .card-deck {
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     .card-img-top {
-      width: 60%;
+      width: 65%;
     }
 
     .card-text {
@@ -403,7 +401,15 @@ span.small {
   }
 
   #herograph {
-    width: 550px;
+    width: 650px;
+  }
+
+  h1 {
+    font-size: 65px;
+  }
+
+  #hero h2 {
+    font-size: 24px;
   }
 
   /* Case STUDIES */
@@ -414,12 +420,16 @@ span.small {
     margin-bottom: 20px;
   }
 
+  #preview h3 {
+    font-size: 28px;
+  }
+
   .casetitle {
     margin-top: 10px;
   }
 
   .card-deck {
-    margin-top: 55px;
+    margin-top: 25px;
   }
 
   .card-text {
@@ -522,7 +532,7 @@ span.small {
   /* Hero Titles and Image */
   #lamp-anim {
     width: 100%;
-    height: 690px;
+    height: 890px;
   }
 
   #hero {
@@ -530,8 +540,15 @@ span.small {
   }
 
   h1 {
-    font-size: 35px;
-    letter-spacing: 5px;
+    font-size: 85px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #hero p {
+    font-size: 24px;
   }
 
   #herograph {
@@ -543,12 +560,16 @@ span.small {
   #preview {
     background-size: cover;
     background-position: 0% 18%;
-    height: 670px;
+    height: 700px;
     margin-bottom: 20px;
   }
 
+  #preview h3 {
+    font-size: 30px;
+  }
+
   .card-deck {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .card-text {
@@ -647,6 +668,7 @@ span.small {
   #herograph {
     font-size: 18px;
     font-weight: lighter;
+    width: 1000px;
   }
 
   #lamp-anim {
@@ -656,13 +678,12 @@ span.small {
   }
 
   h1 {
-    font-size: 38px;
-    letter-spacing: 5px;
+    font-size: 100px;
   }
 
   h2 {
-    font-size: 24px;
-    font-weight: lighter;
+    font-size: 32px;
+    font-weight: 400;
     color: #703035;
   }
 
@@ -676,7 +697,7 @@ span.small {
   }
 
   #preview h3 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .card-deck {

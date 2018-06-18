@@ -219,7 +219,7 @@ a:active {
 /* Footer section */
 footer {
   position: relative;
-  padding: 10px 0;
+  padding: 20px 0;
   width: 100%;
   background-color: #D28F7C;
 }
@@ -276,6 +276,10 @@ span.small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    margin: 30px 0 0 0;
+  }
 
 }
 
@@ -289,6 +293,10 @@ span.small {
     flex-wrap: wrap;
   }
 
+  h1 {
+    margin: 0;
+  }
+
   #about-right1, #about-right2 {
     padding: 0 20px 0 50px;
     margin-bottom: 20px;
@@ -296,7 +304,7 @@ span.small {
   }
 
   #about-right2 {
-    margin-top: -1200px;
+    margin-top: -1300px;
     text-align: right;
   }
 
@@ -325,6 +333,10 @@ span.small {
     flex-wrap: wrap;
   }
 
+  h1 {
+    font-size: 44px;
+  }
+
   #about-right1, #about-right2 {
     padding: 0 20px 50px 50px;
     margin-bottom: 50px;
@@ -332,7 +344,7 @@ span.small {
   }
 
   #about-right2 {
-    margin-top: -700px;
+    margin-top: -900px;
     text-align: right;
   }
 
@@ -383,12 +395,20 @@ span.small {
   }
 
   /* Main */
+  #aboutmain {
+    margin-top: 70px;
+  }
+
   #about-left {
     width: 500px;
     padding: 0 50px 0 80px;
-    margin-top: -600px;
+    margin-top: -650px;
     text-align: left;
-    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 0;
   }
 
   #about-right1, #about-right2 {
@@ -398,12 +418,8 @@ span.small {
   }
 
   #about-right2 {
-    /* margin-top: -750px; */
+    margin-top: -650px;
     text-align: right;
-  }
-
-  h1 {
-    font-size: 32px;
   }
 
   .subtitle, p {
@@ -411,13 +427,13 @@ span.small {
   }
 
   .profilepic {
-    width: 350px;
+    width: 400px;
     margin-left: 350px;
     padding-bottom: 20px;
   }
 
   img {
-    width: 25%;
+    width: 27%;
   }
 
   /* Footer section */

@@ -138,7 +138,7 @@ nav-menu ul li a:before {
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 46px;
 }
 
 .hero-desc {
@@ -243,7 +243,6 @@ h3 {
   font-family: "Poppins", Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 400;
-  padding: 10px 0 10px 0;
 }
 
 p {
@@ -307,12 +306,17 @@ p {
 }
 
 .uxdesignprocess h4 {
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 900;
   color: #126796;
 }
 
 .uxdesignprocess img {
   width: 40%;
+}
+
+.dataset {
+  padding: 6px;
 }
 
 .researchtitle, .brandingtitle, .executiontitle, .lessonstitle, .moretitle {
@@ -364,9 +368,8 @@ ul.datastats {
 
 li h3 {
   float: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
-  margin-bottom: 0;
 }
 
 li h3, li p {
@@ -383,10 +386,15 @@ li h3, li p {
 
 .persona_vincent, .persona_alexis {
   padding: 30px;
+  text-align: left;
 }
 
 .personaimg {
-  width: 60%;
+  width: 70%;
+}
+
+.persona_avatar, .persona_head {
+  text-align: center;
 }
 
 .name {
@@ -395,6 +403,7 @@ li h3, li p {
 }
 
 .persona_head p {
+  padding: 10px;
   margin-bottom: -16px;
 }
 
@@ -439,16 +448,14 @@ figcaption {
   margin-bottom: -8px;
 }
 
-/* More to come */
-#more {
-  padding-top: 30px;
-  background-color: #333333;
+/* Return to Top */
+.returntop {
   color: white;
-  width: 100%;
+  padding-top: 50px;
 }
 
 h4 {
-  font-weight: lighter;
+  font-weight: 400;
   color: #703035;
 }
 
@@ -506,7 +513,7 @@ a:active {
 /* Footer section */
 footer {
   position: relative;
-  padding: 10px 0;
+  padding: 20px 0;
   width: 100%;
   background-color: #D28F7C;
 }
@@ -696,7 +703,7 @@ span.small {
     text-align: left;
   }
 
-  #hero, .researchtitle, .brandingtitle, .executiontitle {
+.researchtitle, .brandingtitle, .executiontitle {
     padding: 20px;
   }
 
@@ -705,7 +712,7 @@ span.small {
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .hero-desc, #hero-left .btn, i  {
@@ -779,7 +786,7 @@ span.small {
   }
 
   .datastats li {
-    padding: 10px;
+    padding-bottom: 10px;
   }
 
   li h3 {
@@ -845,16 +852,16 @@ span.small {
     text-align: left;
   }
 
-  #hero, .researchtitle, .brandingtitle, .executiontitle {
+  .researchtitle, .brandingtitle, .executiontitle {
     padding: 20px;
   }
 
   #hero-left {
-    padding-left: 30px;
+    padding-left: 50px;
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 55px;
   }
 
   .hero-desc, #hero-left .btn, i  {
@@ -915,18 +922,15 @@ span.small {
 
   .uxdesignprocess p {
     font-size: 18px;
+    line-height: 24px;
   }
 
-  .surveydata, .logoimg {
+  .logoimg {
     width: 70%;
   }
 
   .datastats {
-    width: 60%;
-  }
-
-  .datastats li {
-    padding: 20px;
+    width: 70%;
   }
 
   li h3 {
@@ -1003,21 +1007,21 @@ i {
 
   /* Hero */
   #hero {
-    height: 370px;
+    height: 470px;
     text-align: left;
   }
 
-  #hero, .sticky-top, .wireframeimg, .mobileimg, .mobileimg2, .mockupimg, .mockupimg2 {
+  .sticky-top, .wireframeimg, .mobileimg, .mobileimg2, .mockupimg, .mockupimg2 {
     padding: 20px;
   }
 
   #hero-left {
-    padding-left: 30px;
-    padding-right: 10px;
+    padding: 0 50px;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 65px;
+    margin: 70px 0 20px 0;
   }
 
   .hero-desc, .sticky-top a:link, .sub-sub-title, p {
@@ -1028,21 +1032,13 @@ i {
     font-size: 16px;
   }
 
-  .btn-prototype {
-    line-height: 30px;
-  }
-
-  .btn {
-    margin-top: 25px;
-  }
-
   .btnproto {
     display: inline;
   }
 
   #hero-right img {
     float: right;
-    width: 65%;
+    width: 85%;
     margin-top: 20px;
   }
 
@@ -1163,11 +1159,6 @@ i {
     width: 50%;
   }
 
-  .datastats li {
-    margin: 10px;
-    padding-bottom: 20px;
-  }
-
   li h3 {
     width: 20%;
     padding-left: 20px;
@@ -1208,11 +1199,6 @@ i {
   /* Learnings */
   #lessons, .lessonstitle {
     text-align: left;
-  }
-
-  /* More to come */
-   #more {
-    padding: 50px;
   }
 
 

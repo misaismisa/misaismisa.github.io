@@ -134,20 +134,19 @@ nav-menu ul li a:before {
 
 /* Main */
 #hero {
-  /* position: relative; */
-  /* min-height: 100vh; */
-  /* margin: 0 5px 150px 0; */
   margin: 0 5px;
 }
 
 #hero-left {
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 h1 {
   font-family: "Playfair Display", serif;
+  font-size: 45px;
   font-weight: 900;
   padding-bottom: 20px;
+  margin: 0;
 }
 
 h4 {
@@ -166,7 +165,7 @@ hr {
 }
 
 #hero-right {
-    margin: 30px 0 40px 0;
+    margin: 0 0 50px 0;
 }
 
 .form-group {
@@ -215,7 +214,7 @@ a:active {
 footer.navbar-fixed-bottom {
   position: relative;
   bottom: 0;
-  padding: 20px 0;
+  padding: 30px 0;
   width: 100%;
   background-color: #D28F7C;
 }
@@ -279,11 +278,11 @@ span.small {
 
   /* Main */
   #hero {
-    margin: 50px 0 150px 0;
+    margin: 100px 0 100px 0;
   }
 
   #hero-left {
-    margin: 20px 0;
+    margin: 0 auto;
     padding-right: 20px;
   }
 
@@ -292,7 +291,6 @@ span.small {
   }
 
   #hero-right {
-      margin: 40px 0;
       padding-left: 20px;
       align: right;
   }
@@ -338,7 +336,11 @@ span.small {
 
   #hero {
     position: relative;
-    margin: 50px 0 150px 0;
+    margin: 100px 0 150px 0;
+  }
+
+  #hero-left {
+    margin: 0;
   }
 
   footer h4 {
@@ -364,7 +366,7 @@ span.small {
 
   /* Main */
   #hero {
-    margin: 50px 0 100px 0;
+    margin: 100px 0 100px 0;
   }
 
   #hero-left {
@@ -427,7 +429,7 @@ span.small {
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 54px;
     padding-bottom: 20px;
   }
 
