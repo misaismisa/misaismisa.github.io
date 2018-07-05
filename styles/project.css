@@ -254,10 +254,9 @@ p {
 
 /* Overview */
 #overview-shaded {
-  background-color: #545454;
+  background: url(/images/cloudcore/colorbanner@2x.png);
   margin-top: -30px;
   color: #FFFFFF;
-  /* padding-top: 150px; */
 }
 
 .titleshaded {
@@ -353,14 +352,18 @@ ul li {
   margin-bottom: 20px;
 }
 
-ul.datastats {
-  font-size: 18px;
-  margin: 0 auto;
+.datastats {
   padding-left: 0;
 }
 
+ul.datastats p {
+  font-size: 18px;
+  padding-top: 0px;
+  /* padding-bottom: 0px; */
+}
+
 .datastats li {
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px;
   background-color: #2C88AD;
   color: #fff;
@@ -374,6 +377,7 @@ li h3 {
 
 li h3, li p {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .wireframeimg, .mobileimg, .mockupimg {
@@ -403,7 +407,6 @@ li h3, li p {
 }
 
 .persona_head p {
-  padding: 10px;
   margin-bottom: -16px;
 }
 
@@ -782,12 +785,9 @@ span.small {
 
   .datastats {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
   }
 
-  .datastats li {
-    padding-bottom: 10px;
-  }
 
   li h3 {
     float: left;
@@ -795,12 +795,12 @@ span.small {
     font-size: 50px;
     font-weight: bold;
     width: 25%;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   li p {
     text-align: left;
-    margin: 10px;
+    margin: 10px 0;
   }
 
   /* Research */
@@ -909,7 +909,6 @@ span.small {
 
   .numberedprocess {
     margin-left: -40px;
-    margin-bottom: 50px;
   }
 
   .uxdesignprocess img {
@@ -930,7 +929,7 @@ span.small {
   }
 
   .datastats {
-    width: 70%;
+    width: 100%;
   }
 
   li h3 {
@@ -938,7 +937,7 @@ span.small {
     text-align: left;
     font-size: 50px;
     width: 25%;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   li p {
@@ -1007,7 +1006,7 @@ i {
 
   /* Hero */
   #hero {
-    height: 470px;
+    height: 570px;
     text-align: left;
   }
 
@@ -1016,7 +1015,7 @@ i {
   }
 
   #hero-left {
-    padding: 0 50px;
+    padding: 30px 50px 0 50px;
   }
 
   h1 {
@@ -1038,7 +1037,7 @@ i {
 
   #hero-right img {
     float: right;
-    width: 85%;
+    width: 90%;
     margin-top: 20px;
   }
 
@@ -1117,7 +1116,7 @@ i {
   }
 
   .researchtitle, .brandingtitle, .executiontitle {
-    margin: -50px -45px 0 -45px;
+    margin: -100px -45px 0 -45px;
     padding: 30px;
   }
 
@@ -1164,6 +1163,10 @@ i {
     padding-left: 20px;
   }
 
+  .datastats li {
+    margin: 10px 0;
+    padding: 10px 10px 20px 0;
+}
 
   /* Research */
   .personaimg, .userflowimg, .brandsketch {
