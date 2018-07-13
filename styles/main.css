@@ -259,7 +259,7 @@ h2, h4 {
   color: #ffffff;
 }
 
-.card-deck h3, p{
+.card-deck h3, p {
   color: black;
 }
 
@@ -756,7 +756,7 @@ span.small {
 
   /* Hero Titles and Image */
   #hero {
-    margin: 50px 0 120px 0;
+    margin: 30px 0 120px 0;
     position: relative;
   }
 
@@ -773,14 +773,14 @@ span.small {
   } */
 
   h1 {
-    font-size: 80px;
+    font-size: 65px;
   }
 
-  h2 {
-    font-size: 28px;
+  /* h2 {
+    font-size: 23px;
     font-weight: 400;
     color: #703035;
-  }
+  } */
 
 
 
@@ -792,12 +792,12 @@ span.small {
   }
 
   #preview .casetitle {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
   }
 
   #preview h3 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 300;
   }
 
