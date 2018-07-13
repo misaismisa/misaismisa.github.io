@@ -7,8 +7,8 @@
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   background: #EEE2DB;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #D28F7C, #EEE2DB);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #D28F7C, #EEE2DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #D28F7C, #fff0e8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #D28F7C, #fff0e8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Navigation Bar */
@@ -111,23 +111,109 @@ button:focus {
 
 
 /* Hero Titles and Image */
-#lamp-anim {
+/* #lamp-anim {
   position: absolute;
   width: 100%;
   height: 700px;
   margin-top: -10px;
-}
+} */
 
 #hero {
   margin-bottom: 110px;
-  position: relative;
+  padding: 90px 0;
+  /* position: relative; */
 }
 
-h1 {
+/* h1 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-weight: 800;
   margin-top: 90px;
+} */
+
+.headline {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 80px;
+  letter-spacing: 1px;
+}
+
+.headline, .location {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-left: 200px;
+}
+
+.location {
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.rotate, .comma {
+  position: relative;
+}
+
+.comma {
+  padding-right: 20px;
+}
+
+.animation-1 {
+  display: inline-block;
+  text-align: left;
+}
+
+.animation-1 span {
+  position: absolute;
+  width: 900px;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-animation: rotateWord 20s linear infinite 0s;
+	-ms-animation: rotateWord 20s linear infinite 0s;
+  animation: rotateWord 20s linear infinite 0s;
+  color: #e5532b;
+}
+
+.animation-1 span:nth-child(2) {
+  -webkit-animation-delay: 4s;
+	-ms-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animation-1 span:nth-child(3) {
+  -webkit-animation-delay: 8s;
+	-ms-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+.animation-1 span:nth-child(4) {
+  -webkit-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.animation-1 span:nth-child(5) {
+  -webkit-animation-delay: 16s;
+	-ms-animation-delay: 16s;
+  animation-delay: 16s;
+}
+
+@keyframes rotateWord {
+  0% { opacity: 0; }
+  2% { opacity: 0;
+       -webkit-transform: translateY(-30px);
+       transform: translateY(-30px); }
+  5% { opacity: 1;
+       -webkit-transform: translateY(0px);
+       transform: translateY(0px);}
+  17% { opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);}
+  20% { opacity: 0;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);}
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 h2, h4 {
@@ -136,36 +222,45 @@ h2, h4 {
   color: #703035;
 }
 
-#herograph {
+/* #herograph {
   font-size: 18px;
   font-weight: lighter;
   text-align: justify;
   padding: 0 16px;
-}
+} */
 
 
 
 /* Section Case Studies */
-#preview {
+/* #preview {
   background: url(/images/wavy_background@2x.png) no-repeat 0 0;
   background-size: cover;
   height: 500px;
   width: 100%;
   background-position: 0% 0%;
-  /* padding-bottom: 110px; */
-}
+  padding-bottom: 110px;
+} */
 
 .casetitle {
   margin-top: 20px;
+  font-weight: lighter;
 }
 
-.card-deck {
+.card-description {
+  line-height: 30px;
+}
+
+/* .card-deck {
   margin-top: 25px;
-  /* padding-top: 90px; */
+  padding-top: 90px;
+} */
+
+.card-deck a:visited {
+  color: #ffffff;
 }
 
-.card-deck a:visited, .card-title {
-  color: #FFFFFF;
+.card-deck h3, p{
+  color: black;
 }
 
 .card-body {
@@ -177,7 +272,7 @@ h2, h4 {
 .card {
   background-color: transparent;
   border: none;
-  color: white;
+  color: #333;
   padding: 10px;
 }
 
@@ -208,7 +303,7 @@ h2, h4 {
 }
 
 .text {
-  color: white;
+  color: #333333;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -668,17 +763,17 @@ span.small {
   #herograph {
     font-size: 18px;
     font-weight: lighter;
-    width: 1000px;
+    /* width: 1000px; */
   }
 
-  #lamp-anim {
+  /* #lamp-anim {
     position: absolute;
     width: 100%;
     height: 750px;
-  }
+  } */
 
   h1 {
-    font-size: 90px;
+    font-size: 80px;
   }
 
   h2 {
@@ -691,25 +786,51 @@ span.small {
 
   /* Section Case Studies */
   #preview {
-    background-size: cover;
-    background-position: 0% 45%;
-    height: 800px;
+    /* background-size: cover; */
+    /* background-position: 0% 45%; */
+    height: 700px;
+  }
+
+  #preview .casetitle {
+    font-size: 25px;
+    font-weight: 500;
   }
 
   #preview h3 {
-    font-size: 30px;
+    font-size: 45px;
+    font-weight: 300;
   }
 
   .card-deck {
-    margin-top: 40px;
+    margin-top: 50px;
+    /* background-color: blue; */
+  }
+
+  .card {
+    /* margin-top: 40px; */
+    /* border-width: thin;
+    border-color: black;
+    padding: 0px -500px; */
+  }
+
+  .projectinfo {
+    margin-top: 90px;
+    padding-left: 100px;
+    color: white;
   }
 
   .card-text {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .card-img-top {
-    width: 45%;
+    width: 85%;
+  }
+
+  .card-description {
+    font-weight: lighter;
+    font-size: 18px;
+    width: 500px;
   }
 
   /* Footer section */
@@ -735,7 +856,9 @@ span.small {
   }
 
   .btn-primary {
-    font-size: 16px;
+    font-size: 18px;
+    border-radius: 80px;
+    padding: 10px 18px;
   }
 
   span.small {
