@@ -8,3 +8,12 @@ if (document.getElementById('lamp-anim')) {
 setTimeout(function() {
   $('.js-works-d-list').addClass('is-loaded');
 }, 150);
+
+
+css
+/* #lamp-anim {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  margin-top: -10px;
+} */
