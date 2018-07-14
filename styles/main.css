@@ -6,9 +6,11 @@
 
 body {
   font-family: "Poppins", Helvetica, sans-serif;
-  background: #EEE2DB;  /* fallback for old browsers */
+  background: #edd9ce;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #D28F7C, #fff0e8);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #D28F7C, #fff0e8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top, #D28F7C, #F5DED7);
+  /* background: linear-gradient(to top, #fcb69f, #ffecd2); */
+  /* background-image: linear-gradient(to right, #F7CB8D 0%, #D28F7C 100%); */
 }
 
 /* Navigation Bar */
@@ -83,7 +85,7 @@ button:focus {
 }
 
 .navbar-light .navbar-nav a:hover {
-  color: #E3B505 !important;
+  color: #edbc04 !important;
 }
 
 .nav-menu ul li a:after {
@@ -94,7 +96,7 @@ button:focus {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #E3B505;
+  background: #edbc04;
   height: 3px;
   box-shadow: 0 1px 1 white;
 }
@@ -802,8 +804,9 @@ span.small {
   }
 
   .card-deck {
-    margin-top: 50px;
-    /* background-color: blue; */
+    /* margin-top: 50px; */
+    padding: 70px 0;
+    background-color: rgba(255,255,255,0.2);
   }
 
   .card {
