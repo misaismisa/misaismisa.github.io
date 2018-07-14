@@ -6,11 +6,10 @@
 
 body {
   font-family: "Poppins", Helvetica, sans-serif;
-  background: #edd9ce;  /* fallback for old browsers */
+  background: #f9f9f9;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #D28F7C, #fff0e8);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #D28F7C, #F5DED7);
-  /* background: linear-gradient(to top, #fcb69f, #ffecd2); */
-  /* background-image: linear-gradient(to right, #F7CB8D 0%, #D28F7C 100%); */
+  /* background: linear-gradient(to top, #e2b19e, #e5c9be); */
+  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
 }
 
 /* Navigation Bar */
@@ -173,7 +172,9 @@ button:focus {
   -webkit-animation: rotateWord 20s linear infinite 0s;
 	-ms-animation: rotateWord 20s linear infinite 0s;
   animation: rotateWord 20s linear infinite 0s;
-  color: #e5532b;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .animation-1 span:nth-child(2) {
@@ -245,16 +246,25 @@ h2, h4 {
 
 .casetitle {
   margin-top: 20px;
-  font-weight: lighter;
+  font-weight: 500;
+  font-family: "Playfair Display";
 }
+
+/* .line {
+  margin-bottom: -20px;
+  height: 8px;
+  width: 100%;
+  background: blue;
+} */
 
 .card-description {
   line-height: 30px;
 }
 
 /* .card-deck {
-  margin-top: 25px;
-  padding-top: 90px;
+  border-top: 10px solid blue;
+  border-image-source: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border-image-slice: 20;
 } */
 
 .card-deck a:visited {
@@ -262,7 +272,7 @@ h2, h4 {
 }
 
 .card-deck h3, p {
-  color: black;
+  color: #333;
 }
 
 .card-body {
@@ -790,12 +800,34 @@ span.small {
   #preview {
     /* background-size: cover; */
     /* background-position: 0% 45%; */
-    height: 700px;
+    height: 1000px;
+  }
+
+  #preview .scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    width: 89px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
   #preview .casetitle {
-    font-size: 24px;
-    font-weight: 400;
+    display: inline-block;
+    margin-top: 200px;
+    padding-left: 400px;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: left;
+    /* width: 500px; */
+    background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   #preview h3 {
@@ -806,7 +838,7 @@ span.small {
   .card-deck {
     /* margin-top: 50px; */
     padding: 70px 0;
-    background-color: rgba(255,255,255,0.2);
+    /* background-color: rgba(0,0,0,0.8); */
   }
 
   .card {
