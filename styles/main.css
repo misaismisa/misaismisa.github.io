@@ -134,7 +134,7 @@ button:focus {
 .headline {
   font-family: "Playfair Display", serif;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: 1px;
 }
 
@@ -142,12 +142,12 @@ button:focus {
   display: flex;
   justify-content: left;
   align-items: left;
-  margin-left: 200px;
+  margin-left: 120px;
 }
 
 .location {
   font-weight: lighter;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .rotate, .comma {
