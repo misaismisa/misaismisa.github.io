@@ -82,7 +82,7 @@ button:focus {
 }
 
 .navbar-light .navbar-nav a:hover {
-  color: #f7c400 !important;
+  color: #ff5c21 !important;
 }
 
 .nav-menu ul li a:after {
@@ -93,7 +93,7 @@ button:focus {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #f7c400;
+  background: #fc6076;
   height: 3px;
   box-shadow: 0 1px 1 white;
 }
@@ -151,36 +151,36 @@ h1 {
   width: 350px;
   opacity: 0;
   overflow: hidden;
-  -webkit-animation: rotateWord 20s linear infinite 0s;
-	-ms-animation: rotateWord 20s linear infinite 0s;
-  animation: rotateWord 20s linear infinite 0s;
+  -webkit-animation: rotateWord 15s linear infinite 0s;
+	-ms-animation: rotateWord 15s linear infinite 0s;
+  animation: rotateWord 15s linear infinite 0s;
   background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .animation-1 span:nth-child(2) {
-  -webkit-animation-delay: 4s;
-	-ms-animation-delay: 4s;
-  animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .animation-1 span:nth-child(3) {
-  -webkit-animation-delay: 8s;
-	-ms-animation-delay: 8s;
-  animation-delay: 8s;
+  -webkit-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 .animation-1 span:nth-child(4) {
-  -webkit-animation-delay: 12s;
-	-ms-animation-delay: 12s;
-  animation-delay: 12s;
+  -webkit-animation-delay: 9s;
+	-ms-animation-delay: 9s;
+  animation-delay: 9s;
 }
 
 .animation-1 span:nth-child(5) {
-  -webkit-animation-delay: 16s;
-	-ms-animation-delay: 16s;
-  animation-delay: 16s;
+  -webkit-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+  animation-delay: 12s;
 }
 
 @keyframes rotateWord {
@@ -220,6 +220,15 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
+  transition: width 0.5s;
+}
+
+#scroll a:hover {
+  color: #fc6076;
+}
+
+#scroll:hover {
+  width: 95px;
 }
 
 #preview .casetitle {
@@ -282,7 +291,7 @@ a:active {
 
 .btn-primary:hover {
   background-color: #333333;
-  border-color: #333333;
+  border-color: transparent;
   color: #FFFFFF;
 }
 
@@ -425,6 +434,10 @@ span.small {
   .location {
     margin-top: 100px;
     margin-bottom: 150px;
+  }
+
+  .headline, .location {
+    display: flex;
   }
 
   /* Case STUDIES */
@@ -626,12 +639,12 @@ span.small {
     padding: 1em 0 1em;
     text-decoration: none;
     font-weight: 400;
-    color: #393939;
+    color: #212121;
     transition: .7s;
   }
 
   .navbar-light .navbar-nav a:hover {
-    color: #E3B505 !important;
+    color: #ff5c21 !important;
   }
 
   .nav-item {
@@ -650,7 +663,7 @@ span.small {
     width: 0%;
     content: '.';
     color: transparent;
-    background: #E3B505;
+    background: #ff5c21;
     height: 4px;
     box-shadow: 0 1px 1 white;
   }
@@ -683,7 +696,7 @@ span.small {
   .location {
     font-size: 30px;
     margin-top: 60px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
   }
 
   /* Section Case Studies */
@@ -704,13 +717,14 @@ span.small {
   }
 
   .card-img-top {
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   .projectinfo {
     font-size: 20px;
     padding-top: 150px;
-    padding-left: 50px;
+    padding-left: 100px;
+    padding-right: 70px;
   }
 
   /* Footer section */

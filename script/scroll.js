@@ -1,20 +1,15 @@
-jQuery(document).ready(function() {
-  var offset = 250;
-  var duration = 300;
-  jQuery(window).scroll(function() {
-  if (jQuery(this).scrollTop() > offset) {
-  jQuery(‘.back-to-top’).fadeIn(duration);
-  } else {
-  jQuery(‘.back-to-top’).fadeOut(duration);
-  }
+$(document).ready(function(){
+  $('a[href*="#"]').on('click', function(event){
 
-});
+    event.preventDefault();
 
+    var hash = this.hash;
 
-jQuery(‘.back-to-top’).click(function(event) {
-  event.preventDefault();
-  jQuery(‘html, body’).animate({scrollTop: 0}, duration);
-  return false;
-})
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
 
+      window.location.hash = hash;
+    });
+  });
 });
