@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", Helvetica, sans-serif;
-  background: #EEE2DB;  /* fallback for old browsers */
+  background: #f9f9f9;  /* fallback for old browsers */
   min-height: 100vh;
   position: relative;
   margin: 0;
@@ -14,20 +14,22 @@ body {
 
 /* Navigation Bar */
 .navbar-light {
-  background-color: #B85C43;
+  /* background-color: #B85C43; */
   padding: 2px;
 }
 
-.logowhite {
-  width: 100px;
+.logoblack1 {
+  width: 80px;
 }
 
 .navbar-nav {
-  font-size: 14px;
   line-height: 10px;
   overflow: hidden;
   position: relative;
-  color: #FFFFFF;
+}
+
+.navbar-nav a:link {
+  font-size: 14px;
 }
 
 .navbar-light .navbar-toggler {
@@ -91,12 +93,12 @@ button:focus {
   padding: 1em 0 1em;
   text-decoration: none;
   font-weight: 400;
-  color: #393939;
+  color: #ff5c21;
   transition: .7s;
 }
 
 .navbar-light .navbar-nav a:hover {
-  color: #E3B505 !important;
+  color: #ff5c21 !important;
 }
 
 .nav-item {
@@ -121,7 +123,7 @@ nav-menu ul li a:before {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #E3B505;
+  background: #ff5c21;
   height: 3px;
   box-shadow: 0 1px 1 white;
 }
@@ -144,14 +146,12 @@ nav-menu ul li a:before {
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 45px;
-  font-weight: 900;
+  font-weight: 800;
   padding-bottom: 20px;
   margin: 0;
-}
-
-h4 {
-  font-weight: lighter;
-  color: #703035;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -179,8 +179,20 @@ hr {
 }
 
 .btn-success {
-  background-color: #E3B505;
-  border-color: #E3B505;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border-color: transparent;
+  border-radius: 80px;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+}
+
+.btn-success:hover {
+  background-color: #333333;
+  border-color: transparent;
+  color: #FFFFFF;
 }
 
 .alert {
@@ -189,25 +201,19 @@ hr {
 }
 
 
-/* unvisited link */
-a:link {
-    color: #333333;
-    font-size: 20px;
-    text-decoration: none;
-}
 /* visited link */
 a:visited {
-    color: #333333;
+    color: #333;
 }
 /* mouse over link */
 a:hover {
     color: #FFFFFF;
-    text-decoration: none;
 }
 /* selected link */
 a:active {
-    color: #FFFFFF;
+    color: #f7c400;
 }
+
 
 
 /* Footer section */
@@ -216,7 +222,12 @@ footer.navbar-fixed-bottom {
   bottom: 0;
   padding: 30px 0;
   width: 100%;
-  background-color: #D28F7C;
+}
+
+footer hr {
+  height: 4px;
+  color: #f00;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 }
 
 i {
@@ -239,23 +250,20 @@ footer a:link {
 
 footer h4 {
   font-size: 16px;
+  font-weight: 300;
+  color: #000;
 }
 
 .btn-sm {
-  background-color: #E3B505;
-  border-color: #E3B505;
-  font-size: 10px;
-  font-weight: 200;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border-color: transparent;
+  border-radius: 80px;
+  padding: 10px 18px;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 
-.btn-sm a {
-  font-size: 14px;
-}
-
 .btn-sm:hover {
-  background-color: #333333;
-  border-color: #333333;
   color: #FFFFFF;
 }
 
@@ -272,75 +280,56 @@ span.small {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
   /* Navigation Bar */
-  .logowhite {
-    width: 110px;
+  .logoblack1 {
+    width: 100px;
   }
 
   /* Main */
   #hero {
-    margin: 100px 0 100px 0;
+    margin: 0 5px;
   }
 
-  #hero-left {
-    margin: 0 auto;
-    padding-right: 20px;
+  #hero-left, #hero-right {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: column;
   }
 
-  h1 {
-    width: 200px;
+  hr {
+    width: 100%;
   }
 
-  #hero-right {
-      padding-left: 20px;
-      align: right;
-  }
 
   /* Footer section */
-
-  i {
-    font-size: 25px;
-    padding-left: 8px;
-  }
-
   .logoblack {
     width: 100px;
     margin-top: -23px;
   }
 
   footer h4 {
-    font-size: 16px;
     margin-top: -40px;
   }
 
-  .btn-sm {
-    background-color: #E3B505;
-    border-color: #E3B505;
-    font-size: 14px;
-    font-weight: 200;
-    margin-bottom: 10px;
+  span.small {
+    font-size: 12px;
   }
-
-  .btn-sm a {
-    font-size: 14px;
-  }
-
 
 }
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   /* Navigation Bar */
-  .logowhite {
-    width: 130px;
-  }
-
-  #hero {
-    position: relative;
-    margin: 100px 0 150px 0;
+  .logoblack1 {
+    width: 120px;
   }
 
   #hero-left {
-    margin: 0;
+    padding-right: 30px;
+  }
+
+  #hero-right {
+    padding-left: 30px;
+    margin-top: 50px;
   }
 
   footer h4 {
@@ -352,25 +341,20 @@ span.small {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* Navigation Bar */
-  .logowhite {
-    width: 120px;
-  }
 
   .navbar-nav {
     font-size: 16px;
     line-height: 10px;
     overflow: hidden;
     position: relative;
-    color: #FFFFFF;
   }
 
   /* Main */
   #hero {
-    margin: 100px 0 100px 0;
+    margin: 80px 0 50px 0;
   }
 
   #hero-left {
-    margin: 40px 0;
     padding-right: 30px;
   }
 
@@ -399,20 +383,17 @@ span.small {
     margin-top: -50px;
   }
 
-  .btn-sm a {
-    font-size: 16px;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Navigation Bar */
-  .logowhite {
-    width: 120px;
+  .logoblack1 {
+    width: 110px;
   }
 
-  a.nav-link {
-    font-size: 18px;
+  .navbar-nav a:link {
+    font-size: 16px;
   }
 
   .nav-item {
@@ -421,7 +402,7 @@ span.small {
 
   /* Main */
   #hero {
-    margin: 50px 50px 85px 50px;
+    margin: 40px 50px 40px 50px;
   }
 
   #hero-left {
@@ -467,15 +448,16 @@ span.small {
 
   footer h4 {
     font-size: 20px;
-    margin-top: -50px;
+    margin-top: -40px;
   }
 
-  .btn-sm a {
+  .btn-success, .btn-sm a {
     font-size: 16px;
+    text-decoration: none;
   }
 
   span.small {
-    font-size: 12px;
+    font-size: 13px;
   }
 
 }

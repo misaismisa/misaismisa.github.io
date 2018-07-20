@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   background: #f9f9f9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #D28F7C, #fff0e8);  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-linear-gradient(to top, #D28F7C, #fff0e8);  /* Chrome 10-25, Safari 5.1-6 */ */
   /* background: linear-gradient(to top, #e2b19e, #e5c9be); */
   /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
 }
@@ -17,6 +17,10 @@ body {
   font-size: 20px;
   overflow: hidden;
   position: relative;
+}
+
+.navbar-nav a:link {
+  font-size: 14px;
 }
 
 .navbar-light .navbar-toggler {
@@ -78,7 +82,7 @@ button:focus {
   position: relative;
   float: right;
   text-decoration: none;
-  transition: .7s;
+  transition: .5s;
 }
 
 .navbar-light .navbar-nav a:hover {
@@ -101,7 +105,7 @@ button:focus {
 .nav-menu ul li a:hover:after {
   display: inline-block;
   width: 100%;
-  transition: all .5s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .logowine {
@@ -118,7 +122,7 @@ button:focus {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -131,9 +135,9 @@ h1 {
 
 .location {
   font-weight: lighter;
-  font-size: 28px;
+  font-size: 24px;
   display: inline-block;
-  margin-top: 180px;
+  margin-top: 140px;
   margin-bottom: 50px;
 }
 
@@ -280,8 +284,8 @@ a:active {
 }
 
 .btn-primary {
+  font-size: 14px;
   background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
-  /* background-color: #f7c400; */
   border-color: transparent;
   border-radius: 80px;
   padding: 10px 18px;
@@ -709,7 +713,7 @@ span.small {
     margin-bottom: 100px;
     padding-left: 500px;
     width: 850px;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   #preview .card-title {
