@@ -452,17 +452,17 @@ span.small {
   }
 
   footer h4 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: -40px;
   }
 
   .btn-success, .btn-sm a {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
   }
 
   span.small {
-    font-size: 13px;
+    font-size: 14px;
   }
 
 }
