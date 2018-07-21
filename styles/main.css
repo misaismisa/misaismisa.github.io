@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-nav a:link {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navbar-light .navbar-toggler {
@@ -631,9 +631,12 @@ span.small {
 
   /* Navigation Bar */
   .navbar-nav {
-    font-size: 18px;
     overflow: hidden;
     position: relative;
+  }
+
+  .navbar-nav a:link {
+    font-size: 18px;
   }
 
   .navbar-light .navbar-nav a {
@@ -652,7 +655,7 @@ span.small {
   }
 
   .nav-item {
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
   .nav-menu ul li a {

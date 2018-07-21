@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-nav a:link {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .navbar-light .navbar-toggler {
@@ -388,8 +388,14 @@ span.small {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Navigation Bar */
+
   .logoblack1 {
     width: 110px;
+    padding-left: 15px;
+  }
+
+  .navbar-nav {
+    padding: 15px;
   }
 
   .navbar-nav a:link {
@@ -397,7 +403,7 @@ span.small {
   }
 
   .nav-item {
-    padding-right: 10px;
+    padding-right: 20px;
   }
 
   /* Main */
