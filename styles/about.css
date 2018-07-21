@@ -362,7 +362,7 @@ span.small {
 @media (min-width: 1200px) {
   /* Navigation Bar */
   .logoblack {
-    width: 110px;
+    width: 100px;
   }
 
   .nav-item {
@@ -401,15 +401,18 @@ span.small {
 
   .btn-primary {
     font-size: 16px;
+    padding: 10px;
   }
 
   /* Footer */
   footer h4 {
     margin-top: -50px;
+    margin-bottom: 20px;
   }
 
   footer .small {
     font-size: 14px;
+    padding: 20px;
   }
 
 }

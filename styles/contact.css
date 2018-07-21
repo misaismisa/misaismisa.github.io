@@ -378,7 +378,7 @@ span.small {
   }
 
   footer h4 {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: -50px;
   }
 
@@ -387,7 +387,6 @@ span.small {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Navigation Bar */
-
   .logoblack1 {
     width: 110px;
     padding-left: 15px;
@@ -452,8 +451,9 @@ span.small {
   }
 
   footer h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: -40px;
+    margin-bottom: 20px;
   }
 
   .btn-success, .btn-sm a {
@@ -463,6 +463,7 @@ span.small {
 
   span.small {
     font-size: 14px;
+    padding: 20px;
   }
 
 }
