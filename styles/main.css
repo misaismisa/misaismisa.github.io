@@ -303,14 +303,9 @@ a:active {
 /* Footer section */
 footer {
   position: relative;
-  padding-bottom: 20px;
+  padding: 20px 0;
   width: 100%;
-}
-
-hr {
-  height: 4px;
-  color: #f00;
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  background-color: #d4d5d8;
 }
 
 i {
@@ -491,7 +486,7 @@ span.small {
 
   footer h4 {
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: -40px;
   }
 
   .btn-primary {
@@ -617,7 +612,7 @@ span.small {
 
   footer h4 {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: -50px;
   }
 
   span.small {
@@ -636,7 +631,7 @@ span.small {
   }
 
   .navbar-nav a:link {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .navbar-light .navbar-nav a {
@@ -682,7 +677,7 @@ span.small {
   }
 
   .logowine {
-    width: 120px;
+    width: 110px;
   }
 
 
@@ -720,7 +715,11 @@ span.small {
   }
 
   #preview .card-title {
-    font-size: 40px;
+    font-size: 36px;
+  }
+
+  #preview .card-text {
+    font-size: 18px;
   }
 
   .card-img-top {

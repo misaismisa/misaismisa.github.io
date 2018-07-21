@@ -222,12 +222,7 @@ footer.navbar-fixed-bottom {
   bottom: 0;
   padding: 30px 0;
   width: 100%;
-}
-
-footer hr {
-  height: 4px;
-  color: #f00;
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  background-color: #d4d5d8;
 }
 
 i {
@@ -323,6 +318,10 @@ span.small {
     width: 120px;
   }
 
+  #hero {
+    margin: 50px 0;
+  }
+
   #hero-left {
     padding-right: 30px;
   }
@@ -351,7 +350,7 @@ span.small {
 
   /* Main */
   #hero {
-    margin: 80px 0 50px 0;
+    margin: 80px 0 60px 0;
   }
 
   #hero-left {
@@ -408,7 +407,7 @@ span.small {
 
   /* Main */
   #hero {
-    margin: 40px 50px 40px 50px;
+    margin: 60px 50px 40px 50px;
   }
 
   #hero-left {
