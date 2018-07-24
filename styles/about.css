@@ -173,7 +173,7 @@ h3 {
 }
 
 .subtitle {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p {
@@ -311,8 +311,10 @@ span.small {
   }
 
   /* Main */
+
   #aboutcontent {
     margin-top: 30px;
+    padding: 0 100px;
   }
 
   img {
@@ -342,9 +344,10 @@ span.small {
   }
 
   /* Main */
+
   #aboutcontent {
     margin-top: 30px;
-    padding: 0 50px;
+    padding: 0 150px;
   }
 
   h2, h4 {
@@ -392,11 +395,15 @@ span.small {
   /* Main */
   #aboutcontent {
     margin-top: 30px;
-    padding: 0 350px;
+    padding: 0 250px;
   }
 
   h2, h4 {
     font-size: 24px;
+  }
+
+  h3 {
+    font-size: 36px;
   }
 
   .subtitle, p {
