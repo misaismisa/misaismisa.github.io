@@ -16,7 +16,7 @@ body {
   top: 0;
   width: 100%;
   padding: 2px;
-  background-color: #eee;
+  background-color: rgba(238,238,238,0.5);
 }
 
 .logoblack {
@@ -154,10 +154,18 @@ h1 {
   margin: 50px 0;
 }
 
-h2, h3, h4 {
+h2, h4 {
   font-size: 20px;
   font-weight: 300;
-  color: #fc6076;
+  color: #e83f14;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #e83f14;
 }
 
 .subtitle, p {
@@ -165,7 +173,7 @@ h2, h3, h4 {
 }
 
 .subtitle {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 p {
@@ -219,7 +227,7 @@ footer {
   position: relative;
   padding: 15px 0;
   width: 100%;
-  background: #d4d5d8;
+  background: #eee;
 }
 
 
@@ -339,7 +347,7 @@ span.small {
     padding: 0 50px;
   }
 
-  h2, h3, h4 {
+  h2, h4 {
     font-size: 24px;
   }
 
@@ -371,13 +379,13 @@ span.small {
 
   /* Hero */
   .hero {
-    height: 650px;
+    height: 600px;
   }
 
   h1 {
     font-size: 50px;
     position: absolute;
-    bottom: 100px;
+    bottom: 200px;
     left: 40px;
   }
 
@@ -387,7 +395,7 @@ span.small {
     padding: 0 350px;
   }
 
-  h2, h3, h4 {
+  h2, h4 {
     font-size: 24px;
   }
 
