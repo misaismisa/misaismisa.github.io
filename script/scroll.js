@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  AOS.init({
+ duration: 1200
+});
+});
+
+$(document).ready(function(){
   $('a[href*="#"]').on('click', function(event){
 
     event.preventDefault();

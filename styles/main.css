@@ -250,6 +250,7 @@ h1 {
 
 .card-deck {
   background-color: #eee;
+  padding: 50px 0;
 }
 
 .card-img-top {
@@ -309,7 +310,6 @@ footer {
   position: relative;
   padding: 20px 0;
   width: 100%;
-  background-color: #d4d5d8;
 }
 
 i {
