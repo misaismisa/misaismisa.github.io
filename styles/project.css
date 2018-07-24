@@ -600,29 +600,21 @@ span.small {
 @media (min-width: 576px) and (max-width: 767px) {
   /* Hero */
   #hero {
-    height: 330px;
+    height: 880px;
     text-align: left;
   }
 
-  #hero-left {
-    padding-left: 30px;
-  }
-
   h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .hero-desc, #hero-left .btn, i  {
     font-size: 14px;
   }
 
-  .btnproto {
-    justify-content: left;
-  }
-
-  #hero-right img {
-    width: 100%;
-    margin-top: 80px;
+  #heromain img{
+    width: 90%;
+    margin-top: 30px;
   }
 
   /* Sticky nav */
@@ -640,12 +632,11 @@ span.small {
   }
 
   .researchtitle, .brandingtitle, .executiontitle {
-    font-size: 24px;
     padding: 20px;
   }
 
   .sub-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   h5 {
@@ -716,6 +707,14 @@ span.small {
   }
 
   /* Footer */
+  footer {
+    padding-top: 10px;
+  }
+
+  .btn {
+    margin: 5px;
+  }
+
   footer i {
     font-size: 24px;
     padding-left: 8px;
@@ -727,16 +726,12 @@ span.small {
 @media (min-width: 768px) and (max-width: 991px) {
   /* Hero */
   #hero {
-    height: 380px;
+    height: 940px;
     text-align: left;
   }
 
 .researchtitle, .brandingtitle, .executiontitle {
     padding: 20px;
-  }
-
-  #hero-left {
-    padding-left: 30px;
   }
 
   h1 {
@@ -747,13 +742,9 @@ span.small {
     font-size: 16px;
   }
 
-  .btnproto {
-    justify-content: left;
-  }
-
-  #hero-right img {
-    width: 100%;
-    margin-top: 60px;
+  #heromain img {
+    width: 80%;
+    margin-top: 30px;
   }
 
   /* Process */
@@ -766,21 +757,15 @@ span.small {
   }
 
   .researchtitle, .brandingtitle, .executiontitle {
-    font-size: 24px;
     margin: 0 -15px 0 -15px;
   }
 
   .sub-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   h5 {
     font-size: 18px;
-  }
-
-  .uxdesignprocess h3 {
-    text-align: left;
-    margin-left: -90px;
   }
 
   .uxdesignprocess {
@@ -819,8 +804,9 @@ span.small {
     text-align: left;
     font-size: 50px;
     font-weight: bold;
-    width: 25%;
+    width: 30%;
     padding-left: 20px;
+    padding-bottom: 10px;
   }
 
   li p {
@@ -867,22 +853,27 @@ span.small {
     padding-bottom: 50px;
   }
 
+  .btn {
+    margin: 10px 5px;
+  }
+
+  /* Footer */
+  footer {
+    padding-top: 10px;
+  }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* Hero */
   #hero {
-    height: 380px;
-    text-align: left;
+    height: 1080px;
   }
 
   .researchtitle, .brandingtitle, .executiontitle {
     padding: 20px;
-  }
-
-  #hero-left {
-    padding-left: 50px;
   }
 
   h1 {
@@ -893,12 +884,8 @@ span.small {
     font-size: 16px;
   }
 
-  .btnproto {
-    justify-content: left;
-  }
-
-  #hero-right img {
-    width: 100%;
+  #heromain img {
+    width: 80%;
     margin-top: 40px;
   }
 
@@ -912,12 +899,12 @@ span.small {
     text-align: left;
   }
 
-  .researchtitle, .brandingtitle, .executiontitle {
-    font-size: 24px;
+  #showcaseimg {
+    width: 70%;
   }
 
   .sub-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   h5 {
@@ -1007,18 +994,29 @@ span.small {
   #lessons, .lessonstitle {
     text-align: left;
   }
-}
+
+  .btn {
+    margin: 10px 5px;
+  }
+
 
 /* Footer section */
 footer i {
   font-size: 24px;
 }
 
+footer h4 {
+  margin-top: -40px;
+  padding-bottom: 10px;
+}
+
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Navigation Bar */
-  .logowhite {
-    width: 120px;
+  .logoblack1 {
+    width: 110px;
   }
 
   a.nav-link {
@@ -1031,7 +1029,7 @@ footer i {
 
   /* Hero */
   #hero {
-    height: 570px;
+    height: 1300px;
     text-align: left;
   }
 
@@ -1039,40 +1037,35 @@ footer i {
     padding: 20px;
   }
 
-  #hero-left {
-    padding: 30px 50px 0 50px;
-  }
-
   h1 {
     font-size: 65px;
     margin: 70px 0 20px 0;
   }
 
-  .hero-desc, .sticky-top a:link, .sub-sub-title, p {
+  .hero-desc {
+    font-size: 24px;
+  }
+
+  .sticky-top a:link, .sub-sub-title, p {
     font-size: 18px;
   }
 
-  #hero-left .btn, .btn-prototype i {
+  .btn-prototype i {
     font-size: 16px;
-  }
-
-  .btnproto {
-    display: inline;
   }
 
   .btn-proto i {
     padding: 0 8px;
   }
 
-  #hero-right img {
-    float: right;
-    width: 90%;
+  #heromain img {
+    width: 70%;
     margin-top: 20px;
   }
 
   /* Button */
   .btn-primary {
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
     background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
     border-color: transparent;
@@ -1136,9 +1129,8 @@ footer i {
   }
 
   #showcaseimg {
-    width: 90%;
+    width: 80%;
     text-align: center;
-    padding-left: 230px;
   }
 
 
@@ -1153,13 +1145,12 @@ footer i {
     padding: 30px;
   }
 
-  .reiterative {
-    margin-bottom: -50px;
+  .researchtitle, .brandingtitle, .executiontitle, .sub-title {
+    font-size: 20px;
   }
 
-  .uxdesignprocess h3 {
-    font-size: 28px;
-    margin-left: 40px;
+  .reiterative {
+    margin-bottom: -50px;
   }
 
   .processcol {
@@ -1287,6 +1278,10 @@ footer i {
   }
 
   /* Footer section */
+  footer {
+    padding-top: 10px;
+  }
+
   i {
     font-size: 16px;
     padding-left: 10px;
@@ -1299,11 +1294,11 @@ footer i {
 
   footer h4 {
     font-size: 20px;
-    margin-top: -50px;
+    margin-top: -40px;
   }
 
   .btn-sm a {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   span.small {
