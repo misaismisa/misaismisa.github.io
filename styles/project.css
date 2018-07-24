@@ -11,11 +11,11 @@ body {
 
 /* Navigation Bar */
 .navbar-light {
-  background-color: #B85C43;
+  background-color: #f9f9f9;
   padding: 2px;
 }
 
-.logowhite {
+.logoblack1 {
   width: 100px;
 }
 
@@ -93,7 +93,7 @@ button:focus {
 }
 
 .navbar-light .navbar-nav a:hover {
-  color: #E3B505 !important;
+  color: #ff5c21 !important;
 }
 
 .nav-item {
@@ -114,7 +114,7 @@ nav-menu ul li a:before {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #E3B505;
+  background: #ff5c21;
   height: 3px;
   box-shadow: 0 1px 1 white;
 }
@@ -128,9 +128,9 @@ nav-menu ul li a:before {
 
 /* Hero */
 #hero {
-  color: #FFFFFF;
-  background: #333333;
-  height: 650px;
+  color: #333;
+  background: #f9f9f9;
+  height: 750px;
   padding-top: 30px 0 0 20px;
   text-align: center;
 }
@@ -142,9 +142,8 @@ h1 {
 }
 
 .hero-desc {
-  display:block;
-  word-wrap: break-word;
   font-size: 18px;
+  font-weight: 300;
 }
 
 .btnproto {
@@ -153,57 +152,71 @@ h1 {
 }
 
 .btnproto i {
-  font-size: 18px;
-  color: #FFFFFF;
+  font-size: 16px;
+  padding-left: 8px;
+  color: #333;
+}
+
+.btnproto i:hover {
+  color: #fff;
 }
 
 .btnproto i:visited {
   color: #fff;
 }
 
-#hero-right img {
+.heroshowcase {
   width: 100%;
+  padding: 50px 0;
 }
 
 
 
 /* Button */
 .btn-primary {
-  background-color: #E3B505;
-  border-color: #E3B505;
-  font-weight: 200;
-  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border-color: transparent;
+  border-radius: 80px;
+  padding: 10px 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
 .btn-primary:hover {
-  background-color: #333333;
-  border-color: #333333;
+  color: #fff;
+  border-color: transparent;
 }
 
 .btn-primary:visited {
-  background-color: #333333;
-  border-color: #333333;
+  color: #fff;
+  border-color: transparent;
 }
 
 .btn-primary:active {
-  background-color: #E3B505;
-  border-color: #E3B505;
+  color: #fff;
+  border-color: transparent;
 }
 
 /* Sticky nav */
 .sticky-top {
-  background-color: #828B8C;
+  background-color: rgba(238,238,238,0.7);
   top: -1px;
   padding: 19px;
   font-weight: bold;
 }
 
 .sticky-top a:link {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .sticky-top li a:hover {
-  color: #E3B505;
+  color: #c10f50;
+}
+
+.navbar-nav {
+  color: #333;
 }
 
 .anchor::before {
@@ -225,11 +238,11 @@ h1 {
 }
 
 .subnav>a:link {
-  color: #FFF;
+  color: #333;
 }
 
 .subnav>a:visited {
-  color: #FFFFFF;
+  color: #333;
 }
 
 /* Sections */
@@ -255,7 +268,7 @@ p {
 /* Overview */
 #overview-shaded {
   background: url(/images/cloudcore/colorbanner@2x.png);
-  margin-top: -30px;
+  margin-top: -25px;
   color: #FFFFFF;
 }
 
@@ -264,7 +277,7 @@ p {
 }
 
 #overview-shaded, #shaded {
-  padding: 20px;
+  padding: 30px;
 }
 
 #shaded {
@@ -273,7 +286,6 @@ p {
 
 #showcaseimg {
   width: 100%;
-  padding-left: 40px;
 }
 
 /* Process */
@@ -286,7 +298,8 @@ p {
 }
 
 .processtitle {
-  color: #2C88AD;
+  color: #0b7bba;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -304,10 +317,15 @@ p {
   font-weight: 450;
 }
 
+.dataset h3 {
+  font-size: 35px;
+  color: #0b7bba;
+}
+
 .uxdesignprocess h4 {
   font-size: 18px;
   font-weight: 900;
-  color: #126796;
+  color: #0b7bba;
 }
 
 .uxdesignprocess img {
@@ -326,6 +344,7 @@ p {
   background-color: #EEEEEE;
   margin: 50px -15px 0 -15px;
   padding: 30px;
+  font-size: 18px;
 }
 
 .sub-title {
@@ -451,6 +470,10 @@ figcaption {
   margin-bottom: -8px;
 }
 
+.btn-primary i {
+  padding-left: 8px;
+}
+
 /* Return to Top */
 .returntop {
   color: white;
@@ -518,11 +541,11 @@ footer {
   position: relative;
   padding: 20px 0;
   width: 100%;
-  background-color: #D28F7C;
+  background-color: #eee;
 }
 
-i {
-  font-size: 25px;
+footer i {
+  font-size: 24px;
   padding-left: 8px;
 }
 
@@ -541,24 +564,26 @@ footer a:link {
 
 footer h4 {
   font-size: 16px;
+  color: #333;
 }
 
 .btn-sm {
-  background-color: #E3B505;
-  border-color: #E3B505;
-  font-size: 10px;
-  font-weight: 200;
+  font-size: 14px;
+  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  border-color: transparent;
+  border-radius: 80px;
+  padding: 10px 18px;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 
 .btn-sm a {
   font-size: 14px;
-  color: #FFFFFF;
+  color: #333;
 }
 
 .btn-sm:hover {
-  background-color: #333333;
-  border-color: #333333;
+  border-color: transparent;
   color: #FFFFFF;
 }
 
@@ -692,7 +717,7 @@ span.small {
 
   /* Footer */
   footer i {
-    font-size: 25px;
+    font-size: 24px;
     padding-left: 8px;
   }
 
@@ -985,7 +1010,7 @@ span.small {
 }
 
 /* Footer section */
-i {
+footer i {
   font-size: 24px;
 }
 
@@ -1035,6 +1060,10 @@ i {
     display: inline;
   }
 
+  .btn-proto i {
+    padding: 0 8px;
+  }
+
   #hero-right img {
     float: right;
     width: 90%;
@@ -1043,25 +1072,29 @@ i {
 
   /* Button */
   .btn-primary {
-    background-color: #E3B505;
-    border-color: #E3B505;
-    font-weight: 200;
-    margin-right: 30px;
+    font-size: 14px;
+    color: #333;
+    background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    border-color: transparent;
+    border-radius: 80px;
+    padding: 10px 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
   }
 
   .btn-primary:hover {
-    background-color: #333333;
-    border-color: #E3B505;
+    color: #fff;
+    border-color: transparent;
   }
 
   .btn-primary:visited {
-    background-color: #333333;
-    border-color: #333333;
+    color: #fff;
+    border-color: transparent;
   }
 
   .btn-primary:active {
-    background-color: #E3B505;
-    border-color: #E3B505;
+    color: #fff;
+    border-color: transparent;
   }
 
   /* Sticky Nav */
@@ -1255,7 +1288,7 @@ i {
 
   /* Footer section */
   i {
-    font-size: 26px;
+    font-size: 16px;
     padding-left: 10px;
     color: #333;
   }

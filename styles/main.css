@@ -97,7 +97,7 @@ button:focus {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #fc6076;
+  background: #ff5c21;
   height: 3px;
   box-shadow: 0 1px 1 white;
 }
