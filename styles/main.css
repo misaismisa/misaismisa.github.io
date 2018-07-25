@@ -6,15 +6,18 @@
 
 body {
   font-family: "Poppins", Helvetica, sans-serif;
-  background: #f9f9f9;  /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to top, #D28F7C, #fff0e8);  /* Chrome 10-25, Safari 5.1-6 */ */
-  /* background: linear-gradient(to top, #e2b19e, #e5c9be); */
-  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+  /* background: #fcc9e9;  /* fallback for old browsers */
+  /* background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); */
+  background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+  /* background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%); */
+  /* background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%); */
+  /* background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%); */
 }
 
 /* Navigation Bar */
 .navbar-nav {
-  font-size: 20px;
+  /* font-size: 20px; */
   overflow: hidden;
   position: relative;
 }
@@ -108,7 +111,7 @@ button:focus {
   transition: all .4s ease-in-out;
 }
 
-.logowine {
+.logoblack1 {
   width: 90px;
 }
 
@@ -116,36 +119,49 @@ button:focus {
 /* Hero Titles and Image */
 #hero {
   width: 100%;
-  padding-left: 30px;
-  margin-top: 50px;
+  padding: 0 25px;
+  margin-top: 20px;
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 55px;
+  font-family: "Roboto", serif;
+  font-size: 50px;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 10px;
 }
 
 .headline, .location {
-  display: inline-block;
+  display: block;
   justify-content: left;
   align-items: left;
 }
 
 .location {
-  font-weight: lighter;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 20px;
   display: inline-block;
-  margin-top: 140px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 
-.comma {
-  padding-right: 20px;
+.t-stroke {
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #212121;
+  -webkit-text-stroke-color: #212121;
 }
 
-.animation-1 {
+.t-shadow {
+  text-shadow: 6px 6px #fff;
+}
+.name {
+  padding-left: 90px;
+  text-align: left;
+}
+
+
+/* .animation-1 {
   display: block;
   text-align: left;
 }
@@ -158,6 +174,9 @@ h1 {
   -webkit-animation: rotateWord 15s linear infinite 0s;
 	-ms-animation: rotateWord 15s linear infinite 0s;
   animation: rotateWord 15s linear infinite 0s;
+  background: #162AF4;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -203,7 +222,7 @@ h1 {
         transform: translateY(30px);}
   80% { opacity: 0; }
   100% { opacity: 0; }
-}
+} */
 
 
 /* Section Case Studies */
@@ -223,39 +242,51 @@ h1 {
   width: 65px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 30px;
   transition: width 0.5s;
 }
 
 #scroll a:hover {
-  color: #fc6076;
+  color: #fff;
 }
 
 #scroll:hover {
   width: 95px;
 }
 
-#preview .casetitle {
-  font-family: "Playfair Display";
+#preview .casetitle, footer h3 {
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 800;
+  letter-spacing: 10px;
   text-align: left;
-  margin-top: 350px;
-  padding-left: 40px;
   width: 300px;
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  /* background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+}
+
+#preview .casetitle {
+  margin-top: 250px;
+  margin-bottom: 100px;
+  padding-left: 40px;
 }
 
 .card-deck {
-  background-color: #eee;
+  background-color: rgba(255,255,255,0.5);
+  /* background-color: rgb(28, 28, 28); */
+  color: #333;
   padding: 50px 0;
 }
 
 .card-img-top {
-  margin: 50px 0;
+  margin: 30px 0;
   width: 100%;
+}
+
+.projectinfo {
+  padding-left: 20px;
+  margin-bottom: 30px;
 }
 
 #preview .card-title {
@@ -277,7 +308,7 @@ a:link {
 }
 /* visited link */
 a:visited {
-    color: #333;
+    color: #fff;
 }
 /* mouse over link */
 a:hover {
@@ -290,16 +321,16 @@ a:active {
 
 .btn-primary {
   font-size: 14px;
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+  /* background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%); */
+  background-color: #dd449b;
   border-color: transparent;
   border-radius: 80px;
   padding: 10px 18px;
   font-weight: 300;
-  margin-bottom: 10px;
 }
 
 .btn-primary:hover {
-  background-color: #333333;
+  background-color: #eee;
   border-color: transparent;
   color: #FFFFFF;
 }
@@ -312,29 +343,35 @@ footer {
   width: 100%;
 }
 
-i {
-  font-size: 25px;
-  padding-left: 8px;
+.footername {
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.contact, .social {
+  padding: 0 50px 20px 0;
+  text-align: right;
+}
+
+.contact i {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.social a {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 0 40px 10px;
   color: #333;
 }
 
-i:hover {
+a:hover {
   color: #ffffff;
 }
 
-.logoblack {
-  width: 100px;
-  margin-top: -23px;
-}
-
-footer h4 {
-  font-size: 16px;
-  font-weight: 300;
-  color: #000;
-}
 
 span.small {
-  font-size: 8px;
+  font-size: 9px;
   padding: 20px;
 }
 
@@ -691,8 +728,12 @@ span.small {
     padding-left: 100px;
   }
 
+  .headline {
+    padding-right: 100px;
+  }
+
   h1 {
-    font-size: 60px;
+    font-size: 90px;
   }
 
   .animation-1 span {
@@ -700,9 +741,11 @@ span.small {
   }
 
   .location {
-    font-size: 24px;
-    margin-top: 60px;
-    margin-bottom: 110px;
+    font-size: 28px;
+    font-weight: 300;
+    margin-right: 100px;
+    text-align: right;
+
   }
 
   /* Section Case Studies */
@@ -715,7 +758,7 @@ span.small {
     margin-bottom: 100px;
     padding-left: 500px;
     width: 850px;
-    font-size: 50px;
+    font-size: 70px;
   }
 
   #preview .card-title {
