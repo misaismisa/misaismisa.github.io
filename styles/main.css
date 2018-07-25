@@ -11,8 +11,6 @@ body {
   background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); */
   background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
   /* background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%); */
-  /* background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%); */
-  /* background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%); */
 }
 
 /* Navigation Bar */
@@ -273,7 +271,6 @@ a:active {
 
 .btn-primary {
   font-size: 14px;
-  /* background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%); */
   background-color: #dd449b;
   color: #fff;
   border-color: transparent;
