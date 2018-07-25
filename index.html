@@ -25,7 +25,7 @@
 
 </head>
 
-  <body>
+  <body id="top">
     <header>
       <!-- <canvas id="lamp-anim" class="lamp-anim"></canvas> -->
       <!-- NAVIGATION -->
@@ -52,17 +52,17 @@
       <main class="container-fluid">
         <div class="row">
           <div id="hero" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div>
+            <div data-aos="fade-in">
               <h1 class="headline t-stroke t-shadow">
                     <span class="t-stroke t-shadow">HELLO,</span>
                     <span class="t-stroke t-shadow">こんにちは,</span>
                     <span class="t-stroke t-shadow">BONJOUR,</span>
               </h1>
             </div>
-            <div>
+            <div data-aos="fade-in">
               <h1 class="name t-stroke t-shadow">I'M MISA.</h1>
             </div>
-            <h3 class="location">Digital Product Designer based in Los Angeles.</h3>
+            <h3 class="location">Digital Product Designer and Coding Enthusiast<br> Los Angeles, CA</h3>
           </div>
         </div>
       </main>
@@ -75,19 +75,18 @@
       </div>
       <div class="row preview">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" align="left">
-          <!-- <h2 id="workanchor" class="anchor" style="visibility: hidden">anchor</h2> -->
           <h3 id="workanchor" class="casetitle t-stroke t-shadow">FEATURED WORK</h3>
         </div>
       </div>
       <!-- <div class="line"></div> -->
-      <div class="row card-deck">
-        <div class="showcase col-lg-6 col-md-6 col-sm-6 col-xs-6" align="right" data-aos="fade-up">
+      <div class="row card-deck" data-aos="fade-up">
+        <div class="showcase col-lg-6 col-md-6 col-sm-6 col-xs-6" align="right">
           <img class="card-img-top"
                srcset="images/cloudcore/landing_showcase.png 1x"
                src="images/cloudcore/landing_showcase.png"
                alt="Card image cap">
         </div>
-        <div class="projectinfo col-lg-6 col-md-6 col-sm-6 col-xs-6" align="left" data-aos="fade-up">
+        <div class="projectinfo col-lg-6 col-md-6 col-sm-6 col-xs-6" align="left">
           <h3 class="card-title">Cloudcore</h3>
           <p class="card-text">IOS APP | WEBSITE DESIGN | UX&UI DESIGN</p>
           <p class="card-description">A colorful, responsive cloud storage web and mobile design for professionals and students.</p>
@@ -100,21 +99,26 @@
     <!-- FOOTER -->
     <footer>
       <div class="container-fluid bottom">
+        <div class="row returntop" align="center">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="bounce">
+              <a href="#top"><br><p>RETURN TO TOP</p></a>
+            </div>
+          </div>
+        </div>
         <div class="row footer-row justify-content-between">
-          <div class="col-lg-12 col-md-12 col-12">
+          <div class="col-lg-6 col-md-6 col-12" align="left">
             <h3 class="footername t-stroke t-shadow">LET'S CONNECT</h3>
           </div>
-        </div>
-        <div class="row footer-row justify-content-between">
-          <div class="contact col-lg-12 col-md-12 col-12">
-            <button type="button" class="btn btn-primary"><a href="project.html">Contact Me</a></button>
-          </div>
-        </div>
-        <div class="row footer-row justify-content-between">
-          <div class="social col-lg-12 col-md-12 col-12">
-            <a href="https://www.linkedin.com/in/misanguyen1390" aria-label="Go to LinkedIn page">LINKEDIN</a>
-            <a href="https://twitter.com/Misa_N13" aria-label="Go to Twitter page">TWITTER</a>
-            <a href="https://github.com/misaismisa" aria-label="Go to Github page">GITHUB</a>
+          <div class="connect col-lg-6 col-md-6 col-12" align="right">
+            <div class="footerbtn">
+              <button type="button" class="btn btn-primary"><a href="contact.html">Contact Me</a></button>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/misanguyen1390" aria-label="Go to LinkedIn page">LINKEDIN</a>
+              <a href="https://twitter.com/Misa_N13" aria-label="Go to Twitter page">TWITTER</a>
+              <a href="https://github.com/misaismisa" aria-label="Go to Github page">GITHUB</a>
+            </div>
           </div>
         </div>
         <div class="row justify-content-md-center">

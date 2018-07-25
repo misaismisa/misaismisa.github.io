@@ -17,12 +17,12 @@ body {
 
 /* Navigation Bar */
 .navbar-nav {
-  /* font-size: 20px; */
   overflow: hidden;
   position: relative;
 }
 
 .navbar-nav a:link {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
 }
 
@@ -45,7 +45,7 @@ button:focus {
    -moz-transform: rotate(0deg);
    -o-transform: rotate(0deg);
    transform: rotate(0deg);
-   /* opacity: 1; */
+   opacity: 1;
 }
 
 .navbar-toggler span:nth-child(1),
@@ -85,30 +85,48 @@ button:focus {
   position: relative;
   float: right;
   text-decoration: none;
-  transition: .5s;
+  cursor: pointer;
 }
 
-.navbar-light .navbar-nav a:hover {
-  color: #ff5c21 !important;
+.navbar-light .nav-menu .nav-link {
+  color: #000;
+  margin-right: 20px;
+}
+
+.nav-menu ul li a:before, .nav-menu ul li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+.nav-menu ul li a:hover {
+  color: #000;
+}
+
+.nav-menu ul li a:before {
+  left: -3.5px;
 }
 
 .nav-menu ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #ff5c21;
-  height: 3px;
-  box-shadow: 0 1px 1 white;
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-menu ul li a:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .nav-menu ul li a:hover:after {
-  display: inline-block;
+  background: transparent;
   width: 100%;
-  transition: all .4s ease-in-out;
+  transition: 0s;
 }
 
 .logoblack1 {
@@ -119,7 +137,7 @@ button:focus {
 /* Hero Titles and Image */
 #hero {
   width: 100%;
-  padding: 0 25px;
+  padding: 0 35px;
   margin-top: 20px;
 }
 
@@ -130,8 +148,13 @@ h1 {
   letter-spacing: 10px;
 }
 
+.name {
+  padding-left: 160px;
+  text-align: left;
+}
+
 .headline, .location {
-  display: block;
+  display: inline;
   justify-content: left;
   align-items: left;
 }
@@ -155,74 +178,6 @@ h1 {
 .t-shadow {
   text-shadow: 6px 6px #fff;
 }
-.name {
-  padding-left: 90px;
-  text-align: left;
-}
-
-
-/* .animation-1 {
-  display: block;
-  text-align: left;
-}
-
-.animation-1 span {
-  position: absolute;
-  width: 350px;
-  opacity: 0;
-  overflow: hidden;
-  -webkit-animation: rotateWord 15s linear infinite 0s;
-	-ms-animation: rotateWord 15s linear infinite 0s;
-  animation: rotateWord 15s linear infinite 0s;
-  background: #162AF4;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.animation-1 span:nth-child(2) {
-  -webkit-animation-delay: 3s;
-	-ms-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
-.animation-1 span:nth-child(3) {
-  -webkit-animation-delay: 6s;
-	-ms-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-.animation-1 span:nth-child(4) {
-  -webkit-animation-delay: 9s;
-	-ms-animation-delay: 9s;
-  animation-delay: 9s;
-}
-
-.animation-1 span:nth-child(5) {
-  -webkit-animation-delay: 12s;
-	-ms-animation-delay: 12s;
-  animation-delay: 12s;
-}
-
-@keyframes rotateWord {
-  0% { opacity: 0; }
-  2% { opacity: 0;
-       -webkit-transform: translateY(-30px);
-       transform: translateY(-30px); }
-  5% { opacity: 1;
-       -webkit-transform: translateY(0px);
-       transform: translateY(0px);}
-  17% { opacity: 1;
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);}
-  20% { opacity: 0;
-        -webkit-transform: translateY(30px);
-        transform: translateY(30px);}
-  80% { opacity: 0; }
-  100% { opacity: 0; }
-} */
 
 
 /* Section Case Studies */
@@ -291,7 +246,7 @@ h1 {
 
 #preview .card-title {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .card-description {
@@ -312,17 +267,18 @@ a:visited {
 }
 /* mouse over link */
 a:hover {
-    color: #FFFFFF;
+    color: #dd449b;
 }
 /* selected link */
 a:active {
-    color: #f7c400;
+    color: #fff;
 }
 
 .btn-primary {
   font-size: 14px;
   /* background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%); */
   background-color: #dd449b;
+  color: #fff;
   border-color: transparent;
   border-radius: 80px;
   padding: 10px 18px;
@@ -330,49 +286,89 @@ a:active {
 }
 
 .btn-primary:hover {
-  background-color: #eee;
-  border-color: transparent;
-  color: #FFFFFF;
+  background-color: transparent;
+  border-color: #dd449b;
+}
+
+.btn-primary a:hover {
+  color: #dd449b;
+}
+
+/* Return to Top */
+.bounce p {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  width: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -70px;
+  transition: width 0.5s;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 
 /* Footer section */
 footer {
   position: relative;
-  padding: 20px 0;
+  padding: 30px 20px;
   width: 100%;
 }
 
 .footername {
-  margin-bottom: 40px;
-  padding-left: 40px;
+  margin-top: 50px;
 }
 
-.contact, .social {
-  padding: 0 50px 20px 0;
+.connect {
+  margin-top: 60px;
+}
+
+.social {
   text-align: right;
-}
-
-.contact i {
-  font-size: 15px;
-  padding-left: 10px;
+  padding: 20px 0;
 }
 
 .social a {
   font-size: 16px;
   font-weight: 400;
-  padding: 0 0 40px 10px;
+  padding-left: 10px;
   color: #333;
 }
 
 a:hover {
   color: #ffffff;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 
 span.small {
   font-size: 9px;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 /* Media Queries */
@@ -381,23 +377,13 @@ span.small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-
-    /* Navigation Bar */
-    .navbar-nav {
-      font-size: 18px;
-    }
-
     /* Hero Titles and Image */
     #hero {
-      padding-left: 60px;
+      padding-left: 50px;
     }
 
-    h1 {
-      font-size: 65px;
-    }
-
-    .location {
-      font-size: 30px;
+    .name {
+      padding-left: 150px;
     }
 
 
@@ -434,79 +420,63 @@ span.small {
       width: 100%;
     }
 
-    i {
-      font-size: 25px;
-      padding-left: 8px;
-    }
-
-    .logoblack {
-      width: 100px;
-      margin-top: -23px;
-    }
-
-    footer h4 {
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    .btn-primary {
-      align: center;
+    .social {
+      padding-bottom: 50px;
     }
 
     span.small {
-      font-size: 11px;
+      font-size: 12px;
       padding: 20px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-
   /* Hero Titles and Image */
   #hero {
     padding-left: 50px;
   }
 
-  .animation-1 span {
-    width: 700px;
+  h1 {
+    font-size: 70px;
+  }
+
+  .name {
+    padding-right: 20px;
+    text-align: right;
   }
 
   .location {
-    margin-top: 100px;
-    margin-bottom: 150px;
+    padding-left: 70px;
+    font-size: 24px;
   }
 
-  .headline, .location {
-    display: flex;
-  }
 
   /* Case STUDIES */
   #preview {
-    height: 1300px;
+    height: 1400px;
   }
 
   #preview .casetitle {
     margin-top: 250px;
-    margin-bottom: 20px;
-    padding-left: 100px;
-    width: 400px;
+    margin-bottom: 60px;
+    padding-left: 90px;
+    width: 300px;
   }
 
   .col-sm-6 {
-    flex: 0 0 80%;
-    margin: auto;
-    max-width: 80%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
-  #preview .card-title {
-    font-size: 35px;
-    font-weight: 300;
+  .card-img-top {
+    width: 80%;
+    margin-right: 90px;
   }
 
   .projectinfo {
     padding-left: 50px;
   }
-
 
   /* Footer section */
   footer {
@@ -515,300 +485,182 @@ span.small {
     width: 100%;
   }
 
-  i {
-    font-size: 25px;
-    padding-left: 8px;
-  }
-
-  .logoblack {
-    width: 100px;
-    margin-top: -23px;
-  }
-
-  footer h4 {
-    font-size: 16px;
-    margin-top: -40px;
-  }
-
-  .btn-primary {
-    align: center;
-  }
-
-  span.small {
-    font-size: 11px;
-    padding: 20px;
-  }
- }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-  /* Navigation Bar */
-  .navbar-nav {
-    font-size: 18px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .navbar-light .navbar-nav a {
-    display: block;
-    position: relative;
-    float: left;
-    padding: 1em 0 1em;
-    text-decoration: none;
-    font-weight: 400;
-    color: #393939;
-    transition: .7s;
-  }
-
-  .navbar-light .navbar-nav a:hover {
-    color: #E3B505 !important;
-  }
-
-  .nav-item {
-    padding-right: 10px;
-  }
-
-  .nav-menu ul li a {
-    position: relative;
-  }
-
-  .nav-menu ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #E3B505;
-    height: 4px;
-    box-shadow: 0 1px 1 white;
-  }
-
-  .nav-menu ul li a:hover:after {
-    display: inline-block;
-    width: 100%;
-    transition: all 1s ease-in-out;
-  }
-
-  .logowine {
-    width: 130px;
-  }
-
-  /* Hero Titles and Image */
-  #hero {
-    padding-top: 100px;
-    padding-left: 90px;
-  }
-
-  .headline, .location {
-    display: flex;
-  }
-
-  .animation-1 span {
-    width: 650px;
-  }
-
-  .location {
-    margin-top: 60px;
-    margin-bottom: 150px;
-  }
-
-  /* Section Case Studies */
-  #preview {
-    height: 1000px;
-  }
-
-  #preview .casetitle {
-    margin-top: 300px;
-    margin-bottom: 50px;
-    padding-left: 200px;
-    width: 450px;
-  }
-
-  #preview .card-title {
-    font-size: 40px;
-  }
-
-  .card-img-top {
-    padding-left: 20px;
-  }
-
-  .projectinfo {
-    padding-top: 50px;
-    padding-left: 50px;
-  }
-
-  /* Footer section */
-  i {
-    font-size: 30px;
-    padding-left: 10px;
-  }
-
-  .logoblack {
-    width: 120px;
-    margin-top: -23px;
-  }
-
-  footer h4 {
-    font-size: 18px;
-    margin-top: -50px;
+  .social {
+    padding-bottom: 50px;
   }
 
   span.small {
     font-size: 12px;
     padding: 20px;
   }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-  /* Navigation Bar */
-  .navbar-nav {
-    overflow: hidden;
-    position: relative;
   }
 
-  .navbar-nav a:link {
-    font-size: 16px;
-  }
-
-  .navbar-light .navbar-nav a {
-    display: block;
-    position: relative;
-    float: left;
-    padding: 1em 0 1em;
-    text-decoration: none;
-    font-weight: 400;
-    color: #212121;
-    transition: .7s;
-  }
-
-  .navbar-light .navbar-nav a:hover {
-    color: #ff5c21 !important;
-  }
-
-  .nav-item {
-    padding-right: 20px;
-  }
-
-  .nav-menu ul li a {
-    position: relative;
-  }
-
-  .nav-menu ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #ff5c21;
-    height: 4px;
-    box-shadow: 0 1px 1 white;
-  }
-
-  .nav-menu ul li a:hover:after {
-    display: inline-block;
-    width: 100%;
-    transition: all 1s ease-in-out;
-  }
-
-  .logowine {
-    width: 110px;
-  }
-
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
   /* Hero Titles and Image */
   #hero {
-    padding-top: 50px;
-    padding-left: 100px;
+    padding-left: 70px;
   }
 
-  .headline {
-    padding-right: 100px;
+  h1 {
+    font-size: 80px;
+  }
+
+  .name {
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .location {
+    padding-left: 70px;
+    font-size: 24px;
+  }
+
+
+  /* Case STUDIES */
+  #preview {
+    height: 1100px;
+  }
+
+  #preview .casetitle {
+    font-size: 50px;
+    margin-top: 250px;
+    margin-bottom: 60px;
+    padding-left: 290px;
+    width: 300px;
+  }
+
+  .card-deck {
+    padding: 50px 0;
+  }
+
+  .card-img-top {
+    width: 100%;
+  }
+
+  .projectinfo {
+    padding: 80px 30px 0 30px;
+  }
+
+  /* Footer section */
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .footername {
+    font-size: 45px;
+  }
+
+  .social {
+    padding-bottom: 50px;
+  }
+
+  span.small {
+    font-size: 12px;
+    padding: 20px;
+  }
+  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Hero Titles and Image */
+  #hero {
+    padding: 0 100px;
   }
 
   h1 {
     font-size: 90px;
   }
 
-  .animation-1 span {
-    width: 850px;
+  .name {
+    margin-top: -50px;
+    padding-right: 50px;
+    text-align: right;
   }
 
   .location {
-    font-size: 28px;
-    font-weight: 300;
-    margin-right: 100px;
-    text-align: right;
-
+    font-size: 24px;
+    margin-top: -20px;
+    padding-left: 70px;
   }
 
-  /* Section Case Studies */
+  .logoblack1 {
+    font-size: 100px;
+  }
+
+
+  /* Case STUDIES */
   #preview {
-    height: 1230px;
+    height: 1400px;
   }
 
   #preview .casetitle {
-    margin-top: 300px;
-    margin-bottom: 100px;
-    padding-left: 500px;
-    width: 850px;
-    font-size: 70px;
+    font-size: 80px;
+    margin-top: 350px;
+    margin-bottom: 60px;
+    padding-left: 290px;
+    width: 300px;
   }
 
-  #preview .card-title {
-    font-size: 36px;
-  }
-
-  #preview .card-text {
-    font-size: 16px;
+  .card-deck {
+    padding: 50px 0;
   }
 
   .card-img-top {
-    padding-left: 40px;
+    width: 100%;
   }
 
   .projectinfo {
-    font-size: 20px;
-    padding-top: 150px;
-    padding-left: 100px;
-    padding-right: 70px;
+    margin-top: 130px;
+    padding: 0 90px;
   }
 
-  /* Footer section */
-  i {
-    font-size: 26px;
-    padding-left: 10px;
-    color: #333;
+  #preview .card-title {
+    font-size: 40px;
   }
 
-  .logoblack {
-    width: 100px;
-    margin-top: -20px;
-  }
-
-  .footerbtn {
-    padding: 10px;
-  }
-
-  footer h4 {
+  #preview .card-text {
     font-size: 18px;
-    margin-top: -50px;
-    margin-bottom: 20px;
+  }
+
+  #preview .card-description {
+    font-size: 20px;
   }
 
   .btn-primary {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  /* Footer section */
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .footername {
+    font-size: 60px;
+    padding: 0 0 50px 50px;
+  }
+
+  .footerbtn {
+    margin-bottom: 30px;
+  }
+
+  .connect {
+    padding-right: 70px;
+  }
+
+  .social a {
+    font-size: 18px;
+    padding-left: 25px;
   }
 
   span.small {
     font-size: 14px;
     padding: 20px;
   }
-
-}
+  }
