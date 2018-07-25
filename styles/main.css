@@ -140,7 +140,7 @@ button:focus {
 }
 
 h1 {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 800;
   letter-spacing: 10px;
