@@ -7,28 +7,21 @@
 body {
   font-family: "Poppins", Helvetica, sans-serif;
   background: #f9f9f9;  /* fallback for old browsers */
+  /* background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%); */
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
   min-height: 100vh;
   position: relative;
   margin: 0;
 }
 
 /* Navigation Bar */
-.navbar-light {
-  /* background-color: #B85C43; */
-  padding: 2px;
-}
-
-.logoblack1 {
-  width: 80px;
-}
-
 .navbar-nav {
-  line-height: 10px;
   overflow: hidden;
   position: relative;
 }
 
 .navbar-nav a:link {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
 }
 
@@ -90,48 +83,53 @@ button:focus {
   display: block;
   position: relative;
   float: right;
-  padding: 1em 0 1em;
   text-decoration: none;
-  font-weight: 400;
-  color: #ff5c21;
-  transition: .7s;
+  cursor: pointer;
 }
 
-.navbar-light .navbar-nav a:hover {
-  color: #ff5c21 !important;
+.navbar-light .nav-menu .nav-link {
+  color: #000;
+  margin-right: 20px;
 }
 
-.nav-item {
-  padding-right: 10px;
+.nav-menu ul li a:before, .nav-menu ul li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
 }
 
-nav-menu ul li a,
-nav-menu ul li a:after,
-nav-menu ul li a:before {
-  transition: all .5s;
+.nav-menu ul li a:hover {
+  color: #000;
 }
 
-.nav-menu>a {
-  position: relative;
+.nav-menu ul li a:before {
+  left: -3.5px;
 }
 
 .nav-menu ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #ff5c21;
-  height: 3px;
-  box-shadow: 0 1px 1 white;
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-menu ul li a:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .nav-menu ul li a:hover:after {
-  display: inline-block;
+  background: transparent;
   width: 100%;
-  transition: all .5s ease-in-out;
+  transition: 0s;
+}
+
+.logoblack1 {
+  width: 90px;
 }
 
 /* Main */
@@ -144,19 +142,29 @@ nav-menu ul li a:before {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 45px;
+  font-family: "Roboto", serif;
+  font-size: 60px;
   font-weight: 800;
+  letter-spacing: 10px;
   padding-bottom: 20px;
   margin: 0;
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+.t-stroke {
+  color: transparent;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+  -moz-text-stroke-color: #212121;
+  -webkit-text-stroke-color: #212121;
+}
+
+.t-shadow {
+  text-shadow: 6px 6px #fff;
 }
 
 p {
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 hr {
@@ -178,23 +186,6 @@ hr {
   font-weight: lighter;
 }
 
-.btn-success {
-  font-size: 14px;
-  font-weight: 300;
-  color: #333;
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
-  border-color: transparent;
-  border-radius: 80px;
-  padding: 10px 18px;
-  margin-bottom: 10px;
-}
-
-.btn-success:hover {
-  background-color: #333333;
-  border-color: transparent;
-  color: #FFFFFF;
-}
-
 .alert {
     display: none;
     text-align: left;
@@ -203,68 +194,86 @@ hr {
 
 /* visited link */
 a:visited {
-    color: #333;
+    color: #FFF;
 }
 /* mouse over link */
 a:hover {
-    color: #FFFFFF;
+    color: #dd449b;
+    text-decoration: none;
 }
 /* selected link */
 a:active {
-    color: #f7c400;
+    color: #dd449b;
 }
 
-
-
-/* Footer section */
-footer.navbar-fixed-bottom {
-  position: relative;
-  bottom: 0;
-  padding: 30px 0;
-  width: 100%;
-  background-color: #eee;
-}
-
-i {
-  font-size: 25px;
-  padding-left: 8px;
-}
-
-i:hover {
+.btn-primary {
+  font-size: 14px;
+  background-color: #dd449b;
   color: #fff;
-}
-
-footer a:link {
-  color: #333;
-}
-
-.logoblack {
-  width: 100px;
-  margin-top: -23px;
-}
-
-footer h4 {
-  font-size: 16px;
-  font-weight: 300;
-  color: #000;
-}
-
-.btn-sm {
-  background: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
   border-color: transparent;
   border-radius: 80px;
   padding: 10px 18px;
   font-weight: 300;
-  margin-bottom: 10px;
 }
 
-.btn-sm:hover {
-  color: #FFFFFF;
+.btn-primary:hover {
+  background-color: transparent;
+  border-color: #dd449b;
 }
+
+.btn-primary a:hover {
+  color: #dd449b;
+  text-decoration: none;
+}
+
+
+/* Footer section */
+footer {
+  position: relative;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+footer h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.footername {
+  margin-top: 50px;
+}
+
+.connect {
+  margin-top: 60px;
+}
+
+.social {
+  text-align: right;
+  padding: 20px 0;
+}
+
+.social a {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #333;
+}
+
+a:hover {
+  color: #ffffff;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 
 span.small {
-  font-size: 8px;
-  padding: 15px;
+  font-size: 9px;
+  padding: 20px 0;
 }
 
 
@@ -274,10 +283,6 @@ span.small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-  /* Navigation Bar */
-  .logoblack1 {
-    width: 100px;
-  }
 
   /* Main */
   #hero {
@@ -297,60 +302,27 @@ span.small {
 
 
   /* Footer section */
-  .logoblack {
-    width: 100px;
-    margin-top: -23px;
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
   }
 
-  footer h4 {
-    margin-top: -40px;
+  .social {
+    padding-bottom: 50px;
   }
 
   span.small {
     font-size: 12px;
+    padding: 20px;
   }
 
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Navigation Bar */
-  .logoblack1 {
-    width: 120px;
-  }
-
+  /* Hero */
   #hero {
-    margin: 50px 0;
-  }
-
-  #hero-left {
-    padding-right: 30px;
-  }
-
-  #hero-right {
-    padding-left: 30px;
-    margin-top: 50px;
-  }
-
-  footer h4 {
-    margin-top: -40px;
-  }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  /* Navigation Bar */
-
-  .navbar-nav {
-    font-size: 16px;
-    line-height: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-
-  /* Main */
-  #hero {
-    margin: 80px 0 60px 0;
+    margin: 40px 0;
   }
 
   #hero-left {
@@ -358,7 +330,45 @@ span.small {
   }
 
   h1 {
+    padding-bottom: 50px;
+  }
+
+  #hero-right {
+    padding-left: 30px;
+    margin-top: 50px;
+  }
+
+  /* Footer section */
+  footer {
+    position: relative;
     padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .social {
+    padding-bottom: 50px;
+  }
+
+  span.small {
+    font-size: 12px;
+    padding: 20px;
+  }
+  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Main */
+  #hero {
+    margin: 40px 0 60px 0;
+  }
+
+  #hero-left {
+    padding-right: 30px;
+  }
+
+  h1 {
+    padding-bottom: 50px;
+    font-size: 70px;
   }
 
   #hero-right {
@@ -368,45 +378,39 @@ span.small {
   }
 
   /* Footer section */
-  i {
-    font-size: 30px;
-    padding-left: 8px;
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
   }
 
-  .logoblack {
-    width: 110px;
+  .footername {
+    font-size: 45px;
+    padding-left: 100px;
   }
 
-  footer h4 {
-    font-size: 16px;
-    margin-top: -50px;
+  .social {
+    padding-bottom: 50px;
   }
 
-}
+  .footerbtn {
+    margin-bottom: 30px;
+  }
+
+  span.small {
+    font-size: 12px;
+    padding: 20px;
+  }
+  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* Navigation Bar */
   .logoblack1 {
-    width: 110px;
-    padding-left: 15px;
+    width: 100px;
   }
-
-  .navbar-nav {
-    padding: 15px;
-  }
-
-  .navbar-nav a:link {
-    font-size: 16px;
-  }
-
-  .nav-item {
-    padding-right: 20px;
-  }
-
   /* Main */
   #hero {
-    margin: 60px 50px 40px 50px;
+    margin: 40px 50px 40px 50px;
   }
 
   #hero-left {
@@ -414,8 +418,8 @@ span.small {
   }
 
   h1 {
-    font-size: 54px;
-    padding-bottom: 20px;
+    font-size: 74px;
+    padding-bottom: 50px;
   }
 
   p {
@@ -439,31 +443,32 @@ span.small {
   }
 
   /* Footer section */
-
-  i {
-    font-size: 26px;
-    padding-left: 10px;
-    color: #333;
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
   }
 
-  .logoblack {
-    width: 100px;
+  .footername {
+    font-size: 50px;
+    padding: 0 0 50px 200px;
   }
 
-  footer h4 {
-    font-size: 16px;
-    margin-top: -40px;
-    margin-bottom: 20px;
+  .footerbtn {
+    margin-bottom: 30px;
   }
 
-  .btn-success, .btn-sm a {
-    font-size: 14px;
-    text-decoration: none;
+  .connect {
+    padding-right: 70px;
+  }
+
+  .social a {
+    font-size: 18px;
+    padding-left: 25px;
   }
 
   span.small {
     font-size: 14px;
     padding: 20px;
   }
-
-}
+  }
