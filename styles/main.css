@@ -174,7 +174,13 @@ h1 {
 }
 
 .t-shadow {
-  text-shadow: 6px 6px #fff;
+  text-shadow: 4px 4px #fff;
+}
+
+.t-shadow2 {
+  /* text-shadow: 6px 6px #fff466; */
+  text-shadow: 4px 4px #ff59b7;
+  /* text-shadow: 6px 6px #a8c0ff; */
 }
 
 
@@ -509,6 +515,16 @@ span.small {
   .location {
     padding-left: 70px;
     font-size: 24px;
+  }
+
+  .t-shadow {
+    text-shadow: 6px 6px #fff;
+  }
+
+  .t-shadow2 {
+    /* text-shadow: 6px 6px #fff466; */
+    text-shadow: 6px 6px #ff59b7;
+    /* text-shadow: 6px 6px #a8c0ff; */
   }
 
 

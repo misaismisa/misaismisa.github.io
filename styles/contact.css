@@ -159,7 +159,7 @@ h1 {
 }
 
 .t-shadow {
-  text-shadow: 6px 6px #fff;
+  text-shadow: 4px 4px #fff;
 }
 
 p {
@@ -375,6 +375,10 @@ span.small {
       margin: 40px 0;
       padding-left: 30px;
       text-align: right;
+  }
+
+  .t-shadow {
+    text-shadow: 6px 6px #fff;
   }
 
   /* Footer section */

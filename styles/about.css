@@ -154,7 +154,7 @@ h1 {
 }
 
 .t-shadow {
-  text-shadow: 6px 6px #fff;
+  text-shadow: 4px 4px #fff;
 }
 
 h2 {
@@ -391,7 +391,11 @@ span.small {
   }
 
   .profileimg img {
-    width: 70%;
+    width: 60%;
+  }
+
+  #about1 img, #about2 img {
+    width: 80%;
   }
 
   /* Footer section */
@@ -507,6 +511,10 @@ span.small {
   h1 {
     font-size: 70px;
     margin-top: 0;
+  }
+
+  .t-shadow {
+    text-shadow: 6px 6px #fff;
   }
 
   h2 {
