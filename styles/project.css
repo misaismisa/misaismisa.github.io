@@ -465,12 +465,12 @@ figcaption {
 
 /* unvisited link */
 a:link {
-    color: #fff;
+    color: #dd449b;
     text-decoration: none;
 }
 /* visited link */
 a:visited {
-    color: #fff;
+    color: #eee;
 }
 /* mouse over link */
 a:hover {
