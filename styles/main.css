@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Poppins", Helvetica, sans-serif;
+  font-family: "Poppins", Helvetica, "Hiragino Kaku Gothic Pro", sans-serif;
   /* background: #fcc9e9;  /* fallback for old browsers */
   /* background-color: #FAACA8;
   background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); */
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-nav a:link {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -175,13 +175,38 @@ h1 {
 
 .t-shadow {
   text-shadow: 4px 4px #fff;
+  -webkit-animation: fadeinout 8s ease-in-out infinite;
+  animation: fadeinout 8s ease-in-out infinite;
 }
 
 .t-shadow2 {
   /* text-shadow: 6px 6px #fff466; */
   text-shadow: 4px 4px #ff59b7;
-  /* text-shadow: 6px 6px #a8c0ff; */
 }
+
+/* @-webkit-keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
 
 
 /* Section Case Studies */
