@@ -72,6 +72,7 @@ button:focus {
   outline: none;
 }
 
+
 .navbar-toggler span {
    display: block;
    background-color: #444;
@@ -79,11 +80,13 @@ button:focus {
    width: 25px;
    margin-top: 4px;
    margin-bottom: 4px;
+   transition: opacity .25s ease;
+   z-index: 100;
+   cursor: pointer;
    -webkit-transform: rotate(0deg);
    -moz-transform: rotate(0deg);
    -o-transform: rotate(0deg);
    transform: rotate(0deg);
-   opacity: 1;
 }
 
 .navbar-toggler span:nth-child(1),
@@ -166,6 +169,8 @@ button:focus {
   width: 100%;
   transition: 0s;
 }
+
+
 
 .name {
   /* -webkit-background-clip: text;
