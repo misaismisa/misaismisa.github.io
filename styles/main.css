@@ -230,24 +230,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.t-stroke {
-  color: transparent;
-  -moz-text-stroke-width: 2px;
-  -webkit-text-stroke-width: 2px;
-  -moz-text-stroke-color: #212121;
-  -webkit-text-stroke-color: #212121;
-}
-
-.t-shadow {
-  text-shadow: 4px 4px #fff;
-  -webkit-animation: fadeinout 8s ease-in-out infinite;
-  animation: fadeinout 8s ease-in-out infinite;
-}
-
-.t-shadow2 {
-  /* text-shadow: 6px 6px #fff466; */
-  text-shadow: 4px 4px #ff59b7;
-}
 
 /* @-webkit-keyframes fadeinout {
   0% {
