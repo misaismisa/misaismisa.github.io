@@ -1,0 +1,1190 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  background: #F5B597;
+}
+
+/* NAVIGATION BAR */
+.logoblack1 {
+  width: 90px;
+}
+
+.navbar-nav {
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-nav a:link {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar-light .navbar-toggler {
+  border: none!important;
+}
+
+button:focus {
+  outline: none;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: #444;
+   height: 3px;
+   width: 25px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    margin-top: 0px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    margin-top: -23px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+
+.navbar-light .navbar-nav a {
+  display: block;
+  position: relative;
+  float: right;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-light .nav-menu .nav-link {
+  color: #000;
+  margin-right: 20px;
+}
+
+.nav-menu ul li a:before, .nav-menu ul li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 90%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+.nav-menu ul li a:hover {
+  color: #000;
+}
+
+.nav-menu ul li a:before {
+  left: -3.5px;
+}
+
+.nav-menu ul li a:after {
+  right: 2.5px;
+  background: #d80854;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-menu ul li a:hover:before {
+  background: #d80854;
+  width: 100%;
+  transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-menu ul li a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+/* HERO */
+#hero {
+  color: #333;
+  height: 700px;
+  text-align: center;
+}
+
+#heromain {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Bourbon Grotesque", sans-serif;
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: #333;
+}
+
+.hero-desc {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.heroshowcase {
+  width: 100%;
+  padding: 50px 0;
+}
+
+
+/* BUTTON */
+.btn-primary {
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  border-color: transparent;
+  border-radius: 80px;
+  padding: 10px 18px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.btn-primary i {
+  padding-left: 8px;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  border-color: #333;
+  color: #333;
+}
+.btn-primary a:hover {
+  color: #333;
+}
+
+
+
+/* STICKY NAV */
+.sticky-top {
+  background-color: rgba(238,238,238,0.7);
+  /* top: -1px; */
+  padding: 19px;
+}
+
+.sticky-top a:link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.sticky-top li a:hover {
+  color: #41CDAF;
+}
+
+.subnav>a:visited {
+  color: #333;
+}
+
+#navbar-sticky {
+  display: inline-block;
+  text-align: center;
+}
+
+.anchor::before {
+  display: inline-block;
+  content: " ";
+  margin-top: -10px;
+  visibility: hidden;
+}
+
+.subnav {
+  padding: 8px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+
+/* SECTIONS */
+section {
+  align-items: left;
+  text-align: left;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+}
+
+/* Overview */
+#overview-shaded {
+  background: #DEDEDE;
+  margin-top: -25px;
+}
+
+.titleshaded {
+  color: #F5B092;
+}
+
+#overview-shaded, #shaded {
+  padding: 30px;
+}
+
+#shaded {
+  background-color: #EEEEEE;
+}
+
+#showcaseimg {
+  width: 100%;
+}
+
+/* RESEARCH */
+#research, #branding, #execution, #learnings {
+  text-align: left;
+}
+
+.dataset {
+  padding: 6px;
+}
+
+.researchtitle, .brandingtitle, .executiontitle, .lessonstitle, .moretitle {
+  text-align: center;
+}
+
+.researchtitle, .brandingtitle, .executiontitle {
+  background-color: #333;
+  color: #fff;
+  margin-top: 50px;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.numbered {
+  font-size: 40px;
+  color: #F5B092;
+}
+
+.sub-title {
+  text-align: left;
+  color: #F5B092;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* USER RESEARCH */
+ul li {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.card-body {
+  background-color: #A6DFD0;
+}
+
+.card-title {
+  font-size: 35px;
+}
+
+.userflowimg, .brandsketch, .logoimg, .colorimg  {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.wireframeimg, .mobileimg, .mockupimg {
+  width: 100%;
+}
+
+.competitor, .mobileimg2, .mockupimg2 {
+  width: 70%;
+}
+
+.competitor {
+  transform: translateX(20%);
+}
+
+/* PERSONAS */
+.personaimg {
+  width: 50%;
+}
+.persona_adriana, .persona_celine, .persona_elise {
+  padding: 30px;
+  text-align: left;
+}
+
+.persona_avatar, .persona_head {
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.persona_head p {
+  margin-bottom: -16px;
+}
+
+.persona_body {
+  margin-top: 20px;
+}
+
+.persona_quote p {
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.persona_celine::before, .persona_elise::before {
+  content: '';
+  width: 1px;
+  position: absolute;
+  background: #979797;
+  top: 71px;
+  bottom: 106px;
+  left: 0;
+}
+
+
+/* COLOR PALETTE */
+
+.card-top, .card-top2, .card-top3, .card-top4, .card-top5 {
+  color: transparent;
+  padding: 50px;
+}
+
+.card-top {
+  background-color: #8BCAB9;
+}
+.card-top2 {
+  background-color: #F5B597;
+}
+.card-top3 {
+  background-color: #CEE4DE;
+}
+.card-top4 {
+  background-color: #757780;
+}
+.card-top5 {
+  background-color: #FACE47;
+}
+
+.colorcard .card-body {
+  background-color: white;
+}
+
+.colorcard .card-body h5 {
+  font-size: 18px;
+  margin-bottom: -3px;
+}
+
+.colorcard .card-body p {
+  font-size: 16px;
+  line-height: normal;
+}
+
+
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/* Learnings */
+#learnings {
+  background: url(/images/cloudcore/colorbanner@2x.png);
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+.lessonstitle {
+  margin-top: 30px;
+  margin-bottom: -8px;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #dd449b;
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: #eee;
+}
+/* mouse over link */
+a:hover {
+    color: #dd449b;
+}
+/* selected link */
+a:active {
+    color: #dd449b;
+}
+
+
+/* Return to Top */
+.bounce p {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  width: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: width 0.5s;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  padding: 50px 0;
+  margin-bottom: 50px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+/* Footer section */
+footer {
+  position: relative;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.footername {
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.connect {
+  margin-top: 60px;
+}
+
+.social {
+  text-align: right;
+  padding: 20px 0;
+}
+
+.social a {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #333;
+}
+
+a:hover {
+  color: #dd449b;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+
+span.small {
+  font-size: 8px;
+  padding: 20px 0;
+}
+
+/* Media Queries */
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Hero */
+  #hero {
+    height: 880px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .hero-desc, i  {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    margin: 10px;
+  }
+
+  #heromain img {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  /* Sticky nav */
+  .sticky-top {
+    padding: 15px;
+  }
+
+  /* Process */
+  #overview {
+    text-align: left;
+  }
+
+  #shaded {
+    padding-bottom: 40px;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    padding: 20px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .uxdesignprocess h3 {
+    font-size: 20px;
+    text-align: left;
+    /* margin-left: 50px; */
+  }
+
+  .uxdesignprocess {
+    display: inline;
+    text-align: left;
+  }
+
+  .numberedprocess {
+    margin-left: 20px;
+  }
+
+  .processcol {
+    margin: 20px;
+    max-width: 100%;
+  }
+
+  .uxdesignprocess img {
+    width: 100px;
+  }
+
+  .uxdesignprocess h4 {
+    font-size: 18px;
+  }
+
+  .uxdesignprocess p {
+    font-size: 14px;
+  }
+
+
+  /* Research */
+  .logoimg, .colorimg, {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .competitors, .competitor {
+    padding: 0;
+  }
+
+  .userflowimg, .brandsketch, .wireframeimg, .mockupimg {
+    width: 45%;
+  }
+
+  .mobileimg {
+    width: 80%;
+  }
+
+  .mobileimg2, .mockupimg2 {
+    width: 30%;
+  }
+
+  .personaimg {
+    width: 60%;
+  }
+
+  .lessonstitle {
+    text-align: left;
+  }
+
+  /* Footer */
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .social {
+    padding-bottom: 50px;
+  }
+
+  span.small {
+    font-size: 12px;
+    padding: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Hero */
+  #hero {
+    height: 940px;
+    text-align: left;
+  }
+
+.researchtitle, .brandingtitle, .executiontitle {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .hero-desc, i  {
+    font-size: 16px;
+  }
+
+  #heromain img {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  /* Process */
+  #overview {
+    text-align: left;
+  }
+
+  #overview-shaded, #shaded {
+    padding-bottom: 40px;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    margin: 0 -15px 0 -15px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .uxdesignprocess {
+    text-align: left;
+  }
+
+  .numberedprocess {
+    margin-left: -40px;
+    margin-bottom: 50px;
+  }
+
+  .uxdesignprocess img {
+    width: 110px;
+  }
+
+  .uxdesignprocess h4 {
+    font-size: 18px;
+  }
+
+  .uxdesignprocess p {
+    font-size: 16px;
+  }
+
+  .surveydata, .logoimg {
+    width: 70%;
+  }
+
+  .datastats {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
+  li h3 {
+    float: left;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    width: 30%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  li p {
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  /* Research */
+  .colorimg, {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .competitors, .competitor {
+    padding: 0;
+  }
+
+  .userflowimg, .brandsketch, .mockupimg {
+    width: 45%;
+  }
+
+  .wireframeimg, .mobileimg2 {
+    width: 23%;
+  }
+
+  .mockupimg2 {
+    width: 30%;
+  }
+
+  .personaimg {
+    width: 50%;
+  }
+
+  .mobileimg {
+    width: 70%;
+  }
+
+  /* Lessons */
+  #lessons, .lessonstitle {
+    text-align: left;
+  }
+
+  #lessons {
+    padding-bottom: 50px;
+  }
+
+  .btn {
+    margin: 10px 5px;
+  }
+
+  /* Footer section */
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .social {
+    padding-bottom: 50px;
+  }
+
+  span.small {
+    font-size: 12px;
+    padding: 20px;
+  }
+  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Hero */
+  #hero {
+    height: 1080px;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  .t-shadow {
+    text-shadow: 6px 6px #FFF;
+  }
+
+  .hero-desc, i  {
+    font-size: 16px;
+  }
+
+  #heromain img {
+    width: 80%;
+    margin-top: 40px;
+  }
+
+  /* Process */
+  #overview {
+    text-align: left;
+  }
+
+  #overview-shaded, #shaded {
+    padding-bottom: 40px;
+    text-align: left;
+  }
+
+  #showcaseimg {
+    width: 70%;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  .uxdesignprocess h3 {
+    text-align: left;
+  }
+
+  .uxdesignprocess {
+    text-align: left;
+  }
+
+  .numberedprocess {
+    margin-left: -40px;
+  }
+
+  .uxdesignprocess img {
+    width: 120px;
+  }
+
+  .uxdesignprocess h4 {
+    font-size: 20px;
+  }
+
+  .uxdesignprocess p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .logoimg {
+    width: 70%;
+  }
+
+  .datastats {
+    width: 100%;
+  }
+
+  li h3 {
+    float: left;
+    text-align: left;
+    font-size: 50px;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  li p {
+    text-align: left;
+  }
+
+  /* Research */
+  .colorimg, {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .competitors, .competitor {
+    padding: 0;
+  }
+
+  .userflowimg, .brandsketch, .mockupimg {
+    width: 45%;
+  }
+
+  .wireframeimg, .mobileimg2 {
+    width: 23%;
+  }
+
+  .mockupimg2 {
+    width: 30%;
+  }
+
+  .personaimg {
+    width: 50%;
+  }
+
+  .mobileimg {
+    width: 80%;
+  }
+
+  /* Lessons */
+  #lessons {
+    padding-bottom: 50px;
+  }
+
+  #lessons, .lessonstitle {
+    text-align: left;
+  }
+
+  .btn {
+    margin: 10px 5px;
+  }
+
+
+  /* Footer section */
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .footername {
+    font-size: 45px;
+  }
+
+  .social {
+    padding-bottom: 50px;
+  }
+
+  span.small {
+    font-size: 12px;
+    padding: 20px;
+  }
+  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Navigation Bar */
+  .logoblack1 {
+    width: 100px;
+  }
+
+  /* Hero */
+  #hero {
+    height: 1300px;
+    text-align: left;
+  }
+
+  .sticky-top, .wireframeimg, .mobileimg, .mobileimg2, .mockupimg, .mockupimg2 {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .hero-desc {
+    font-size: 20px;
+  }
+
+  .btn-primary {
+    font-size: 16px;
+  }
+
+  .sticky-top a:link, .sub-sub-title, p {
+    font-size: 14px;
+  }
+
+  #heromain img {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+
+  /* Sticky Nav */
+  .subnav {
+    padding-right: 20px;
+  }
+
+  .anchor::before {
+    display: inline-block;
+    content: " ";
+    margin-top: -10px;
+    height: 100px;
+    visibility: hidden;
+  }
+
+
+  /* Sections */
+  h3 {
+    font-size: 28px;
+  }
+
+  .sub-title {
+    /* padding-top: 30px; */
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+
+  /* Overview */
+  #overview {
+    margin-top: -70px;
+    text-align: left;
+  }
+  #overview-shaded, #shaded {
+    padding: 50px;
+  }
+
+  #showcaseimg {
+    width: 80%;
+    text-align: center;
+  }
+
+
+  /* Process */
+  #process, #research, #branding, #execution, #learnings {
+    padding: 30px;
+    text-align: left;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle {
+    margin: -100px -45px 0 -45px;
+    padding: 30px;
+  }
+
+  .researchtitle, .brandingtitle, .executiontitle, .uxdesignprocess h4, .uxdesignprocess p {
+    font-size: 20px;
+  }
+
+  .sub-title {
+    font-size: 24px;
+  }
+
+  .reiterative {
+    margin-bottom: -50px;
+  }
+
+  .processcol {
+    max-width: 100%;
+    padding: 50px;
+  }
+
+  .uxdesignprocess img {
+    width: 140px;
+  }
+
+  .persona_vincent, .persona_alexis {
+    padding: 80px;
+  }
+
+  ul {
+    font-size: 18px;
+  }
+
+  .logoimg  {
+    width: 50%;
+  }
+
+  li h3 {
+    width: 20%;
+    padding-left: 20px;
+  }
+
+  .datastats li {
+    margin: 10px 0;
+    padding: 10px 10px 20px 0;
+}
+
+  /* Research */
+  .personaimg, .userflowimg, .brandsketch {
+    width: 40%;
+  }
+
+  .colorimg {
+    width: 60%;
+  }
+
+  .competitor {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .wireframeimg {
+    width: 35%;
+  }
+
+  .mobileimg {
+    width: 100%;
+  }
+
+  .mobileimg2 {
+    width: 20%;
+  }
+
+  .mockupimg, .mockupimg2 {
+    width: 30%;
+  }
+
+
+  /* Learnings */
+  #lessons, .lessonstitle {
+    text-align: left;
+  }
+
+  /* Footer section */
+  footer {
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .footername {
+    font-size: 60px;
+    padding: 0 0 50px 50px;
+  }
+
+  .footerbtn {
+    margin-bottom: 30px;
+  }
+
+  .connect {
+    padding-right: 70px;
+  }
+
+  .social a {
+    font-size: 18px;
+    padding-left: 25px;
+  }
+
+  span.small {
+    font-size: 14px;
+    padding: 20px;
+  }
+  }
