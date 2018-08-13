@@ -183,6 +183,9 @@ h1 {
 .btn-primary a:hover {
   color: #333;
 }
+.btn-primary a:visited {
+  color: #eee;
+}
 
 
 
@@ -304,7 +307,7 @@ b {
 
 .numbered {
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 600;
   color: #F5B092;
 }
 
