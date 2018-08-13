@@ -304,6 +304,7 @@ b {
 
 .numbered {
   font-size: 45px;
+  font-weight: 700;
   color: #F5B092;
 }
 
@@ -475,7 +476,7 @@ a:link {
 }
 /* visited link */
 a:visited {
-    color: #ddd;
+    color: #41CDAF;
 }
 /* mouse over link */
 a:hover {
