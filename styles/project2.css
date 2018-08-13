@@ -188,7 +188,7 @@ h1 {
 
 /* STICKY NAV */
 .sticky-top {
-  background-color: rgba(238,238,238,0.7);
+  background-color: rgba(51,51,51,0.7);
   top: -1px;
   padding: 19px;
 }
@@ -196,7 +196,7 @@ h1 {
 .sticky-top a:link {
   font-size: 14px;
   font-weight: 500;
-  color: #333;
+  color: #fff;
 }
 
 .sticky-top li a:hover {
@@ -204,7 +204,7 @@ h1 {
 }
 
 .subnav>a:visited {
-  color: #333;
+  color: #fff;
 }
 
 #navbar-sticky {
@@ -274,6 +274,7 @@ b {
 
 #shaded {
   background-color: #EEEEEE;
+  text-align: left;
 }
 
 #showcaseimg {
@@ -445,6 +446,10 @@ figcaption {
   font-style: italic;
   font-weight: lighter;
   padding: 20px 0;
+}
+
+iframe {
+  width: 80%;
 }
 
 /* Learnings */
@@ -647,6 +652,9 @@ span.small {
     width: 70%;
   }
 
+  iframe {
+    width: 50%;
+  }
 
   /* Footer */
   footer {
@@ -690,6 +698,14 @@ span.small {
     padding: 30px 0;
   }
 
+  #shaded {
+    padding: 100px 0 50px 30px;
+  }
+
+  .showcaseimg {
+    width: 90%;
+  }
+
 
   /* Process */
   .deliverables {
@@ -719,6 +735,9 @@ span.small {
     width: 70%;
   }
 
+  iframe {
+    width: 40%;
+  }
 
   /* Footer */
   footer {
@@ -762,10 +781,22 @@ span.small {
     padding: 30px 0;
   }
 
+  #shaded {
+    padding: 100px 0 50px 50px;
+  }
+
+  .shadedleft {
+    transform: translateY(20%);
+  }
+
+  .showcaseimg {
+    width: 90%;
+  }
 
   /* Process */
-  .deliverables {
-    margin-right: 70px;
+
+  .deliverables p {
+    width: 220px;
   }
 
   .overviewtitle, .researchtitle, .brandingtitle, .executiontitle {
@@ -813,6 +844,10 @@ span.small {
 
   .projectinfo {
     margin-top: 30px;
+  }
+
+  iframe {
+    width: 30%;
   }
 
   /* Footer */
@@ -866,11 +901,20 @@ span.small {
     padding: 30px 0;
   }
 
+  #shaded {
+    padding: 100px 100px 50px 180px;
+  }
+
+  .shadedleft {
+    transform: translateY(20%);
+  }
+
+  .showcaseimg {
+    width: 90%;
+  }
+
 
   /* Process */
-  .deliverables {
-    margin-right: 60px;
-  }
 
   .overviewtitle, .researchtitle, .brandingtitle, .executiontitle {
     font-size: 33px;
@@ -912,6 +956,10 @@ span.small {
 
   .projectinfo {
     margin-top: 70px;
+  }
+
+  iframe {
+    width: 25%;
   }
 
   /* Footer */
