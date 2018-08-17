@@ -58,7 +58,9 @@
   font-family: 'Bourbon Grotesque Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Bourbon Grotesque Regular'), url('BourbonGrotesque-Regular.woff') format('woff');
+  src: local('Bourbon Grotesque Regular'),
+  url('BourbonGrotesque-Regular.woff') format('woff'),
+  url('BourbonGrotesque-Regular.otf') format('truetype');
   }
 
 body, html {
