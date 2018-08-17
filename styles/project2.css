@@ -54,7 +54,7 @@
   font-style: normal;
   font-weight: 200; }
 
-body {
+body, html {
   background-color: #FFFFFF;
   font-family: "Manrope", sans-serif;
 }
