@@ -54,6 +54,13 @@
   font-style: normal;
   font-weight: 200; }
 
+@font-face {
+  font-family: 'Bourbon Grotesque Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bourbon Grotesque Regular'), url('BourbonGrotesque-Regular.woff') format('woff');
+  }
+
 body, html {
   background-color: #FFFFFF;
   font-family: "Manrope", sans-serif;
@@ -194,7 +201,7 @@ button:focus {
 }
 
 h1 {
-  font-family: "Bourbon Grotesque", sans-serif;
+  font-family: "Bourbon Grotesque Regular", sans-serif;
   font-size: 40px;
   letter-spacing: 5px;
   color: #333;
