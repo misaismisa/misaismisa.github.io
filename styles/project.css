@@ -264,7 +264,7 @@ b {
 
 /* OVERVIEW */
 #overview-shaded {
-  background: #DEDEDE;
+  background: #d3e7ed;
   margin-top: -25px;
 }
 
@@ -273,7 +273,7 @@ b {
 }
 
 #shaded {
-  background-color: #EEEEEE;
+  background-color: #f4fdff;
   text-align: left;
 }
 
@@ -331,7 +331,7 @@ b {
 }
 
 #branding {
-  background-color: #eee;
+  background-color: #f4fdff;
 }
 
 .researchtitle, .brandingtitle, .executiontitle, .lessonstitle {
