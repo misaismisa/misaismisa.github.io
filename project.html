@@ -12,9 +12,9 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="styles/manrope.css">
 
     <!-- AOS Style -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -50,11 +50,11 @@
       <main class="container-fluid">
         <div id="hero" class="row">
             <div id="heromain" class="col-lg-12 col-md-12 col-sm-12" align="center">
-              <h1 class="hero-title t-stroke t-shadow">CLOUDCORE</h1>
-              <p class="hero-desc">Cloud storage solutions right at your fingertips. A redesign that is simple, clean, and intuitive.</p>
+              <h1 class="hero-title">CLOUDCORE</h1>
+              <p class="hero-desc">Cloud storage solutions right at your fingertips.<br> A redesign that is simple, clean, and intuitive.</p>
 
-              <a href="https://invis.io/C6FY9NID83A" target="_blank"><button type="button" class="btn btn-primary btn-prototype">View Desktop Prototype<i class="fas fa-desktop"></i></button></a>
-              <a href="https://invis.io/RUFY9MWTF7H" target="_blank"><button type="button" class="btn btn-primary btn-prototype">View Mobile Prototype<i class="fas fa-mobile-alt"></i></button></a>
+              <a href="https://invis.io/NVNKNBZ5F6E" target="_blank"><button type="button" class="btn btn-primary btn-prototype">View Desktop Prototype<i class="fas fa-desktop"></i></button></a>
+              <a href="https://invis.io/7GNKNIIZ4T8" target="_blank"><button type="button" class="btn btn-primary btn-prototype">View Mobile Prototype<i class="fas fa-mobile-alt"></i></button></a>
               <img class="heroshowcase" src="images/cloudcore/landing_showcase.png" alt="dekstop and mobile mockup image for cloudcore" data-aos="fade-up">
             </div>
         </div>
@@ -67,7 +67,7 @@
       <banner class="container-fluid">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 menu">
-          <ul class="nav navbar-nav ml-auto" id="navbar-left">
+          <ul class="nav navbar-nav ml-auto" id="navbar-sticky">
             <li class="subnav"><a href="#overview">OVERVIEW</a></li>
             <li class="subnav"><a href="#researchanchor">RESEARCH</a></li>
             <li class="subnav"><a href="#brandinganchor">BRANDING</a></li>
@@ -83,6 +83,25 @@
     <!-- OVERVIEW -->
     <section id="overview" class="anchor">
       <div class="container-fluid" id="overview-shaded">
+        <div class="row">
+          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h3 class="overviewtitle">// OVERVIEW</H3>
+          </div>
+        </div>
+        <div class="row deliverables">
+          <div class="offset-lg-2 col-lg-3 offset-md-2 col-md-3 col-sm-6">
+            <h4 class="smalltitle">ROLE</h4>
+            <p>User Experience Design / User Interface Design / User Research / iOS App Design / Responsive Landing Page Development / Strategy / Branding</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h4 class="smalltitle">TOOLS</h4>
+            <p>Figma / Sketch / Adobe Illustrator / Marvel / Maze / Whimsical / HTML&CSS</p>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <h4 class="smalltitle">DELIVERABLES</h4>
+            <p>User Surveys / User Personas / Competitive Analysis / User Stories & Flows / Cardboard & Paper Prototype / Wireframes / User Testing / Hi-Fidelity Mockups</p>
+          </div>
+        </div>
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
             <h3 class="title" id="jumptitle">What is Cloudcore?</h3>
@@ -116,7 +135,7 @@
             <p><b>Cloudcore</b> is a SaaS (Software as a Service) web and mobile application, for both professional users and the everyday user. It’s fun and colorful design makes it appealing to users who are looking to store items for personal use. Yet, its simplistic and minimal layout is attractive for professionals who need to collaborate and share work with others.</p>
           </div>
           <div class="col-lg-12 col-md-12 col-sm-12" align="center">
-            <img src="images/cloudcore/solution_showcase@2x.png" id="showcaseimg" class="center-block" alt="larger showcase image for cloudcore mockups" data-aos="fade-up">
+            <img src="images/cloudcore/solution_showcase@2x.png" class="showcaseimg" class="center-block" alt="larger showcase image for cloudcore mockups" data-aos="fade-up">
           </div>
         </div>
       </div>
@@ -187,16 +206,17 @@
     <section id="research">
       <div class="container-fluid" id="researchjump">
         <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h3 class="researchtitle">THE RESEARCH</h3>
+          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h2 id="researchanchor" class="anchor" style="visibility: hidden">anchor</h2>
+            <h3 class="researchtitle">// RESEARCH & USER EXPERIENCE</h3>
           </div>
         </div>
         <br>
         <!-- User Research -->
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h4 class="numbered">01</h4>
             <h4 class="sub-title">User Research</h4>
-            <hr>
           </div>
         </div>
         <div class="row">
@@ -210,58 +230,46 @@
                 <li>The primary use for these applications</li>
                 <li>The importance of collaboration and sharing content</li>
               </ul>
-            <p><a href="https://docs.google.com/presentation/d/13wi06QF3a4EG8lcUNrfnL7di55s29XtPtFPc_WkTPak/edit?usp=sharing" target="_blank"><b>Results</b></a> showed the current trends and products of the cloud storage market. Most notable are:</p>
+            <p><a href="https://docs.google.com/presentation/d/13wi06QF3a4EG8lcUNrfnL7di55s29XtPtFPc_WkTPak/edit?usp=sharing" target="_blank">Results</a> showed the current trends and products of the cloud storage market. Most notable are:</p>
           </div>
         </div>
         <br>
-        <div class="row">
-          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-            <ul class="datastats">
-              <li data-aos="fade-up">
-                <div>
-                  <h3>94%</h3>
-                  <p>are familiar with and use cloud storage services</p>
-                  <p></p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <div>
-                  <h3>96%</h3>
-                  <p>use Google Drive as their primary storage service</p>
-                  <p></p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <div>
-                  <h3>84%</h3>
-                  <p>believe uploading content from computer or mobile is one of the most important features</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <div>
-                  <h3>80%</h3>
-                  <p>feel that sharing content easily with someone else is important</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <div>
-                  <h3>52%</h3>
-                  <p>feel that the amount of free storage given could be improved</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <div>
-                  <h3>44%</h3>
-                  <p>use cloud storage services for both personal and business purposes</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <div>
-                  <h3>40%</h3>
-                  <p>feel that real-time collaboration is one of the least important features to have</p>
-                </div>
-              </li>
-            </ul>
+        <div class="card-columns offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+          <div class="card text-center" data-aos="flip-down">
+            <div class="card-body">
+              <h3 class="card-title">94%</h3>
+              <p class="card-text">are familiar with and use cloud storage services</p>
+            </div>
+          </div>
+          <div class="card text-center" data-aos="flip-down">
+            <div class="card-body">
+              <h3 class="card-title">96%</h3>
+              <p class="card-text">use Google Drive as their primary storage service</p>
+            </div>
+          </div>
+          <div class="card text-center" data-aos="flip-down">
+            <div class="card-body">
+              <h3 class="card-title">84%</h3>
+              <p class="card-text">believe uploading content from computer or mobile is one of the most important features</p>
+            </div>
+          </div>
+          <div class="card text-center" data-aos="flip-down">
+            <div class="card-body">
+              <h3 class="card-title">80%</h3>
+              <p class="card-text">feel that sharing content easily with someone else is important</p>
+            </div>
+          </div>
+          <div class="card text-center" data-aos="flip-down">
+            <div class="card-body">
+              <h3 class="card-title">52%</h3>
+              <p class="card-text">feel that the amount of free storage given could be improved</p>
+            </div>
+          </div>
+          <div class="card text-center" data-aos="flip-down">
+            <div class="card-body">
+              <h3 class="card-title">44%</h3>
+              <p class="card-text">use cloud storage services for both personal and business purposes</p>
+            </div>
           </div>
         </div>
         <br>
@@ -274,8 +282,8 @@
         <!-- Competitive Analysis -->
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-            <h4 class="sub-title">Competitve Analysis</h4>
-            <hr>
+            <h4 class="numbered">02</h4>
+            <h4 class="sub-title">Competitive Analysis</h4>
           </div>
         </div>
         <div class="row">
@@ -300,8 +308,8 @@
         <!-- User Personas -->
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h4 class="numbered">03</h4>
             <h4 class="sub-title">User Personas</h4>
-            <hr>
           </div>
         </div>
         <div class="row">
@@ -378,8 +386,8 @@
         <!-- User Stories -->
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h4 class="numbered">04</h4>
             <h4 class="sub-title">User Stories</h4>
-            <hr>
           </div>
         </div>
         <div class="row">
@@ -391,8 +399,8 @@
         <!-- User Flows & Sitemap -->
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h4 class="numbered">05</h4>
             <h4 class="sub-title">User Flows & Sitemap</h4>
-            <hr>
           </div>
         </div>
         <div class="row">
@@ -413,23 +421,23 @@
     <section id="branding">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h3 class="brandingtitle">BRANDING</H3>
+          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h3 class="brandingtitle">// BRANDING</H3>
           </div>
         </div>
        <br>
        <!-- Branding Work -->
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+           <h4 class="numbered">06</h4>
            <h4 class="sub-title">Branding Work</h4>
-           <hr>
          </div>
        </div>
        <br>
        <br>
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-          <h5 class="sub-sub-title" style="text-decoration: underline">Research and Sketching</h5>
+          <h5 class="sub-sub-title">RESEARCH AND SKETCHING:</h5>
           <p>For my cloud storage project, I wanted to think of a brand name that would be easy to remember and straightforward. Looking at competitors, I also noticed that “Google <b>Drive</b>”, “Drop<b>box</b>”, “<b>Box</b>”, “<b>Cloud</b>up”, and “One<b>Drive</b>” are all examples of current services on the market with easy to decipher names and branding.</p>
           <p>Ultimately, I came up with “CloudCore”. The name is straightforward and encompasses the meaning of being the <b>foundation of storage or at the center of all cloud storage services.</b> </p>
          </div>
@@ -443,7 +451,7 @@
        <br>
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-          <h5 class="sub-sub-title" style="text-decoration: underline">Refinement</h5>
+          <h5 class="sub-sub-title">REFINEMENT:</h5>
           <p>Looking over my sketches, one image and name stuck out to me in particular. An image of a cloud encased in a circular wave to accompany the name “CloudCore”. The name itself felt it needed a rounded feeling and I played around with several different logo concepts, with the cloud placement in various positions. I ultimately came up with the final design below. For the typography, I knew I wanted something clean, simple and slightly rounded to match the logo design.  My final decision ended with <b>Quicksand</b> and <b>Open Sans</b> as both my primary and secondary font styles.</p>
          </div>
        </div>
@@ -455,22 +463,62 @@
        <br>
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-          <h5 class="sub-sub-title" style="text-decoration: underline">Color Palettes and Styleguide</h5>
+          <h5 class="sub-sub-title">COLOR PALETTE:</h5>
           <p>For my <a href="https://drive.google.com/file/d/17B5ysFs3Dhd52Peop1CljtTE1MH8TF0C/view?usp=sharing" target="_blank"><b>color palette and style guide</b></a>, I took a look at the colors and styles being used on my mood board and came with a variant of teal as my primary color to accent the monotone white, grey, and black with a contrasting berry color as the primary action button.  Blue represents strength and reliability and darker greens representative of stability and affluence. Both of these colors combined bring a rich hue of teal which I think is a good balance between the standard blues that are commonly associated with cloud storage services and a new color that differentiates it from the rest while not deviating too far into a different color realm. </p>
          </div>
        </div>
-       <div class="row">
-         <div class="col-lg-12 col-md-12 col-sm-12" align="center" data-aos="fade-up">
-           <img class="colorimg" src="images/cloudcore/colorpalette.png" alt="cloudcore color palette">
+       <div class="colorcolumns card-columns offset-lg-2 col-lg-8 offset-md-2 col-md-8 offset-sm-2 col-sm-8">
+         <div class="card colorcard" data-aos="flip-up">
+           <div class="card-top">color</div>
+           <div class="card-body">
+             <h5 class="card-title">Primary</h5>
+             <p class="card-text">Teal/Blue Gradient<br>#6289CF<br>rgb(98,137,207)</p>
+           </div>
+         </div>
+         <div class="card colorcard" data-aos="flip-up">
+           <div class="card-top2">color</div>
+           <div class="card-body">
+             <h5 class="card-title">Secondary</h5>
+             <p class="card-text">Dark Teal<br>#07496A<br>rgb(7,73,106)</p>
+           </div>
+         </div>
+         <div class="card colorcard" data-aos="flip-up">
+           <div class="card-top3">color</div>
+           <div class="card-body">
+             <h5 class="card-title">Button/Call to Action</h5>
+             <p class="card-text">Berry<br>#A0094A<br>rgb(160,9,74)</p>
+           </div>
+         </div>
+         <div class="card colorcard" data-aos="flip-up">
+           <div class="card-top4">color</div>
+           <div class="card-body">
+             <h5 class="card-title">Accent</h5>
+             <p class="card-text">Grey<br>#999999<br>rgb(153,153,153)</p>
+           </div>
+         </div>
+         <div class="card colorcard" data-aos="flip-up">
+           <div class="card-top5">color</div>
+           <div class="card-body">
+             <h5 class="card-title">Accent/Background</h5>
+             <p class="card-text">Indigo<br>#00172F<br>rgb(0, 23, 47)</p>
+           </div>
+         </div>
+         <div class="card colorcard" data-aos="flip-up">
+           <div class="card-top6">color</div>
+           <div class="card-body">
+             <h5 class="card-title">Text</h5>
+             <p class="card-text">Black<br>#000000<br>rgb(0,0,0)</p>
+           </div>
          </div>
        </div>
-       <br>
+
+     <br>
 
        <!-- Wireframes -->
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+           <h4 class="numbered">07</h4>
            <h4 class="sub-title">Wireframes</h4>
-           <hr>
          </div>
        </div>
        <div class="row">
@@ -498,8 +546,8 @@
     <section id="execution">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <h3 class="executiontitle">EXECUTION</H3>
+          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+            <h3 class="executiontitle">// EXECUTION</H3>
           </div>
         </div>
        <br>
@@ -507,8 +555,8 @@
        <!-- Mockups -->
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+           <h4 class="numbered">08</h4>
            <h4 class="sub-title">Mockups</h4>
-           <hr>
          </div>
        </div>
        <div class="row">
@@ -519,7 +567,8 @@
        <div class="row">
          <div class="col-lg-12 col-md-12 col-sm-12" align="center" data-aos="fade-up">
            <img class="mockupimg" src="images/cloudcore/mockups/mockup1.png" alt="cloudcore digital mockup 1">
-           <img class="mockupimg" src="images/cloudcore/mockups/mockup2.png" alt="cloudcore digital mockup 2">
+           <img class="mockupimg" src="images/cloudcore/mockups/mockup2.png" alt="cloudcore digital mockup 2"><br>
+           <img class="mockupimg2" src="images/cloudcore/mockups/mockup3.png" alt="cloudcore digital mockup 3">
          </div>
        </div>
        <br><br>
@@ -527,39 +576,42 @@
        <!-- Testing and Results -->
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
+           <h4 class="numbered">09</h4>
            <h4 class="sub-title">Prototypes and User Testing Results</h4>
-           <hr>
          </div>
        </div>
        <br>
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-          <h5 class="sub-sub-title" style="text-decoration: underline">Preference Testing</h5>
+          <h5 class="sub-sub-title">PREFERENCE TESTING:</h5>
           <p>For my preference tests, I chose 3 different elements between my desktop and mobile versions.  The tests consisted of first, a comparison between a rectangular and rounded <a href="https://usabilityhub.com/tests/816baca2ad25/results/b37d8a2e84b4" target="_blank"><b>button style</b></a>, the second between two <a href="https://usabilityhub.com/tests/5ca04a1f02e2/results/2161e518f471" target="_blank"><b>toolbar styles</b></a> for the mobile application, and inputted <a href="https://usabilityhub.com/tests/d794e4fc14be/results/b6028dbdaf" target="_blank"><b>color text</b></a>.  Results ultimately revealed that users preferred the rounded button style, a more emphasized toolbar style, and a dark grey font as inputted text.</p>
          </div>
        </div>
        <br>
        <div class="row">
-         <div class="col-lg-12 col-md-12 col-sm-12" align="center" data-aos="fade-up">
+         <div class="offset-lg-2 col-lg-4 col-md-6 col-sm-6" align="center" data-aos="fade-up">
            <figure>
-             <img class="mobileimg" src="images/cloudcore/mockups/mobilenavbar1.png" alt="cloudcore mobile mockup navbar option 1">
+             <img class="preftest" src="images/cloudcore/mockups/mobilenavbar1.png" alt="cloudcore mobile mockup navbar option 1">
              <figcaption>Flat Navbar Style</figcaption>
            </figure>
+         </div>
+         <div class="col-lg-4 col-md-6 col-sm-6" align="center" data-aos="fade-up">
            <figure>
-             <img class="mobileimg" src="images/cloudcore/mockups/mobilenavbar2.png" alt="cloudcore mobile mockup navbar option 2">
+             <img class="preftest" src="images/cloudcore/mockups/mobilenavbar2.png" alt="cloudcore mobile mockup navbar option 2">
              <figcaption>Focused Navbar Style</figcaption>
            </figure>
-          <br>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12" align="center" data-aos="fade-up">
+        <div class="offset-lg-2 col-lg-4 col-md-6 col-sm-6" align="center" data-aos="fade-up">
           <figure>
-            <img class="mobileimg" src="images/cloudcore/mockups/mobilebutton1.png" alt="cloudcore mobile mockup button option 1">
+            <img class="preftest" src="images/cloudcore/mockups/mobilebutton1.png" alt="cloudcore mobile mockup button option 1">
             <figcaption>Square Button Style</figcaption>
           </figure>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6" align="center" data-aos="fade-up">
           <figure>
-            <img class="mobileimg" src="images/cloudcore/mockups/mobilebutton2.png" alt="cloudcore mobile mockup button option 2">
+            <img class="preftest" src="images/cloudcore/mockups/mobilebutton2.png" alt="cloudcore mobile mockup button option 2">
             <figcaption>Rounded Button Style</figcaption>
           </figure>
          </div>
@@ -567,7 +619,7 @@
        <br><br>
        <div class="row">
          <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-          <h5 class="sub-sub-title" style="text-decoration: underline">Clickable Prototype Testing</h5>
+          <h5 class="sub-sub-title">CLICKABLE PROTOTYPE TESTING:</h5>
           <p>I decided to test 3 people (2 in-person and 1 remote) for my wireframes and high fidelity mockups.  For the <b>first round of testing</b>, I focused on the desktop wireframes. The <b>second round</b> included both my mobile and desktop high-fi mockups.  I came to several conclusions after finishing the tests and reviewing the videos.  First, that the ease and use of both applications were straightforward and simple. Most encountered minor issues.  Second, that language is important.  The need for concise and clear wording helps the user to understand what the next action should be.  I had the users test 3 tasks: <b>signing up for an account</b>, <b>upgrading the account to the next tier</b>, and <b>uploading a link or image to the dashboard</b>.</p>
           <p>I received great <b>feedback</b> on both versions, which led to multiple changes and adjustments to achieve the final product:</p>
             <ul>
@@ -584,24 +636,19 @@
        <br>
        <div class="row">
          <div class="col-lg-12 col-md-12 col-sm-12" align="center" data-aos="fade-up">
-           <img class="mobileimg2" src="images/cloudcore/mockups/mobilemockup1.png" alt="cloudcore mobile mockup 1">
-           <img class="mobileimg2" src="images/cloudcore/mockups/mobilemockup2.png" alt="cloudcore mobile mockup 2">
-           <img class="mobileimg2" src="images/cloudcore/mockups/mobilemockup3.png" alt="cloudcore mobile mockup 3">
+           <!-- <img class="showcaseimg2" src="images/cloudcore/iphoneshowcase.png" alt="cloudcore mobile mockup 1"> -->
+           <video controls>
+             <source src="images/cloudcore/cloudcoredesktop.mov" type="video/mp4">
+           </video>
          </div>
        </div>
        <br>
-       <div class="row">
-         <div class="col-lg-12 col-md-12 col-sm-12" align="center" data-aos="fade-up">
-           <img class="mockupimg2" src="images/cloudcore/mockups/desktopmockup1.png" alt="cloudcore desktop mockup 1">
-           <img class="mockupimg2" src="images/cloudcore/mockups/desktopmockup2.png" alt="cloudcore desktop mockup 2">
-           <img class="mockupimg2" src="images/cloudcore/mockups/desktopmockup3.png" alt="cloudcore desktop mockup 3">
-         </div>
-       </div>
+
        <br><br><br>
        <div class="row">
          <div class="col-lg-12 col-md-12 col-sm-12" align="center">
-           <a href="https://invis.io/C6FY9NID83A" target="_blank"><button type="button" class="btn btn-primary btn-proto">View Desktop Prototype<i class="fas fa-desktop"></i></button></a>
-           <a href="https://invis.io/RUFY9MWTF7H" target="_blank"><button type="button" class="btn btn-primary btn-proto">View Mobile Prototype<i class="fas fa-mobile-alt"></i></button></a>
+           <a href="https://invis.io/NVNKNBZ5F6E" target="_blank"><button type="button" class="btn btn-primary btn-proto">View Desktop Prototype<i class="fas fa-desktop"></i></button></a>
+           <a href="https://invis.io/7GNKNIIZ4T8" target="_blank"><button type="button" class="btn btn-primary btn-proto">View Mobile Prototype<i class="fas fa-mobile-alt"></i></button></a>
            <h2 id="learningsanchor" class="anchor" style="visibility: hidden">anchor</h2>
          </div>
        </div>
@@ -613,7 +660,7 @@
       <div class="container-fluid" id="lessons">
         <div class="row">
           <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 col-sm-12">
-            <h3 class="lessonstitle">Lessons Learned</H3>
+            <h3 class="lessonstitle">// LESSONS LEARNED</H3>
           </div>
         </div>
        <br>
@@ -634,7 +681,25 @@
      </div>
     </section>
 
-
+    <!-- LURE -->
+    <section id="projects">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-md-6 col-12" align="left">
+            <img class="card-img-top"
+                 srcset="images/lure/showcaseimg.png 1x"
+                 src="images/lure/showcaseimg.png"
+                 alt="Card image cap">
+          </div>
+          <div class="projectinfo col-lg-6 col-md-6 col-12" align="right">
+            <h3 class="card-title">LURE</h3>
+            <p class="card-text">IOS APP | UX&UI DESIGN | LANDING PAGE DESIGN</p>
+            <p class="card-description">A mobile beauty search service with booking capabilities.</p>
+            <button type="button" class="btn btn-primary"><a href="project2.html">View Case Study</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
