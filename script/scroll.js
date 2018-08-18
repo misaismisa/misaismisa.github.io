@@ -4,6 +4,12 @@ $(document).ready(function(){
 });
 });
 
+$(function(){
+  $('.menu').click(function(){
+    $('.menu').toggleClass('rotateEffect');
+  });
+});
+
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');

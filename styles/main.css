@@ -4,201 +4,192 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-extrabold.woff2") format("woff2"), /* Modern browsers */
+  url("../fonts/manrope/manrope-extrabold.woff") format("woff"), /* Legacy browsers */
+  url("../fonts/manrope/manrope-extrabold.otf") format("truetype"); /* Android, iOS */
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-bold.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-bold.woff") format("woff"),
+  url("../fonts/manrope/manrope-bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-semibold.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-semibold.woff") format("woff"),
+  url("../fonts/manrope/manrope-semibold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-medium.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-medium.woff") format("woff"),
+  url("../fonts/manrope/manrope-medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-regular.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-regular.woff") format("woff"),
+  url("../fonts/manrope/manrope-regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-light.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-light.woff") format("woff"),
+  url("../fonts/manrope/manrope-light.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope/manrope-thin.woff2") format("woff2"),
+  url("../fonts/manrope/manrope-thin.woff") format("woff"),
+  url("../fonts/manrope/manrope-thin.otf") format("truetype");
+  font-style: normal;
+  font-weight: 200; }
+
+@font-face {
+  font-family: 'Bourbon Grotesque Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bourbon Grotesque Regular'),
+  url('../fonts/bourbongrotesque/BourbonGrotesque-Regular.woff') format('woff'),
+  url('../fonts/bourbongrotesque/BourbonGrotesque-Regular.otf') format('truetype');
+  }
+
 body {
-  font-family:  "Helvetica", "Hiragino Kaku Gothic Pro", sans-serif;
-  /* background: #fcc9e9;  /* fallback for old browsers */
-  background-color: #FAACA8;
-  background-image: linear-gradient(-40deg, #ddd6f3 0%,  #faaca8 100%, #faaca8 100%);
-  /* background-size: 400% 400%; */
-  /* -webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite; */
-  /* background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%); */
-
+  font-family:  "Manrope", "Helvetica", sans-serif;
+  background-color: #88ad7e;
 }
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
 
 /* Navigation Bar */
-.navbar-nav {
-  overflow: hidden;
-  position: relative;
+.logoblack1 {
+  width: 90px;
+  z-index: 1000;
 }
 
-.navbar-nav a:link {
-  font-size: 16px;
+.navbar {
+  position: fixed;
+  z-index: 70;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar-light .navbar-toggler {
-  border: none!important;
+.menu {
+  padding-right: 40px;
 }
 
-button:focus {
-  outline: none;
-}
-
-
-.navbar-toggler span {
-   display: block;
-   background-color: #444;
-   height: 3px;
-   width: 25px;
-   margin-top: 4px;
-   margin-bottom: 4px;
-   transition: opacity .25s ease;
-   z-index: 100;
-   cursor: pointer;
-   -webkit-transform: rotate(0deg);
-   -moz-transform: rotate(0deg);
-   -o-transform: rotate(0deg);
-   transform: rotate(0deg);
-}
-
-.navbar-toggler span:nth-child(1),
-.navbar-toggler span:nth-child(3) {
-   -webkit-transition: transform .35s ease-in-out;
-   -moz-transition: transform .35s ease-in-out;
-   -o-transition: transform .35s ease-in-out;
-   transition: transform .35s ease-in-out;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(1) {
-    margin-top: 0px;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg);
-    opacity: 0.9;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(2) {
-    height: 12px;
-    visibility: hidden;
-    background-color: transparent;
-}
-
-.navbar-toggler:not(.collapsed) span:nth-child(3) {
-    margin-top: -22px;
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-    opacity: 0.9;
-}
-
-.navbar-light .navbar-nav a {
-  display: block;
-  position: relative;
-  float: right;
-  text-decoration: none;
+.menu:hover {
+  color: white;
+  transition: ease-in-out .5s;
   cursor: pointer;
 }
 
-.navbar-light .nav-menu .nav-link {
-  color: #000;
-  margin-right: 20px;
+.rotateEffect {
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 
-.nav-menu ul li a:before, .nav-menu ul li a:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 3px;
-  top: 90%;
-  margin-top: -0.5px;
-  background: #fff;
-}
-
-.nav-menu ul li a:hover {
-  color: #000;
-}
-
-.nav-menu ul li a:before {
-  left: -3.5px;
-}
-
-.nav-menu ul li a:after {
-  right: 2.5px;
-  background: #fff;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.nav-menu ul li a:hover:before {
-  background: #fff;
+.overlay {
+  position: fixed;
+  background: #ffea96;
+  top: 0;
+  left: 0;
   width: 100%;
-  transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition:  visibility .35s, height .35s;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.nav-menu ul li a:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+
+li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+li:nth-of-type(4) {
+  animation-delay: .50s;
 }
 
 
+.overlay-menu {
+    position: relative;
+    height: 70%;
+    top: 60%;
+    left: 8%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: 800;
+    text-align: left;
+  }
 
-.name {
-  /* -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
-  /* background-color: #fff; */
-  /* background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%); */
-  /* background-size: 300% 300%; */
-  -webkit-animation: color-change 7s ease infinite;
-	-moz-animation: color-change 7s ease infinite;
-	animation: color-change 7s ease infinite;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+  }
+
+.nav-link a {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 60px;
+  position: relative;
+  opacity: 0;
+  color: #333;
+  padding: 10px;
 }
 
-@keyframes color-change {
-    0% { color: white; }
-    30% { color: #ff59b7; }
-    60% { color: #9bd0ff; }
-    80% { color: #fff587; }
-    100% { color: white; }
+.nav-link:visited {
+    display: block;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    overflow: hidden;
 }
 
-.logotext {
-  font-family: "Raleway";
-  font-size: 30px;
-  /* font-weight: 800; */
+.nav-link:hover {
+  color: #fff;
+  transition: ease-in-out .5s;
 }
 
-.logoblack1 {
-  width: 90px;
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
 
@@ -206,14 +197,19 @@ button:focus {
 #hero {
   width: 100%;
   padding: 0 20px;
-  margin-top: 60px;
+  margin-top: 150px;
 }
 
 h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Bourbon Grotesque Regular", "Hiragino Sans", "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 800;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
+  line-height: 60px;
+}
+
+.name {
+  color: white;
 }
 
 .headline, .location {
@@ -231,54 +227,29 @@ h1 {
 }
 
 
-/* @-webkit-keyframes fadeinout {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeinout {
-  0% {
-    opacity: 0;
-  }
-  33% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-
-
 /* Section Case Studies */
-#preview {
-  height: 2250px;
-}
-
 #preview .scroll {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 0;
   padding: 10px;
   font-size: 13px;
   text-align: center;
-  border-bottom: 2px solid #333;
-  width: 65px;
+  border-bottom: 2px solid #fff;
+  width: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   transition: width 0.5s;
 }
 
-#scroll a:hover {
+#scroll a {
   color: #fff;
+}
+
+#scroll a:hover {
+  color: #333;
 }
 
 #scroll:hover {
@@ -286,30 +257,32 @@ h1 {
 }
 
 #preview .casetitle, footer h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Bourbon Grotesque Regular", "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 800;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-align: left;
   width: 300px;
 }
 
 #preview .casetitle {
   margin-top: 250px;
-  margin-bottom: 100px;
-  padding-left: 40px;
+  margin-bottom: 50px;
 }
 
-.card-deck {
-  background-color: rgba(255,255,255,0.5);
-  /* background-color: rgb(28, 28, 28); */
+.card-deck1 {
+  background-color: #8C99D6;
   color: #333;
-  margin: 10px 0;
-  padding: 50px 0;
+  padding: 100px 0;
+}
+
+.card-deck2 {
+  background-color: #F5B597;
+  padding: 100px 0;
 }
 
 .card-img-top, .card-img-top2 {
-  margin: 30px 0;
+  margin: 50px 0;
   width: 100%;
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
@@ -329,8 +302,8 @@ h1 {
 }
 
 #preview .card-title {
+  font-family: "Bourbon Grotesque Regular", "Raleway", sans-serif;
   font-size: 30px;
-  font-weight: 400;
 }
 
 .card-description {
@@ -351,7 +324,7 @@ a:visited {
 }
 /* mouse over link */
 a:hover {
-    color: #dd449b;
+    color: #fff;
 }
 /* selected link */
 a:active {
@@ -360,7 +333,7 @@ a:active {
 
 .btn-primary {
   font-size: 14px;
-  background-color: #dd449b;
+  background-color: #333;
   color: #fff;
   border-color: transparent;
   border-radius: 80px;
@@ -370,20 +343,18 @@ a:active {
 
 .btn-primary:hover {
   background-color: transparent;
-  border-color: #dd449b;
+  border-color: #333;
 }
 
 .btn-primary a:hover {
-  color: #dd449b;
+  color: #333;
 }
 
 /* Return to Top */
 .bounce p {
-  font-family: "Poppins", sans-serif;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  z-index: 3;
   padding: 10px;
   font-size: 13px;
   text-align: center;
@@ -391,11 +362,12 @@ a:active {
   width: 115px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -70px;
+  /* margin-top: -100px; */
   transition: width 0.5s;
 }
 
 .bounce {
+  z-index: 1;
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -419,10 +391,11 @@ footer {
   position: relative;
   padding: 30px 20px;
   width: 100%;
+  background-color: #bf6e87;
 }
 
 .footername {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .connect {
@@ -462,14 +435,11 @@ span.small {
 @media (min-width: 576px) and (max-width: 767px) {
     /* Hero Titles and Image */
     #hero {
-      padding-left: 50px;
+      padding-left: 40px;
+      margin-top: 200px;
     }
-
 
     /* Case STUDIES */
-    #preview {
-      height: 2150px;
-    }
 
     #preview .casetitle {
       margin-top: 250px;
@@ -483,13 +453,8 @@ span.small {
       max-width: 100%;
     }
 
-    #preview .card-title {
-      font-size: 30px;
-      font-weight: 300;
-    }
-
     .projectinfo {
-      padding-left: 50px;
+      padding-left: 40px;
     }
 
     /* Footer section */
@@ -513,24 +478,11 @@ span.small {
 @media (min-width: 768px) and (max-width: 991px) {
   /* Hero Titles and Image */
   #hero {
-    padding-left: 50px;
-    margin-top: 100px;
+    padding-left: 70px;
+    margin-top: 210px;
   }
-
-  h1 {
-    font-size: 70px;
-  }
-
-  .location {
-    font-size: 24px;
-  }
-
 
   /* Case STUDIES */
-  #preview {
-    height: 2300px;
-  }
-
   #preview .casetitle {
     margin-top: 250px;
     margin-bottom: 60px;
@@ -580,43 +532,29 @@ span.small {
   /* Hero Titles and Image */
   #hero {
     padding-left: 70px;
-    margin-top: 100px;
+    margin-top: 230px;
   }
 
   h1 {
-    font-size: 80px;
+    font-size: 55px;
   }
 
   .location {
-    font-size: 24px;
-  }
-
-  .t-shadow {
-    text-shadow: 6px 6px #fff;
-  }
-
-  .t-shadow2 {
-    /* text-shadow: 6px 6px #fff466; */
-    text-shadow: 6px 6px #ff59b7;
-    /* text-shadow: 6px 6px #a8c0ff; */
+    font-size: 22px;
   }
 
 
   /* Case STUDIES */
-  #preview {
-    height: 1600px;
-  }
-
   #preview .casetitle {
     font-size: 50px;
     margin-top: 250px;
     margin-bottom: 60px;
-    padding-left: 290px;
+    padding-left: 150px;
     width: 300px;
   }
 
   .card-deck {
-    padding: 50px 0;
+    padding: 150px 0;
   }
 
   .card-img-top {
@@ -671,7 +609,7 @@ span.small {
   /* Hero Titles and Image */
   #hero {
     padding: 0 100px;
-    margin-top: 100px;
+    margin-top: 250px;
   }
 
   h1 {
@@ -679,7 +617,6 @@ span.small {
   }
 
   .location {
-    font-size: 24px;
     margin-top: 60px;
   }
 
@@ -687,14 +624,16 @@ span.small {
     width: 100px;
   }
 
-
-  /* Case STUDIES */
-  #preview {
-    height: 1900px;
+  .nav-link {
+    font-size: 50px;
+    margin-top: -20px;
+    padding-bottom: 50px;
   }
 
+
+  /* Case STUDIES */
   #preview .casetitle {
-    font-size: 60px;
+    font-size: 50px;
     margin-top: 350px;
     margin-bottom: 60px;
     padding-left: 290px;
@@ -702,7 +641,7 @@ span.small {
   }
 
   .card-deck {
-    padding: 50px 0;
+    padding: 100px 0;
   }
 
   .card-img-top {
@@ -722,10 +661,6 @@ span.small {
     font-size: 18px;
   }
 
-  #preview .card-description {
-    font-size: 20px;
-  }
-
   .btn-primary {
     font-size: 16px;
   }
@@ -738,7 +673,6 @@ span.small {
   }
 
   .footername {
-    font-size: 60px;
     padding: 0 0 50px 50px;
   }
 
