@@ -196,6 +196,7 @@ button:focus {
   color: #333;
   height: 750px;
   text-align: center;
+  padding-top: 100px;
 }
 
 #heromain {
