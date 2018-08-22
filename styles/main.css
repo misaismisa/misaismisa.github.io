@@ -281,7 +281,7 @@ h1 {
   padding: 10px;
   font-size: 13px;
   text-align: center;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #333;
   width: 110px;
   margin-left: auto;
   margin-right: auto;
@@ -290,15 +290,16 @@ h1 {
 }
 
 #scroll a {
-  color: #fff;
+  color: #333;
 }
 
 #scroll a:hover {
-  color: #333;
+  color: #fff;
 }
 
 #scroll:hover {
   width: 140px;
+  border-bottom: 2px solid #fff;
 }
 
 .pulse {
@@ -692,6 +693,16 @@ span.small {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .logoblack1 {
+    width: 100px;
+  }
+
+  .nav-link {
+    font-size: 45px;
+    margin-top: -20px;
+    padding-bottom: 30px;
+  }
+
   /* Hero Titles and Image */
   .slide {
     height: 650px !important;
@@ -716,16 +727,6 @@ span.small {
     margin-top: 60px;
     text-align: center;
     padding-left: 100px;
-  }
-
-  .logoblack1 {
-    width: 100px;
-  }
-
-  .nav-link {
-    font-size: 45px;
-    margin-top: -20px;
-    padding-bottom: 30px;
   }
 
 

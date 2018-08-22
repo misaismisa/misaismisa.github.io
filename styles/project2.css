@@ -79,13 +79,13 @@ header {
   z-index: 1000;
 }
 
-.navTop {
+header .navbar {
   position: relative;
   z-index: 70;
-  padding: 20px;
+  /* padding: 10px; */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .menu {
@@ -126,18 +126,22 @@ header {
   height: 100%;
 }
 
-.nav-item {
-  animation: fadeInRight .5s ease forwards;
+.overlay.close {
+  visibility: hidden;
+}
+
+li {
+  animation: fadeInLeft .5s ease forwards;
   animation-delay: .35s;
 }
 
-.nav-item:nth-of-type(2) {
-  animation-delay: .4s;
+li:nth-of-type(2) {
+  animation-delay: .40s;
 }
-.nav-item:nth-of-type(3) {
+li:nth-of-type(3) {
   animation-delay: .45s;
 }
-.nav-item:nth-of-type(4) {
+li:nth-of-type(4) {
   animation-delay: .50s;
 }
 
@@ -146,11 +150,13 @@ header {
     position: relative;
     height: 70%;
     top: 60%;
-    left: 8%;
+    left: 4%;
     transform: translateY(-50%);
+    text-align: left;
+    overflow: scroll;
   }
 
-.overlay-menu>ul {
+.overlay-menu ul {
     list-style: none;
     padding: 0;
     margin: 0 auto;
@@ -159,17 +165,20 @@ header {
     height: 100%;
   }
 
-a.nav-link {
+.overlay-menu ul li {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.nav-link a {
   display: block;
   height: 25%;
   height: calc(100% / 4);
   min-height: 60px;
   position: relative;
+  opacity: 0;
   color: #333;
-  padding: 20px;
-  font-size: 40px;
-  font-weight: 800;
-  text-align: left;
+  padding: 10px;
 }
 
 .nav-link:visited {
@@ -182,17 +191,20 @@ a.nav-link {
 
 .nav-link:hover {
   color: #fff;
+  -webkit-transition: ease-in-out .5s;
+  -moz-transition: ease-in-out .5s;
+  -o-transition: ease-in-out .5s;
   transition: ease-in-out .5s;
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInLeft {
   0% {
     opacity: 0;
-    left: 20%;
+    right: 20%;
   }
   100% {
     opacity: 1;
-    left: 0;
+    right: 0;
   }
 }
 
@@ -202,7 +214,6 @@ a.nav-link {
   color: #333;
   height: 850px;
   text-align: center;
-  padding-top: 50px;
 }
 
 #heromain {
@@ -670,6 +681,10 @@ span.small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
+  .overlay-menu {
+    left: 11%;
+  }
+
   /* Hero */
   #hero {
     height: 780px;
@@ -744,6 +759,10 @@ span.small {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+  .overlay-menu {
+    left: 12%;
+  }
+
   /* Hero */
   #hero {
     height: 870px;
@@ -827,6 +846,10 @@ span.small {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .overlay-menu {
+    left: 10%;
+  }
+
   /* Hero */
   #hero {
     height: 970px;
@@ -940,6 +963,12 @@ span.small {
   /* Navigation Bar */
   .logoblack1 {
     width: 100px;
+  }
+
+  .nav-link {
+    font-size: 45px;
+    margin-top: -20px;
+    padding-bottom: 30px;
   }
 
   /* Hero */

@@ -22,8 +22,8 @@ $('#toggle').click(function() {
 $(document).ready(function(){
   $('a[href*="#"]').on('click', function(event){
 
-    // $('#overlay').toggleClass('close');
-    // $(this).toggleClass('active');
+    $('#overlay').removeClass("open");
+    $(this).toggleClass('active');
     // event.preventDefault();
 
     var hash = this.hash;
