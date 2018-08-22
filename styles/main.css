@@ -322,7 +322,7 @@ h1 {
 
 /* CASE STUDIES */
 .slide {
-  height: 650px !important;
+  height: 600px !important;
 }
 
 .casetitle, footer h3 {
@@ -341,7 +341,7 @@ h1 {
 }
 
 .card-deck {
-  margin: 200px 0;
+  margin: 100px 0;
 }
 
 .card-img-top, .card-img-top2 {
@@ -493,6 +493,10 @@ span.small {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
+    .overlay-menu {
+      left: 8%;
+    }
+
     /* Hero Titles and Image */
     #hero {
       padding-left: 70px;
@@ -506,8 +510,6 @@ span.small {
     /* Case STUDIES */
 
     .casetitle {
-      /* margin-top: 250px; */
-      margin-bottom: 60px;
       padding-left: 80px;
       width: 300px;
     }
@@ -516,7 +518,15 @@ span.small {
       padding-left: 40px;
     }
 
+    .returntop {
+      margin-top: 50px;
+    }
+
     /* Footer section */
+    .connect {
+      margin: 20px 0;
+    }
+
     footer {
       padding: 0 30px;
     }
@@ -541,6 +551,10 @@ span.small {
 
   .fulltitle {
     padding-left: 170px;
+  }
+
+  .scroll {
+    margin-top: 100px;
   }
 
   /* Case STUDIES */
