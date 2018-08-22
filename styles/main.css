@@ -494,7 +494,7 @@ span.small {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
     .overlay-menu {
-      left: 8%;
+      left: 10%;
     }
 
     /* Hero Titles and Image */
@@ -539,9 +539,12 @@ span.small {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+  .overlay-menu {
+    left: 12%;
+  }
   /* Hero Titles and Image */
   .slide {
-    height: 750px !important;
+    height: 730px !important;
   }
 
   #hero {
@@ -554,7 +557,7 @@ span.small {
   }
 
   .scroll {
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
   /* Case STUDIES */
@@ -592,19 +595,30 @@ span.small {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
   .overlay-menu {
-    left: 8%;
+    left: 10%;
   }
 
   /* Hero Titles and Image */
+  .slide {
+    height: 550px !important;
+  }
+
   #hero {
-    padding-left: 70px;
+    padding-left: 300px;
     margin-top: 230px;
   }
 
+  .fulltitle {
+    padding-left: 170px;
+  }
+
   h1 {
-    font-size: 55px;
+    font-size: 60px;
+  }
+
+  .word {
+    width: 600px;
   }
 
   .location {
@@ -615,7 +629,7 @@ span.small {
   /* Case STUDIES */
   .casetitle {
     font-size: 50px;
-    margin-bottom: 60px;
+    margin-top: 200px;
     padding-left: 150px;
     width: 800px;
   }
@@ -657,7 +671,7 @@ span.small {
   }
 
   form {
-    margin-top: 80px;
+    margin-top: 90px;
   }
 
   .bounce {
