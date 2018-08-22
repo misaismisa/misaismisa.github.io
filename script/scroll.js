@@ -23,7 +23,7 @@ $(document).ready(function(){
   $('a[href*="#"]').on('click', function(event){
 
     $('#overlay').removeClass("open");
-    $(this).toggleClass('active');
+    $('.menu').toggleClass('rotateEffect');
     // event.preventDefault();
 
     var hash = this.hash;
