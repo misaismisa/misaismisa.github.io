@@ -29,7 +29,7 @@
 
   <body id="top">
     <header class="slide slide-one" data-background="#dda6d8">
-      <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+      <nav class="navbar" role="navigation">
         <a class="navbar-brand" href="index.html">
           <img class="logoblack1" src="images/misa_logo_black.png" alt="Misa Logo">
         </a>
@@ -39,7 +39,7 @@
       <nav class="overlay-menu">
         <ul>
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" v-scroll-to="#workanchor">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#workanchor">Case Studies</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#footeranchor">Contact</a></li>
         </ul>
@@ -57,8 +57,9 @@
                     <span class="word hello">HELLO,</span>
                     <span class="word konnichwa">こんにちは,</span>
                     <span class="word bonjour">BONJOUR,</span>
-                    <br>I'M
-                    <span class="name">MISA</span>.
+                    <br>
+                    <span class="fulltitle">I'M
+                    <span class="name">MISA</span>.</span>
               </h1>
             </div>
             <h3 class="location">Digital Product Designer & Coding Enthusiast.<br>Los Angeles, CA</h3>
@@ -71,38 +72,20 @@
     </header>
 
     <!-- SECTION CASE STUDIES -->
-    <!-- <section class="container-fluid" id="preview"> -->
-      <div class="row preview">
-        <div id="featured" class="col-lg-12 col-md-12 col-sm-12" align="left">
+      <div class="row">
+        <!-- <div class="col-lg-12 col-md-12 col-sm-12" align="left"> -->
           <h3 id="workanchor" class="casetitle">FEATURED CASE STUDIES</h3>
-        </div>
+        <!-- </div> -->
       </div>
-      <!-- <div class="line"></div> -->
-      <!-- <section class="container-fluid">
-      <div class="row card-deck card-deck1 slide slide-two" data-background="#8C99D6">
-        <div class="showcase col-lg-6 col-md-6 col-sm-12" align="right" data-aos="fade-up">
-          <img class="card-img-top"
-               srcset="images/cloudcore/landing_showcase.png 1x"
-               src="images/cloudcore/landing_showcase.png"
-               alt="Card image cap">
-        </div>
-        <div class="projectinfo col-lg-6 col-md-6 col-sm-12" align="left" data-aos="fade-up">
-          <h3 class="card-title">Cloudcore</h3>
-          <p class="card-text">IOS APP | WEBSITE DESIGN | UX&UI DESIGN</p>
-          <p class="card-description">A colorful, responsive cloud storage web and mobile design for professionals and students.</p>
-          <button type="button" class="btn btn-primary"><a href="project.html">View Case Study</a></button>
-        </div>
-      </div>
-      </section> -->
       <section class="container-fluid slide slide-two" data-background="#8C99D6">
       <div class="row card-deck">
-        <div class="projectinfo col-lg-6 col-md-6 col-sm-12" align="left" data-aos="fade-up">
+        <div class="projectinfo col-lg-6 col-md-12 col-sm-12" align="left" data-aos="fade-up">
           <h3 class="card-title">Cloudcore</h3>
           <p class="card-text">IOS APP | WEBSITE DESIGN | UX&UI DESIGN</p>
           <p class="card-description">A colorful, responsive cloud storage web and mobile design for professionals and students.</p>
           <button type="button" class="btn btn-primary"><a href="project.html">View Case Study</a></button>
         </div>
-        <div class="showcase col-lg-6 col-md-6 col-sm-12" align="right" data-aos="fade-up">
+        <div class="showcase col-lg-6 col-md-12 col-sm-12" data-aos="fade-up">
           <img class="card-img-top"
                srcset="images/cloudcore/landing_showcase.png 1x"
                src="images/cloudcore/landing_showcase.png"
@@ -112,13 +95,13 @@
     </section>
       <section class="container-fluid slide slide-three" data-background="#F5B597">
       <div class="row card-deck">
-        <div class="projectinfo col-lg-6 col-md-6 col-sm-12" align="left" data-aos="fade-up">
+        <div class="projectinfo col-lg-6 col-md-12 col-sm-12" align="left" data-aos="fade-up">
           <h3 class="card-title">Lure</h3>
           <p class="card-text">IOS APP | UX&UI DESIGN | LANDING PAGE DESIGN</p>
           <p class="card-description">A mobile beauty search service with booking capabilities.</p>
           <button type="button" class="btn btn-primary"><a href="project2.html">View Case Study</a></button>
         </div>
-        <div class="showcase col-lg-6 col-md-6 col-sm-12" align="right" data-aos="fade-up">
+        <div class="showcase col-lg-6 col-md-12 col-sm-12" data-aos="fade-up">
           <img class="card-img-top2"
                srcset="images/lure/showcaseimg.png 1x"
                src="images/lure/showcaseimg.png"
@@ -139,14 +122,14 @@
           </div>
         </div>
         <div class="row footer-row justify-content-between">
-          <div class="connect col-lg-6 col-md-6 col-12" align="left">
+          <div class="connect col-lg-6 col-md-12 col-12" align="left">
             <h3 id="footeranchor" class="footername">LET'S CONNECT</h3>
             <p>Have a project you would like to collaborate on or simply want to talk design?</p>
             <p>Let's grab coffee or a bite to eat over some interesting topics like travel, design, music, and curiousities of the world.</p>
             <hr>
             <p>Want to see my <b style="color: white">resume</b>? Shoot me a message and I'll send it right over!</p>
           </div>
-          <div class="connect col-lg-6 col-md-6 col-12" align="left">
+          <div class="connect col-lg-6 col-md-12 col-12" align="left">
             <!-- <div class="footerbtn">
               <button type="button" class="btn btn-primary"><a href="contact.html">Contact Me</a></button>
             </div> -->

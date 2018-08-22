@@ -79,10 +79,10 @@ body {
 .navbar {
   position: fixed;
   z-index: 70;
-  padding: 10px;
+  /* padding: 10px; */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .menu {
@@ -321,6 +321,10 @@ h1 {
 
 
 /* CASE STUDIES */
+.slide {
+  height: 650px !important;
+}
+
 .casetitle, footer h3 {
   font-family: "Bourbon Grotesque Regular", "Raleway", sans-serif;
   font-size: 40px;
@@ -328,15 +332,16 @@ h1 {
   letter-spacing: 5px;
   text-align: left;
   width: 300px;
+  margin: 0;
 }
 
 .casetitle {
   margin-top: 150px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .card-deck {
-  margin: 100px 0;
+  margin: 200px 0;
 }
 
 .card-img-top, .card-img-top2 {
@@ -490,22 +495,21 @@ span.small {
 @media (min-width: 576px) and (max-width: 767px) {
     /* Hero Titles and Image */
     #hero {
-      padding-left: 40px;
+      padding-left: 70px;
       margin-top: 200px;
+    }
+
+    .slide {
+      height: 670px !important;
     }
 
     /* Case STUDIES */
 
     .casetitle {
-      margin-top: 250px;
+      /* margin-top: 250px; */
       margin-bottom: 60px;
       padding-left: 80px;
       width: 300px;
-    }
-
-    .col-sm-6 {
-      flex: 0 0 100%;
-      max-width: 100%;
     }
 
     .projectinfo {
@@ -526,32 +530,32 @@ span.small {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
   /* Hero Titles and Image */
+  .slide {
+    height: 750px !important;
+  }
+
   #hero {
-    padding-left: 70px;
+    padding-left: 150px;
     margin-top: 210px;
+  }
+
+  .fulltitle {
+    padding-left: 170px;
   }
 
   /* Case STUDIES */
   .casetitle {
-    margin-top: 250px;
-    margin-bottom: 60px;
     padding-left: 90px;
     width: 500px;
   }
 
-  .col-sm-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .card-deck {
+    margin-bottom: 200px;
   }
 
-  .card-img-top {
-    width: 80%;
-    margin-right: 90px;
-  }
-
-  .card-img-top2 {
-    width: 80%;
-    margin-right: 90px;
+  .card-img-top, .card-img-top2 {
+    width: 90%;
+    text-align: center;
   }
 
   .projectinfo {
@@ -559,9 +563,11 @@ span.small {
   }
 
   /* Footer section */
-
-  form {
-    margin-top: 50px;
+  footer {
+    margin: 0 50px;
+  }
+  .connect {
+    margin: 20px 0;
   }
 
   span.small {
