@@ -205,7 +205,6 @@ ul {
 
 /* Hero Titles and Image */
 .container-fluid {
-    display: table;
     height: 100%;
     width: 100%;
 }
@@ -220,7 +219,7 @@ h1 {
   font-family: "Bourbon Grotesque Regular", "Mplus 1p", "Noto Sans Japanese", "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 900;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   line-height: 70px;
 }
 
@@ -228,6 +227,7 @@ h1 {
   position: absolute;
   width: 350px;
   opacity: 0;
+  z-index: 0;
 }
 
 .letter {
@@ -284,7 +284,7 @@ h1 {
   width: 110px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 50px;
   transition: width 0.5s;
 }
 
@@ -319,6 +319,8 @@ h1 {
     100% { transform: scale(1); }
 }
 
+
+/* CASE STUDIES */
 .casetitle, footer h3 {
   font-family: "Bourbon Grotesque Regular", "Raleway", sans-serif;
   font-size: 40px;
@@ -501,7 +503,7 @@ span.small {
 
     /* Case STUDIES */
 
-    #preview .casetitle {
+    .casetitle {
       margin-top: 250px;
       margin-bottom: 60px;
       padding-left: 80px;
@@ -537,7 +539,7 @@ span.small {
   }
 
   /* Case STUDIES */
-  #preview .casetitle {
+  .casetitle {
     margin-top: 250px;
     margin-bottom: 60px;
     padding-left: 90px;
@@ -598,7 +600,7 @@ span.small {
 
 
   /* Case STUDIES */
-  #preview .casetitle {
+  .casetitle {
     font-size: 50px;
     margin-bottom: 60px;
     padding-left: 150px;
@@ -687,7 +689,7 @@ span.small {
 
 
   /* Case STUDIES */
-  #preview .casetitle {
+  .casetitle {
     font-size: 50px;
     padding-left: 290px;
   }

@@ -1,20 +1,24 @@
+// AOS ANIMATIONS
 $(document).ready(function(){
   AOS.init({
  duration: 1300
 });
 });
 
+// ROTATE MENU EFFECT
 $(function(){
   $('.menu').click(function(){
     $('.menu').toggleClass('rotateEffect');
   });
 });
 
+// TOGGLE MENU BUTTON
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
   });
 
+// SCROLL TO HASH
 $(document).ready(function(){
   $('a[href*="#"]').on('click', function(event){
 
@@ -54,6 +58,7 @@ $(document).ready(function(){
 //  })
 //  });
 
+// BACKGROUND SLIDE COLOR CHANGE
 $(document).ready(function() {
 
     var wHeight = $(window).height();
@@ -73,7 +78,9 @@ $(document).ready(function() {
 
   });
 
-  var words = document.getElementsByClassName('word');
+
+// ROTATING WORDS
+var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
 
