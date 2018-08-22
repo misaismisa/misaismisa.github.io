@@ -147,11 +147,12 @@ li:nth-of-type(4) {
     position: relative;
     height: 70%;
     top: 60%;
-    left: 5%;
+    left: 4%;
     transform: translateY(-50%);
     font-size: 40px;
     font-weight: 800;
     text-align: left;
+    overflow: scroll;
   }
 
 ul {
@@ -494,7 +495,7 @@ span.small {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
     .overlay-menu {
-      left: 10%;
+      left: 11%;
     }
 
     /* Hero Titles and Image */
@@ -544,7 +545,7 @@ span.small {
   }
   /* Hero Titles and Image */
   .slide {
-    height: 730px !important;
+    height: 900px !important;
   }
 
   #hero {
@@ -563,10 +564,11 @@ span.small {
   /* Case STUDIES */
   .casetitle {
     padding-left: 90px;
+    margin-top: 0;
     width: 500px;
   }
 
-  .card-deck {
+  .container-fluid {
     margin-bottom: 200px;
   }
 
@@ -605,7 +607,7 @@ span.small {
   }
 
   #hero {
-    padding-left: 300px;
+    padding-left: 250px;
     margin-top: 230px;
   }
 
@@ -628,7 +630,7 @@ span.small {
 
   /* Case STUDIES */
   .casetitle {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 200px;
     padding-left: 150px;
     width: 800px;
@@ -691,17 +693,29 @@ span.small {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   /* Hero Titles and Image */
+  .slide {
+    height: 650px !important;
+  }
+
   #hero {
-    padding: 0 100px;
-    margin-top: 250px;
+    padding-left: 350px;
+    margin-top: 200px;
   }
 
   h1 {
-    font-size: 55px;
+    /* padding-left: 120px; */
+    font-size: 65px;
+    line-height: 90px;
+  }
+
+  .fulltitle {
+    padding-left: 300px;
   }
 
   .location {
     margin-top: 60px;
+    text-align: center;
+    padding-left: 100px;
   }
 
   .logoblack1 {
