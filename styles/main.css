@@ -335,15 +335,8 @@ h1 {
   padding-left: 30px;
 }
 
-.card-deck1 {
-  /* background-color: #8C99D6; */
-  color: #333;
-  padding: 100px 0;
-}
-
-.card-deck2 {
-  /* background-color: #F5B597; */
-  padding: 50px 0;
+.card-deck {
+  margin: 100px 0;
 }
 
 .card-img-top, .card-img-top2 {
