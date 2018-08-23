@@ -695,6 +695,7 @@ span.small {
 @media (min-width: 1200px) {
   .logoblack1 {
     width: 100px;
+    /* padding: 10px; */
   }
 
   .nav-link {
