@@ -212,7 +212,7 @@ li:nth-of-type(4) {
 /* HERO */
 #hero {
   color: #333;
-  height: 850px;
+  height: 880px;
   text-align: center;
 }
 
@@ -233,6 +233,10 @@ h1 {
 }
 
 .heroshowcase {
+  display: none;
+}
+
+.heroshowcase_mobile {
   width: 100%;
   padding: 50px 0;
 }
@@ -369,6 +373,10 @@ b {
   background-color: #eee;
 }
 
+#execution {
+  background-color: #F5F5F5;
+}
+
 .researchtitle, .brandingtitle, .executiontitle, .lessonstitle {
   text-align: left;
   margin-top: 30px;
@@ -413,11 +421,18 @@ ul li {
   font-size: 35px;
 }
 
-.userflowimg, .brandsketch, .logoimg, .colorimg  {
+.brandsketch, .logoimg, .colorimg  {
   width: 100%;
   margin-bottom: 20px;
 }
 
+.userflowimg_mobile {
+  width: 100%;
+}
+
+.userflowimg {
+  display: none;
+}
 
 .wireframeimg, .mockupimg {
   width: 100%;
@@ -455,6 +470,10 @@ ul li {
 
 .persona_body {
   margin-top: 20px;
+}
+
+.personatitle {
+  margin-bottom: 0;
 }
 
 .persona_quote p {
@@ -687,7 +706,7 @@ span.small {
 
   /* Hero */
   #hero {
-    height: 780px;
+    height: 890px;
   }
 
   .hero-desc, i  {
@@ -699,8 +718,12 @@ span.small {
   }
 
   .heroshowcase {
-    width: 90%;
-    margin-top: 30px;
+    display: none;
+  }
+
+  .heroshowcase_mobile {
+    width: 80%;
+    padding: 30px 0;
   }
 
 
@@ -728,7 +751,7 @@ span.small {
     width: 45%;
   }
 
-  .userflowimg, .mockupimg, .preftest {
+  .userflowimg_mobile, .mockupimg, .preftest {
     width: 90%;
   }
 
@@ -784,6 +807,11 @@ span.small {
     width: 90%;
     margin-top: 20px;
     padding: 30px 0;
+    display: block;
+  }
+
+  .heroshowcase_mobile {
+    display: none;
   }
 
   #shaded {
@@ -817,6 +845,14 @@ span.small {
 
   .userflowimg, .wireframeimg, .preftest {
     width: 60%;
+  }
+
+  .userflowimg {
+    display:block;
+  }
+
+  .userflowimg_mobile {
+    display: none;
   }
 
  .mockupimg {
@@ -871,6 +907,11 @@ span.small {
     width: 80%;
     margin-top: 20px;
     padding: 30px 0;
+    display: block;
+  }
+
+  .heroshowcase_mobile {
+    display: none;
   }
 
   #shaded {
@@ -878,7 +919,7 @@ span.small {
   }
 
   .shadedleft {
-    transform: translateY(20%);
+    transform: translateY(25%);
   }
 
   .showcaseimg {
@@ -915,6 +956,11 @@ span.small {
 
   .userflowimg {
     width: 65%;
+    display:block;
+  }
+
+  .userflowimg_mobile {
+    display: none;
   }
 
   .brandsketch {
@@ -1003,7 +1049,7 @@ span.small {
   }
 
   .shadedleft {
-    transform: translateY(20%);
+    transform: translateY(30%);
   }
 
   .showcaseimg {
