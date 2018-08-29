@@ -24,7 +24,7 @@ $(document).ready(function(){
 
     $('#overlay').removeClass("open");
     $('.menu').toggleClass('rotateEffect');
-    event.preventDefault();
+    // event.preventDefault();
 
     var hash = this.hash;
 
