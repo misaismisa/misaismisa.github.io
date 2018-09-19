@@ -500,6 +500,10 @@ a:hover {
     padding-top: 100px;
   }
 
+  h1, h2 {
+    text-align: center;
+  }
+
   h1 {
     font-size: 50px;
     margin-top: 0;
@@ -570,6 +574,10 @@ a:hover {
 
   .headline {
     margin-top: 5%;
+  }
+
+  h1, h2 {
+    text-align: center;
   }
 
   h1 {
