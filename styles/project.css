@@ -260,6 +260,9 @@ h1 {
   background-color: transparent;
   border-color: #333;
   color: #333;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .btn-primary a:hover {
   color: #333;

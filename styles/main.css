@@ -282,25 +282,22 @@ h1 {
   padding: 10px;
   font-size: 13px;
   text-align: center;
-  border-bottom: 2px solid #333;
   width: 110px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  transition: width 0.5s;
 }
 
 #scroll a {
   color: #333;
 }
 
-#scroll a:hover {
-  color: #fff;
+#scroll i {
+  font-size: 20px;
 }
 
-#scroll:hover {
-  width: 140px;
-  border-bottom: 2px solid #fff;
+#scroll a:hover {
+  color: #fff;
 }
 
 .pulse {
@@ -414,6 +411,9 @@ a:active {
 .btn-primary:hover {
   background-color: transparent;
   border-color: #333;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .btn-primary a:hover {
@@ -429,7 +429,7 @@ a:active {
   font-size: 13px;
   text-align: center;
   border-bottom: 2px solid #fff;
-  width: 115px;
+  width: 125px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -474,15 +474,18 @@ a:active {
   padding: 20px 0;
 }
 
-.social a {
-  font-size: 16px;
-  font-weight: 400;
-  padding: 0 10px;
-  color: #333;
+.social i {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50px;
 }
 
-a:hover {
+i:hover {
   color: #ffffff;
+  background-color: transparent;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -732,7 +735,7 @@ span.small {
   }
   }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* Large devices (laptops, 1200px and up) */
 @media (min-width: 1200px) {
   .logoblack1 {
     width: 100px;
@@ -787,6 +790,10 @@ span.small {
     margin-bottom: 50px;
   }
 
+  .card-deck {
+    margin: 100px;
+  }
+
   .card-img-top, .card-img-top2 {
     width: 100%;
     margin-left: 50px;
@@ -810,6 +817,10 @@ span.small {
   .connect {
     padding: 50px 80px;
   }
+
+  form {
+    max-width: 800px;
+  }
   .social a {
     font-size: 18px;
   }
@@ -819,3 +830,103 @@ span.small {
     padding: 20px;
   }
   }
+
+/* Extra Large devices (Desktops) */
+  @media (min-width: 2200px) {
+    .logoblack1 {
+      width: 110px;
+    }
+
+    .nav-link {
+      font-size: 45px;
+      margin-top: -20px;
+      padding-bottom: 30px;
+    }
+
+    /* Hero Titles and Image */
+    .slide {
+      height: 650px !important;
+    }
+
+    #hero {
+      width: 100%;
+      text-align: center;
+      margin-top: 300px;
+    }
+
+    h1 {
+      font-size: 70px;
+      line-height: 90px;
+      text-align: center;
+    }
+
+    .word {
+      margin-left: -440px;
+    }
+
+    .fulltitle {
+      padding-left: 60px;
+    }
+
+    #blurb {
+      text-align: center;
+      padding: 0;
+    }
+
+    .location {
+      margin-top: 60px;
+    }
+
+
+    /* Case STUDIES */
+    .casetitle {
+      font-size: 50px;
+      padding-left: 290px;
+      margin-top: 450px;
+    }
+
+    .card-deck {
+      margin: 350px 200px;
+    }
+
+    .card-img-top, .card-img-top2 {
+      width: 100%;
+      margin-left: 50px;
+    }
+
+    .projectinfo {
+      margin-top: 180px;
+      padding-left: 200px;
+    }
+
+    .card-title {
+      font-size: 40px;
+    }
+
+    .card-text {
+      font-size: 18px;
+    }
+
+    .returntop {
+      margin-top: 150px;
+    }
+
+
+    /* Footer section */
+    .connect {
+      padding: 200px;
+    }
+
+    form {
+      max-width: 800px;
+
+    }
+    .social a {
+      font-size: 18px;
+    }
+
+    span.small {
+      font-size: 14px;
+      padding: 20px;
+    }
+    }
